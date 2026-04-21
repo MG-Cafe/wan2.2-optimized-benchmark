@@ -1,0 +1,85 @@
++ echo '=== System Info ==='
+=== System Info ===
++ nvidia-smi
+Tue Apr 21 02:35:44 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 570.211.01             Driver Version: 570.211.01     CUDA Version: 12.9     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX PRO 6000 Blac...    On  |   00000000:05:00.0 Off |                    0 |
+| N/A   41C    P0             78W /  600W |       0MiB /  97887MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA RTX PRO 6000 Blac...    On  |   00000000:06:00.0 Off |                    0 |
+| N/A   41C    P0             64W /  600W |       0MiB /  97887MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA RTX PRO 6000 Blac...    On  |   00000000:0A:00.0 Off |                    0 |
+| N/A   42C    P0             91W /  600W |       0MiB /  97887MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA RTX PRO 6000 Blac...    On  |   00000000:0B:00.0 Off |                    0 |
+| N/A   41C    P0             56W /  600W |       0MiB /  97887MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   4  NVIDIA RTX PRO 6000 Blac...    On  |   00000000:84:00.0 Off |                    0 |
+| N/A   38C    P0             49W /  600W |       0MiB /  97887MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   5  NVIDIA RTX PRO 6000 Blac...    On  |   00000000:85:00.0 Off |                    0 |
+| N/A   38C    P0             48W /  600W |       0MiB /  97887MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   6  NVIDIA RTX PRO 6000 Blac...    On  |   00000000:89:00.0 Off |                    0 |
+| N/A   37C    P0             48W /  600W |       0MiB /  97887MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   7  NVIDIA RTX PRO 6000 Blac...    On  |   00000000:8A:00.0 Off |                    0 |
+| N/A   38C    P0             48W /  600W |       0MiB /  97887MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
++ echo '=== GPU Topology ==='
+=== GPU Topology ===
++ nvidia-smi topo -m
+	[4mGPU0	GPU1	GPU2	GPU3	GPU4	GPU5	GPU6	GPU7	CPU Affinity	NUMA Affinity	GPU NUMA ID[0m
+GPU0	 X 	PIX	NODE	NODE	SYS	SYS	SYS	SYS	0-95,192-287	0		N/A
+GPU1	PIX	 X 	NODE	NODE	SYS	SYS	SYS	SYS	0-95,192-287	0		N/A
+GPU2	NODE	NODE	 X 	PIX	SYS	SYS	SYS	SYS	0-95,192-287	0		N/A
+GPU3	NODE	NODE	PIX	 X 	SYS	SYS	SYS	SYS	0-95,192-287	0		N/A
+GPU4	SYS	SYS	SYS	SYS	 X 	PIX	NODE	NODE	96-191,288-383	1		N/A
+GPU5	SYS	SYS	SYS	SYS	PIX	 X 	NODE	NODE	96-191,288-383	1		N/A
+GPU6	SYS	SYS	SYS	SYS	NODE	NODE	 X 	PIX	96-191,288-383	1		N/A
+GPU7	SYS	SYS	SYS	SYS	NODE	NODE	PIX	 X 	96-191,288-383	1		N/A
+
+Legend:
+
+  X    = Self
+  SYS  = Connection traversing PCIe as well as the SMP interconnect between NUMA nodes (e.g., QPI/UPI)
+  NODE = Connection traversing PCIe as well as the interconnect between PCIe Host Bridges within a NUMA node
+  PHB  = Connection traversing PCIe as well as a PCIe Host Bridge (typically the CPU)
+  PXB  = Connection traversing multiple PCIe bridges (without traversing the PCIe Host Bridge)
+  PIX  = Connection traversing at most a single PCIe bridge
+  NV#  = Connection traversing a bonded set of # NVLinks
++ echo '=== NCCL P2P Level ==='
+=== NCCL P2P Level ===
++ echo 'NCCL_P2P_LEVEL=not set'
+NCCL_P2P_LEVEL=not set
++ echo '=== Cache-DiT ==='
+=== Cache-DiT ===
++ echo 'SGLANG_CACHE_DIT_ENABLED=not set'
+SGLANG_CACHE_DIT_ENABLED=not set
++ echo '=== Python/SGLang Version ==='
+=== Python/SGLang Version ===
++ python3 -c 'import sglang; print('\''SGLang version:'\'', sglang.__version__)'
+SGLang version: 0.5.10.post1

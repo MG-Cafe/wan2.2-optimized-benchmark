@@ -1,0 +1,1653 @@
+/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/entrypoints/post_training/weights_api.py:10: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
+  from sglang.srt.utils.json_response import orjson_response
+[04-21 03:37:23] Enabled T5 text encoder parallel folding (mode=sp) for ServerArgs (tp_size=1, sp_degree=8).
+[04-21 03:37:23] server_args: {"model_path": "Wan-AI/Wan2.2-T2V-A14B-Diffusers", "model_id": null, "backend": "auto", "attention_backend": "sage_attn", "attention_backend_config": {}, "cache_dit_config": null, "nccl_port": null, "trust_remote_code": false, "revision": null, "num_gpus": 8, "tp_size": 1, "sp_degree": 8, "ulysses_degree": 4, "ring_degree": 2, "dp_size": 1, "dp_degree": 1, "enable_cfg_parallel": false, "hsdp_replicate_dim": 1, "hsdp_shard_dim": 8, "dist_timeout": 3600, "pipeline_class_name": null, "lora_path": null, "lora_nickname": "default", "lora_scale": 1.0, "component_paths": {}, "transformer_weights_path": null, "lora_target_modules": null, "dit_cpu_offload": false, "dit_layerwise_offload": false, "dit_offload_prefetch_size": 0.0, "text_encoder_cpu_offload": false, "image_encoder_cpu_offload": true, "vae_cpu_offload": true, "use_fsdp_inference": false, "pin_cpu_memory": true, "comfyui_mode": false, "enable_torch_compile": false, "warmup": false, "warmup_resolutions": null, "warmup_steps": 1, "disable_autocast": false, "master_port": 30005, "host": "127.0.0.1", "port": 30000, "webui": false, "webui_port": 12312, "scheduler_port": 5560, "strict_ports": false, "output_path": "/scratch/results/sp_8gpu_u4r2", "input_save_path": "inputs/uploads", "prompt_file_path": null, "model_paths": {}, "model_loaded": {"transformer": true, "vae": true, "video_vae": true, "audio_vae": true, "video_dit": true, "audio_dit": true, "dual_tower_bridge": true}, "boundary_ratio": null, "log_level": "info", "uvicorn_access_log_exclude_prefixes": []}
+[04-21 03:37:23] Local mode: True
+[04-21 03:37:23] Starting server...
+/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/entrypoints/post_training/weights_api.py:10: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
+  from sglang.srt.utils.json_response import orjson_response
+/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/entrypoints/post_training/weights_api.py:10: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
+  from sglang.srt.utils.json_response import orjson_response
+/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/entrypoints/post_training/weights_api.py:10: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
+  from sglang.srt.utils.json_response import orjson_response
+/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/entrypoints/post_training/weights_api.py:10: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
+  from sglang.srt.utils.json_response import orjson_response
+/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/entrypoints/post_training/weights_api.py:10: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
+  from sglang.srt.utils.json_response import orjson_response
+[04-21 03:37:31] Scheduler bind at endpoint: tcp://127.0.0.1:5560
+/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/entrypoints/post_training/weights_api.py:10: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
+  from sglang.srt.utils.json_response import orjson_response
+/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/entrypoints/post_training/weights_api.py:10: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
+  from sglang.srt.utils.json_response import orjson_response
+/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/entrypoints/post_training/weights_api.py:10: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
+  from sglang.srt.utils.json_response import orjson_response
+[04-21 03:37:31] Initializing distributed environment with world_size=8, device=cuda:0, timeout=3600
+[04-21 03:37:31] Setting distributed timeout to 3600 seconds
+[04-21 03:37:32] Found nccl from library libnccl.so.2
+[04-21 03:37:32] sglang-diffusion is using nccl==2.28.3
+[04-21 03:37:33] Found nccl from library libnccl.so.2
+[04-21 03:37:33] sglang-diffusion is using nccl==2.28.3
+[04-21 03:37:33] No pipeline_class_name specified, using model_index.json
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[93m[04-21 03:37:33] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.[0;0m
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[93m[04-21 03:37:34] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.[0;0m
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[93m[04-21 03:37:34] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.[0;0m
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[93m[04-21 03:37:34] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.[0;0m
+[04-21 03:37:34] Using pipeline from model_index.json: WanPipeline
+[04-21 03:37:34] Loading pipeline modules...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[93m[04-21 03:37:34] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.[0;0m
+Loading required modules:   0%|          | 0/6 [00:00<?, ?it/s]Loading required modules:   0%|          | 0/6 [00:00<?, ?it/s]Loading required modules:   0%|          | 0/6 [00:00<?, ?it/s]Loading required modules:   0%|          | 0/6 [00:00<?, ?it/s]Loading required modules:   0%|          | 0/6 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[93m[04-21 03:37:34] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.[0;0m
+[04-21 03:37:34] Checking for cached model in HF Hub cache for Wan-AI/Wan2.2-T2V-A14B-Diffusers...
+[04-21 03:37:34] Found complete model in cache at /root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7
+[04-21 03:37:34] Model path: /root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7
+[04-21 03:37:34] Diffusers version: 0.35.0.dev0
+[04-21 03:37:34] Loading pipeline modules from config: {'_class_name': 'WanPipeline', '_diffusers_version': '0.35.0.dev0', 'boundary_ratio': 0.875, 'scheduler': ['diffusers', 'UniPCMultistepScheduler'], 'text_encoder': ['transformers', 'UMT5EncoderModel'], 'tokenizer': ['transformers', 'T5TokenizerFast'], 'transformer': ['diffusers', 'WanTransformer3DModel'], 'transformer_2': ['diffusers', 'WanTransformer3DModel'], 'vae': ['diffusers', 'AutoencoderKLWan']}
+[04-21 03:37:34] MoE pipeline detected. Adding transformer_2 to self.required_config_modules...
+[04-21 03:37:34] Setting boundary ratio to 0.875
+Loading required modules:   0%|          | 0/6 [00:00<?, ?it/s][04-21 03:37:34] Loading required components: ['text_encoder', 'tokenizer', 'vae', 'transformer', 'scheduler', 'transformer_2']
+Loading required modules:   0%|          | 0/6 [00:00<?, ?it/s][04-21 03:37:34] Loading text_encoder from /root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7/text_encoder. avail mem: 91.72 GB
+Loading required modules:   0%|          | 0/6 [00:00<?, ?it/s][04-21 03:37:36] [RunAI Streamer] Overall time to stream 10.6 GiB of all files to cpu: 1.95s, 5.4 GiB/s
+[04-21 03:37:36] Loaded text_encoder: UMT5EncoderModel (sgl-diffusion version). model size: 2.65 GB, consumed GPU mem: 2.70 GB, avail GPU mem: 89.03 GB
+Loading required modules:  17%|█▋        | 1/6 [00:02<00:10,  2.04s/it][04-21 03:37:36] Loading tokenizer from /root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7/tokenizer. avail mem: 89.03 GB
+[04-21 03:37:36] [RunAI Streamer] Overall time to stream 10.6 GiB of all files to cpu: 2.03s, 5.2 GiB/s
+[04-21 03:37:36] [RunAI Streamer] Overall time to stream 10.6 GiB of all files to cpu: 2.08s, 5.1 GiB/s
+Loading required modules:  17%|█▋        | 1/6 [00:02<00:10,  2.10s/it][04-21 03:37:36] [RunAI Streamer] Overall time to stream 10.6 GiB of all files to cpu: 2.04s, 5.2 GiB/s
+Loading required modules:  17%|█▋        | 1/6 [00:02<00:10,  2.13s/it]Loading required modules:  17%|█▋        | 1/6 [00:02<00:10,  2.12s/it][04-21 03:37:36] [RunAI Streamer] Overall time to stream 10.6 GiB of all files to cpu: 2.08s, 5.1 GiB/s
+[04-21 03:37:36] [RunAI Streamer] Overall time to stream 10.6 GiB of all files to cpu: 2.1s, 5.0 GiB/s
+[04-21 03:37:36] [RunAI Streamer] Overall time to stream 10.6 GiB of all files to cpu: 2.1s, 5.0 GiB/s
+Loading required modules:  17%|█▋        | 1/6 [00:02<00:10,  2.17s/it]Loading required modules:  17%|█▋        | 1/6 [00:02<00:10,  2.19s/it]Loading required modules:  17%|█▋        | 1/6 [00:02<00:10,  2.19s/it][04-21 03:37:36] [RunAI Streamer] Overall time to stream 10.6 GiB of all files to cpu: 2.25s, 4.7 GiB/s
+Loading required modules:  17%|█▋        | 1/6 [00:02<00:11,  2.34s/it][04-21 03:37:37] Loaded tokenizer: T5Tokenizer (sgl-diffusion version). model size: NA GB, consumed GPU mem: 0.00 GB, avail GPU mem: 89.03 GB
+Loading required modules:  33%|███▎      | 2/6 [00:03<00:06,  1.52s/it][04-21 03:37:37] Loading vae from /root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7/vae. avail mem: 89.03 GB
+Loading required modules:  33%|███▎      | 2/6 [00:03<00:06,  1.54s/it]Loading required modules:  33%|███▎      | 2/6 [00:03<00:06,  1.55s/it]Loading required modules:  33%|███▎      | 2/6 [00:03<00:06,  1.60s/it]Loading required modules:  33%|███▎      | 2/6 [00:03<00:06,  1.62s/it]Loading required modules:  33%|███▎      | 2/6 [00:03<00:06,  1.66s/it][04-21 03:37:37] Loaded vae: AutoencoderKLWan (sgl-diffusion version). model size: 0.47 GB, consumed GPU mem: 0.00 GB, avail GPU mem: 89.03 GB
+Loading required modules:  50%|█████     | 3/6 [00:03<00:02,  1.04it/s][04-21 03:37:37] Loading transformer from /root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7/transformer. avail mem: 89.03 GB
+[04-21 03:37:37] Loading WanTransformer3DModel from 12 safetensors file(s) , param_dtype: torch.bfloat16
+Loading required modules:  33%|███▎      | 2/6 [00:03<00:06,  1.68s/it][04-21 03:37:37] Using Sage Attention backend
+[04-21 03:37:37] Using Sage Attention backend
+Loading required modules:  33%|███▎      | 2/6 [00:03<00:07,  1.76s/it]Loading required modules:  50%|█████     | 3/6 [00:05<00:04,  1.66s/it]Loading required modules:  50%|█████     | 3/6 [00:05<00:05,  1.70s/it]Loading required modules:  50%|█████     | 3/6 [00:05<00:05,  1.77s/it]Loading required modules:  50%|█████     | 3/6 [00:05<00:05,  1.78s/it]Loading required modules:  50%|█████     | 3/6 [00:05<00:05,  1.80s/it]Loading required modules:  50%|█████     | 3/6 [00:05<00:05,  1.80s/it]Loading required modules:  50%|█████     | 3/6 [00:05<00:05,  1.77s/it][04-21 03:37:56] [RunAI Streamer] Overall time to stream 53.2 GiB of all files to cpu: 16.92s, 3.1 GiB/s
+[04-21 03:37:57] [RunAI Streamer] Overall time to stream 53.2 GiB of all files to cpu: 17.64s, 3.0 GiB/s
+[04-21 03:37:57] [RunAI Streamer] Overall time to stream 53.2 GiB of all files to cpu: 17.83s, 3.0 GiB/s
+[04-21 03:37:57] [RunAI Streamer] Overall time to stream 53.2 GiB of all files to cpu: 19.71s, 2.7 GiB/s
+[04-21 03:37:57] [RunAI Streamer] Overall time to stream 53.2 GiB of all files to cpu: 18.29s, 2.9 GiB/s
+[04-21 03:37:57] [RunAI Streamer] Overall time to stream 53.2 GiB of all files to cpu: 18.29s, 2.9 GiB/s
+[04-21 03:37:57] [RunAI Streamer] Overall time to stream 53.2 GiB of all files to cpu: 18.06s, 2.9 GiB/s
+[04-21 03:37:58] [RunAI Streamer] Overall time to stream 53.2 GiB of all files to cpu: 18.59s, 2.9 GiB/s
+Loading required modules:  67%|██████▋   | 4/6 [00:42<00:31, 15.82s/it]Loading required modules:  67%|██████▋   | 4/6 [00:43<00:32, 16.15s/it]Loading required modules:  67%|██████▋   | 4/6 [00:43<00:32, 16.19s/it][04-21 03:38:17] Loaded model with 14.29B parameters
+[04-21 03:38:17] Loaded transformer: WanTransformer3DModel (sgl-diffusion version). model size: 26.62 GB, consumed GPU mem: 28.10 GB, avail GPU mem: 60.93 GB
+Loading required modules:  67%|██████▋   | 4/6 [00:43<00:32, 16.44s/it][04-21 03:38:17] Loading scheduler from /root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7/scheduler. avail mem: 60.93 GB
+[04-21 03:38:17] Loaded scheduler: UniPCMultistepScheduler (sgl-diffusion version). model size: NA GB, consumed GPU mem: 0.00 GB, avail GPU mem: 60.93 GB
+[04-21 03:38:17] Loading transformer_2 from /root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7/transformer_2. avail mem: 60.93 GB
+[04-21 03:38:17] Loading WanTransformer3DModel from 12 safetensors file(s) , param_dtype: torch.bfloat16
+Loading required modules:  67%|██████▋   | 4/6 [00:43<00:32, 16.24s/it]Loading required modules:  67%|██████▋   | 4/6 [00:44<00:32, 16.33s/it]Loading required modules:  67%|██████▋   | 4/6 [00:44<00:32, 16.36s/it]Loading required modules:  67%|██████▋   | 4/6 [00:44<00:33, 16.54s/it][04-21 03:38:36] [RunAI Streamer] Overall time to stream 53.2 GiB of all files to cpu: 17.5s, 3.0 GiB/s
+[04-21 03:38:36] [RunAI Streamer] Overall time to stream 53.2 GiB of all files to cpu: 18.44s, 2.9 GiB/s
+[04-21 03:38:36] [RunAI Streamer] Overall time to stream 53.2 GiB of all files to cpu: 19.79s, 2.7 GiB/s
+[04-21 03:38:36] [RunAI Streamer] Overall time to stream 53.2 GiB of all files to cpu: 19.18s, 2.8 GiB/s
+[04-21 03:38:36] [RunAI Streamer] Overall time to stream 53.2 GiB of all files to cpu: 19.2s, 2.8 GiB/s
+[04-21 03:38:36] [RunAI Streamer] Overall time to stream 53.2 GiB of all files to cpu: 18.74s, 2.8 GiB/s
+[04-21 03:38:37] [RunAI Streamer] Overall time to stream 53.2 GiB of all files to cpu: 19.27s, 2.8 GiB/s
+[04-21 03:38:37] [RunAI Streamer] Overall time to stream 53.2 GiB of all files to cpu: 19.86s, 2.7 GiB/s
+Loading required modules: 100%|██████████| 6/6 [01:22<00:00, 17.90s/it]Loading required modules: 100%|██████████| 6/6 [01:22<00:00, 13.77s/it]
+Loading required modules: 100%|██████████| 6/6 [01:22<00:00, 17.98s/it]Loading required modules: 100%|██████████| 6/6 [01:22<00:00, 13.79s/it]
+Loading required modules: 100%|██████████| 6/6 [01:23<00:00, 18.13s/it]Loading required modules: 100%|██████████| 6/6 [01:23<00:00, 13.86s/it]
+Loading required modules: 100%|██████████| 6/6 [01:23<00:00, 18.12s/it]Loading required modules: 100%|██████████| 6/6 [01:23<00:00, 13.87s/it]
+Loading required modules: 100%|██████████| 6/6 [01:23<00:00, 18.20s/it]Loading required modules: 100%|██████████| 6/6 [01:23<00:00, 13.96s/it]
+Loading required modules: 100%|██████████| 6/6 [01:23<00:00, 18.20s/it]Loading required modules: 100%|██████████| 6/6 [01:23<00:00, 13.96s/it]
+[04-21 03:38:57] Loaded model with 14.29B parameters
+[04-21 03:38:57] Loaded transformer_2: WanTransformer3DModel (sgl-diffusion version). model size: 26.62 GB, consumed GPU mem: 28.10 GB, avail GPU mem: 32.83 GB
+Loading required modules: 100%|██████████| 6/6 [01:23<00:00, 18.36s/it]Loading required modules: 100%|██████████| 6/6 [01:23<00:00, 13.96s/it]
+[04-21 03:38:57] Creating pipeline stages...
+[04-21 03:38:57] Using Sage Attention backend
+[04-21 03:38:57] Pipeline instantiated
+[04-21 03:38:57] Worker 0: Initialized device, model, and distributed environment.
+[04-21 03:38:57] Worker 0: Scheduler loop started.
+Loading required modules: 100%|██████████| 6/6 [01:23<00:00, 18.22s/it]Loading required modules: 100%|██████████| 6/6 [01:23<00:00, 13.96s/it]
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[93m[04-21 03:38:58] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.[0;0m
+[04-21 03:38:58] Resolution unspecified, using default: (1280, 720)
+[04-21 03:38:58] Sequence dimension shard is enabled, disabling frame adjustment for better performance
+[04-21 03:38:58] Adjusting number of frames from 81 to 81 based on model
+[04-21 03:38:58] Processing prompt 1/1: <redacted, len=494>
+[04-21 03:38:58] Sampling params:
+                       width: 1280
+                      height: 720
+                  num_frames: 81
+                         fps: 16
+                      prompt: <redacted, len=494>
+                  neg_prompt: <redacted, len=137>
+                        seed: 42
+                 infer_steps: 40
+      num_outputs_per_prompt: 1
+              guidance_scale: 4.0
+     embedded_guidance_scale: 6.0
+                    n_tokens: None
+                  flow_shift: 12.0
+                  image_path: None
+                 save_output: True
+            output_file_path: /scratch/results/sp_8gpu_u4r2/Summer_beach_vacation_style_a_white_cat_wearing_sunglasses_sits_on_a_surfboard._The_fluffy-furred_f_20260421-033858_c96cfa6d.mp4
+        
+[04-21 03:38:58] Running pipeline stages: ['InputValidationStage', 'TextEncodingStage', 'LatentPreparationStage', 'TimestepPreparationStage', 'DenoisingStage', 'DecodingStage']
+[04-21 03:38:58] [InputValidationStage] started...
+[04-21 03:38:58] [InputValidationStage] finished in 0.0001 seconds
+[04-21 03:38:58] [TextEncodingStage] started...
+[04-21 03:38:59] [TextEncodingStage] finished in 1.2711 seconds
+[04-21 03:38:59] [LatentPreparationStage] started...
+[04-21 03:38:59] [LatentPreparationStage] finished in 0.0010 seconds
+[04-21 03:38:59] [TimestepPreparationStage] started...
+[04-21 03:38:59] [TimestepPreparationStage] finished in 0.0003 seconds
+[04-21 03:38:59] [DenoisingStage] started...
+  0%|          | 0/40 [00:00<?, ?it/s][91m[04-21 03:39:00] [denoising_step_0] Error during execution after 1314.0987 ms: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1075, in forward
+    noise_pred = self._predict_noise_with_cfg(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1568, in _predict_noise_with_cfg
+    noise_pred_cond = self._predict_noise(
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1514, in _predict_noise
+    return current_model(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 1111, in forward
+    hidden_states = block(
+                    ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 554, in forward
+    attn_output = self.attn1(query, key, value)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 452, in forward
+    out = ring_attn(
+          ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 241, in ring_attn
+    out, *_ = _templated_ring_attention(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/experimental/_attention.py", line 466, in _templated_ring_attention
+    out, logsumexp, *rest = op(
+                            ^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 214, in attn_callable_adapter
+    output, softmax_lse, *rest = attn_impl.forward(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/backends/sage_attn.py", line 72, in forward
+    output, softmax_lse = output
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)[0;0m
+[91m[04-21 03:39:00] [DenoisingStage] Error during execution after 1317.2632 ms: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/base.py", line 203, in __call__
+    result = self.forward(batch, server_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1075, in forward
+    noise_pred = self._predict_noise_with_cfg(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1568, in _predict_noise_with_cfg
+    noise_pred_cond = self._predict_noise(
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1514, in _predict_noise
+    return current_model(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 1111, in forward
+    hidden_states = block(
+                    ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 554, in forward
+    attn_output = self.attn1(query, key, value)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 452, in forward
+    out = ring_attn(
+          ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 241, in ring_attn
+    out, *_ = _templated_ring_attention(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/experimental/_attention.py", line 466, in _templated_ring_attention
+    out, logsumexp, *rest = op(
+                            ^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 214, in attn_callable_adapter
+    output, softmax_lse, *rest = attn_impl.forward(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/backends/sage_attn.py", line 72, in forward
+    output, softmax_lse = output
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)[0;0m
+[91m[04-21 03:39:00] Error executing request 930f2a0d-fed8-4fb7-86e8-6b09b80152a0: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 230, in execute_forward
+    result = self.pipeline.forward(req, self.server_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/composed_pipeline_base.py", line 622, in forward
+    return self.executor.execute_with_profiling(self.stages, batch, server_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/executors/pipeline_executor.py", line 57, in execute_with_profiling
+    batch = self.execute(stages, batch, server_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/executors/parallel_executor.py", line 101, in execute
+    batch = self._execute(stages, batch, server_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/executors/parallel_executor.py", line 92, in _execute
+    batch = stage(batch, server_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/base.py", line 203, in __call__
+    result = self.forward(batch, server_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1075, in forward
+    noise_pred = self._predict_noise_with_cfg(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1568, in _predict_noise_with_cfg
+    noise_pred_cond = self._predict_noise(
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1514, in _predict_noise
+    return current_model(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 1111, in forward
+    hidden_states = block(
+                    ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 554, in forward
+    attn_output = self.attn1(query, key, value)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 452, in forward
+    out = ring_attn(
+          ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 241, in ring_attn
+    out, *_ = _templated_ring_attention(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/experimental/_attention.py", line 466, in _templated_ring_attention
+    out, logsumexp, *rest = op(
+                            ^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 214, in attn_callable_adapter
+    output, softmax_lse, *rest = attn_impl.forward(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/backends/sage_attn.py", line 72, in forward
+    output, softmax_lse = output
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)[0;0m
+[91m[04-21 03:39:00] [denoising_step_0] Error during execution after 1317.5446 ms: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1075, in forward
+    noise_pred = self._predict_noise_with_cfg(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1568, in _predict_noise_with_cfg
+    noise_pred_cond = self._predict_noise(
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1514, in _predict_noise
+    return current_model(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 1111, in forward
+    hidden_states = block(
+                    ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 554, in forward
+    attn_output = self.attn1(query, key, value)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 452, in forward
+    out = ring_attn(
+          ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 241, in ring_attn
+    out, *_ = _templated_ring_attention(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/experimental/_attention.py", line 466, in _templated_ring_attention
+    out, logsumexp, *rest = op(
+                            ^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 214, in attn_callable_adapter
+    output, softmax_lse, *rest = attn_impl.forward(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/backends/sage_attn.py", line 72, in forward
+    output, softmax_lse = output
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)[0;0m
+  0%|          | 0/40 [00:01<?, ?it/s]
+[91m[04-21 03:39:00] [DenoisingStage] Error during execution after 1321.2313 ms: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/base.py", line 203, in __call__
+    result = self.forward(batch, server_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1075, in forward
+    noise_pred = self._predict_noise_with_cfg(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1568, in _predict_noise_with_cfg
+    noise_pred_cond = self._predict_noise(
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1514, in _predict_noise
+    return current_model(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 1111, in forward
+    hidden_states = block(
+                    ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 554, in forward
+    attn_output = self.attn1(query, key, value)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 452, in forward
+    out = ring_attn(
+          ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 241, in ring_attn
+    out, *_ = _templated_ring_attention(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/experimental/_attention.py", line 466, in _templated_ring_attention
+    out, logsumexp, *rest = op(
+                            ^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 214, in attn_callable_adapter
+    output, softmax_lse, *rest = attn_impl.forward(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/backends/sage_attn.py", line 72, in forward
+    output, softmax_lse = output
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)[0;0m
+[91m[04-21 03:39:00] Error executing request 930f2a0d-fed8-4fb7-86e8-6b09b80152a0: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 230, in execute_forward
+    result = self.pipeline.forward(req, self.server_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/composed_pipeline_base.py", line 622, in forward
+    return self.executor.execute_with_profiling(self.stages, batch, server_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/executors/pipeline_executor.py", line 57, in execute_with_profiling
+    batch = self.execute(stages, batch, server_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/executors/parallel_executor.py", line 101, in execute
+    batch = self._execute(stages, batch, server_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/executors/parallel_executor.py", line 92, in _execute
+    batch = stage(batch, server_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/base.py", line 203, in __call__
+    result = self.forward(batch, server_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1075, in forward
+    noise_pred = self._predict_noise_with_cfg(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1568, in _predict_noise_with_cfg
+    noise_pred_cond = self._predict_noise(
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1514, in _predict_noise
+    return current_model(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 1111, in forward
+    hidden_states = block(
+                    ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 554, in forward
+    attn_output = self.attn1(query, key, value)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 452, in forward
+    out = ring_attn(
+          ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 241, in ring_attn
+    out, *_ = _templated_ring_attention(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/experimental/_attention.py", line 466, in _templated_ring_attention
+    out, logsumexp, *rest = op(
+                            ^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 214, in attn_callable_adapter
+    output, softmax_lse, *rest = attn_impl.forward(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/backends/sage_attn.py", line 72, in forward
+    output, softmax_lse = output
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)[0;0m
+[91m[04-21 03:39:00] Failed to generate output for prompt 1: Error executing request 930f2a0d-fed8-4fb7-86e8-6b09b80152a0: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/utils/logging_utils.py", line 625, in log_generation_timer
+    yield timer
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/entrypoints/diffusion_generator.py", line 235, in generate
+    raise Exception(f"{output_batch.error}")
+Exception: Error executing request 930f2a0d-fed8-4fb7-86e8-6b09b80152a0: not enough values to unpack (expected 2, got 1)[0;0m
+[91m[04-21 03:39:00] Generation failed for prompt 1/1: Error executing request 930f2a0d-fed8-4fb7-86e8-6b09b80152a0: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/entrypoints/diffusion_generator.py", line 235, in generate
+    raise Exception(f"{output_batch.error}")
+Exception: Error executing request 930f2a0d-fed8-4fb7-86e8-6b09b80152a0: not enough values to unpack (expected 2, got 1)[0;0m
+[04-21 03:39:00] Completed batch processing. Generated 0 outputs in [92m2.61[0;0m seconds
+[91m[04-21 03:39:00] [denoising_step_0] Error during execution after 1321.8440 ms: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1075, in forward
+    noise_pred = self._predict_noise_with_cfg(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1568, in _predict_noise_with_cfg
+    noise_pred_cond = self._predict_noise(
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1514, in _predict_noise
+    return current_model(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 1111, in forward
+    hidden_states = block(
+                    ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 554, in forward
+    attn_output = self.attn1(query, key, value)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 452, in forward
+    out = ring_attn(
+          ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 241, in ring_attn
+    out, *_ = _templated_ring_attention(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/experimental/_attention.py", line 466, in _templated_ring_attention
+    out, logsumexp, *rest = op(
+                            ^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 214, in attn_callable_adapter
+    output, softmax_lse, *rest = attn_impl.forward(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/backends/sage_attn.py", line 72, in forward
+    output, softmax_lse = output
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)[0;0m
+[91m[04-21 03:39:00] [DenoisingStage] Error during execution after 1324.9735 ms: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/base.py", line 203, in __call__
+    result = self.forward(batch, server_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1075, in forward
+    noise_pred = self._predict_noise_with_cfg(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1568, in _predict_noise_with_cfg
+    noise_pred_cond = self._predict_noise(
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1514, in _predict_noise
+    return current_model(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 1111, in forward
+    hidden_states = block(
+                    ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 554, in forward
+    attn_output = self.attn1(query, key, value)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 452, in forward
+    out = ring_attn(
+          ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 241, in ring_attn
+    out, *_ = _templated_ring_attention(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/experimental/_attention.py", line 466, in _templated_ring_attention
+    out, logsumexp, *rest = op(
+                            ^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 214, in attn_callable_adapter
+    output, softmax_lse, *rest = attn_impl.forward(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/backends/sage_attn.py", line 72, in forward
+    output, softmax_lse = output
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)[0;0m
+[91m[04-21 03:39:00] [denoising_step_0] Error during execution after 1323.0570 ms: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1075, in forward
+    noise_pred = self._predict_noise_with_cfg(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1568, in _predict_noise_with_cfg
+    noise_pred_cond = self._predict_noise(
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1514, in _predict_noise
+    return current_model(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 1111, in forward
+    hidden_states = block(
+                    ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 554, in forward
+    attn_output = self.attn1(query, key, value)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 452, in forward
+    out = ring_attn(
+          ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 241, in ring_attn
+    out, *_ = _templated_ring_attention(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/experimental/_attention.py", line 466, in _templated_ring_attention
+    out, logsumexp, *rest = op(
+                            ^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 214, in attn_callable_adapter
+    output, softmax_lse, *rest = attn_impl.forward(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/backends/sage_attn.py", line 72, in forward
+    output, softmax_lse = output
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)[0;0m
+[91m[04-21 03:39:00] Error executing request 930f2a0d-fed8-4fb7-86e8-6b09b80152a0: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 230, in execute_forward
+    result = self.pipeline.forward(req, self.server_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/composed_pipeline_base.py", line 622, in forward
+    return self.executor.execute_with_profiling(self.stages, batch, server_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/executors/pipeline_executor.py", line 57, in execute_with_profiling
+    batch = self.execute(stages, batch, server_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/executors/parallel_executor.py", line 101, in execute
+    batch = self._execute(stages, batch, server_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/executors/parallel_executor.py", line 92, in _execute
+    batch = stage(batch, server_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/base.py", line 203, in __call__
+    result = self.forward(batch, server_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1075, in forward
+    noise_pred = self._predict_noise_with_cfg(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1568, in _predict_noise_with_cfg
+    noise_pred_cond = self._predict_noise(
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1514, in _predict_noise
+    return current_model(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 1111, in forward
+    hidden_states = block(
+                    ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 554, in forward
+    attn_output = self.attn1(query, key, value)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 452, in forward
+    out = ring_attn(
+          ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 241, in ring_attn
+    out, *_ = _templated_ring_attention(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/experimental/_attention.py", line 466, in _templated_ring_attention
+    out, logsumexp, *rest = op(
+                            ^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 214, in attn_callable_adapter
+    output, softmax_lse, *rest = attn_impl.forward(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/backends/sage_attn.py", line 72, in forward
+    output, softmax_lse = output
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)[0;0m
+[93m[04-21 03:39:00] Generator was garbage collected without being shut down. Attempting to shut down the local server and client.[0;0m
+[91m[04-21 03:39:00] [DenoisingStage] Error during execution after 1326.2891 ms: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/base.py", line 203, in __call__
+    result = self.forward(batch, server_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1075, in forward
+    noise_pred = self._predict_noise_with_cfg(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1568, in _predict_noise_with_cfg
+    noise_pred_cond = self._predict_noise(
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1514, in _predict_noise
+    return current_model(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 1111, in forward
+    hidden_states = block(
+                    ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 554, in forward
+    attn_output = self.attn1(query, key, value)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 452, in forward
+    out = ring_attn(
+          ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 241, in ring_attn
+    out, *_ = _templated_ring_attention(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/experimental/_attention.py", line 466, in _templated_ring_attention
+    out, logsumexp, *rest = op(
+                            ^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 214, in attn_callable_adapter
+    output, softmax_lse, *rest = attn_impl.forward(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/backends/sage_attn.py", line 72, in forward
+    output, softmax_lse = output
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)[0;0m
+[91m[04-21 03:39:00] Error executing request 930f2a0d-fed8-4fb7-86e8-6b09b80152a0: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 230, in execute_forward
+    result = self.pipeline.forward(req, self.server_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/composed_pipeline_base.py", line 622, in forward
+    return self.executor.execute_with_profiling(self.stages, batch, server_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/executors/pipeline_executor.py", line 57, in execute_with_profiling
+    batch = self.execute(stages, batch, server_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/executors/parallel_executor.py", line 101, in execute
+    batch = self._execute(stages, batch, server_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/executors/parallel_executor.py", line 92, in _execute
+    batch = stage(batch, server_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/base.py", line 203, in __call__
+    result = self.forward(batch, server_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1075, in forward
+    noise_pred = self._predict_noise_with_cfg(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1568, in _predict_noise_with_cfg
+    noise_pred_cond = self._predict_noise(
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1514, in _predict_noise
+    return current_model(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 1111, in forward
+    hidden_states = block(
+                    ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 554, in forward
+    attn_output = self.attn1(query, key, value)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 452, in forward
+    out = ring_attn(
+          ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 241, in ring_attn
+    out, *_ = _templated_ring_attention(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/experimental/_attention.py", line 466, in _templated_ring_attention
+    out, logsumexp, *rest = op(
+                            ^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 214, in attn_callable_adapter
+    output, softmax_lse, *rest = attn_impl.forward(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/backends/sage_attn.py", line 72, in forward
+    output, softmax_lse = output
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)[0;0m
+[91m[04-21 03:39:00] [denoising_step_0] Error during execution after 1326.5204 ms: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1075, in forward
+    noise_pred = self._predict_noise_with_cfg(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1568, in _predict_noise_with_cfg
+    noise_pred_cond = self._predict_noise(
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1514, in _predict_noise
+    return current_model(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 1111, in forward
+    hidden_states = block(
+                    ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 554, in forward
+    attn_output = self.attn1(query, key, value)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 452, in forward
+    out = ring_attn(
+          ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 241, in ring_attn
+    out, *_ = _templated_ring_attention(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/experimental/_attention.py", line 466, in _templated_ring_attention
+    out, logsumexp, *rest = op(
+                            ^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 214, in attn_callable_adapter
+    output, softmax_lse, *rest = attn_impl.forward(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/backends/sage_attn.py", line 72, in forward
+    output, softmax_lse = output
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)[0;0m
+[91m[04-21 03:39:00] [denoising_step_0] Error during execution after 1325.7926 ms: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1075, in forward
+    noise_pred = self._predict_noise_with_cfg(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1568, in _predict_noise_with_cfg
+    noise_pred_cond = self._predict_noise(
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1514, in _predict_noise
+    return current_model(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 1111, in forward
+    hidden_states = block(
+                    ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 554, in forward
+    attn_output = self.attn1(query, key, value)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 452, in forward
+    out = ring_attn(
+          ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 241, in ring_attn
+    out, *_ = _templated_ring_attention(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/experimental/_attention.py", line 466, in _templated_ring_attention
+    out, logsumexp, *rest = op(
+                            ^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 214, in attn_callable_adapter
+    output, softmax_lse, *rest = attn_impl.forward(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/backends/sage_attn.py", line 72, in forward
+    output, softmax_lse = output
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)[0;0m
+[91m[04-21 03:39:00] [denoising_step_0] Error during execution after 1325.6466 ms: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1075, in forward
+    noise_pred = self._predict_noise_with_cfg(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1568, in _predict_noise_with_cfg
+    noise_pred_cond = self._predict_noise(
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1514, in _predict_noise
+    return current_model(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 1111, in forward
+    hidden_states = block(
+                    ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 554, in forward
+    attn_output = self.attn1(query, key, value)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 452, in forward
+    out = ring_attn(
+          ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 241, in ring_attn
+    out, *_ = _templated_ring_attention(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/experimental/_attention.py", line 466, in _templated_ring_attention
+    out, logsumexp, *rest = op(
+                            ^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 214, in attn_callable_adapter
+    output, softmax_lse, *rest = attn_impl.forward(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/backends/sage_attn.py", line 72, in forward
+    output, softmax_lse = output
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)[0;0m
+[91m[04-21 03:39:00] [denoising_step_0] Error during execution after 1326.5583 ms: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1075, in forward
+    noise_pred = self._predict_noise_with_cfg(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1568, in _predict_noise_with_cfg
+    noise_pred_cond = self._predict_noise(
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1514, in _predict_noise
+    return current_model(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 1111, in forward
+    hidden_states = block(
+                    ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 554, in forward
+    attn_output = self.attn1(query, key, value)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 452, in forward
+    out = ring_attn(
+          ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 241, in ring_attn
+    out, *_ = _templated_ring_attention(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/experimental/_attention.py", line 466, in _templated_ring_attention
+    out, logsumexp, *rest = op(
+                            ^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 214, in attn_callable_adapter
+    output, softmax_lse, *rest = attn_impl.forward(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/backends/sage_attn.py", line 72, in forward
+    output, softmax_lse = output
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)[0;0m
+[91m[04-21 03:39:00] [DenoisingStage] Error during execution after 1329.6145 ms: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/base.py", line 203, in __call__
+    result = self.forward(batch, server_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1075, in forward
+    noise_pred = self._predict_noise_with_cfg(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1568, in _predict_noise_with_cfg
+    noise_pred_cond = self._predict_noise(
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1514, in _predict_noise
+    return current_model(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 1111, in forward
+    hidden_states = block(
+                    ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 554, in forward
+    attn_output = self.attn1(query, key, value)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 452, in forward
+    out = ring_attn(
+          ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 241, in ring_attn
+    out, *_ = _templated_ring_attention(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/experimental/_attention.py", line 466, in _templated_ring_attention
+    out, logsumexp, *rest = op(
+                            ^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 214, in attn_callable_adapter
+    output, softmax_lse, *rest = attn_impl.forward(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/backends/sage_attn.py", line 72, in forward
+    output, softmax_lse = output
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)[0;0m
+[91m[04-21 03:39:00] [DenoisingStage] Error during execution after 1329.0824 ms: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/base.py", line 203, in __call__
+    result = self.forward(batch, server_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1075, in forward
+    noise_pred = self._predict_noise_with_cfg(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1568, in _predict_noise_with_cfg
+    noise_pred_cond = self._predict_noise(
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1514, in _predict_noise
+    return current_model(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 1111, in forward
+    hidden_states = block(
+                    ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 554, in forward
+    attn_output = self.attn1(query, key, value)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 452, in forward
+    out = ring_attn(
+          ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 241, in ring_attn
+    out, *_ = _templated_ring_attention(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/experimental/_attention.py", line 466, in _templated_ring_attention
+    out, logsumexp, *rest = op(
+                            ^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 214, in attn_callable_adapter
+    output, softmax_lse, *rest = attn_impl.forward(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/backends/sage_attn.py", line 72, in forward
+    output, softmax_lse = output
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)[0;0m
+[91m[04-21 03:39:00] [DenoisingStage] Error during execution after 1328.9751 ms: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/base.py", line 203, in __call__
+    result = self.forward(batch, server_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1075, in forward
+    noise_pred = self._predict_noise_with_cfg(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1568, in _predict_noise_with_cfg
+    noise_pred_cond = self._predict_noise(
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1514, in _predict_noise
+    return current_model(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 1111, in forward
+    hidden_states = block(
+                    ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 554, in forward
+    attn_output = self.attn1(query, key, value)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 452, in forward
+    out = ring_attn(
+          ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 241, in ring_attn
+    out, *_ = _templated_ring_attention(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/experimental/_attention.py", line 466, in _templated_ring_attention
+    out, logsumexp, *rest = op(
+                            ^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 214, in attn_callable_adapter
+    output, softmax_lse, *rest = attn_impl.forward(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/backends/sage_attn.py", line 72, in forward
+    output, softmax_lse = output
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)[0;0m
+[91m[04-21 03:39:00] [DenoisingStage] Error during execution after 1329.8840 ms: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/base.py", line 203, in __call__
+    result = self.forward(batch, server_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1075, in forward
+    noise_pred = self._predict_noise_with_cfg(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1568, in _predict_noise_with_cfg
+    noise_pred_cond = self._predict_noise(
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1514, in _predict_noise
+    return current_model(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 1111, in forward
+    hidden_states = block(
+                    ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 554, in forward
+    attn_output = self.attn1(query, key, value)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 452, in forward
+    out = ring_attn(
+          ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 241, in ring_attn
+    out, *_ = _templated_ring_attention(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/experimental/_attention.py", line 466, in _templated_ring_attention
+    out, logsumexp, *rest = op(
+                            ^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 214, in attn_callable_adapter
+    output, softmax_lse, *rest = attn_impl.forward(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/backends/sage_attn.py", line 72, in forward
+    output, softmax_lse = output
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)[0;0m
+[91m[04-21 03:39:00] Error executing request 930f2a0d-fed8-4fb7-86e8-6b09b80152a0: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 230, in execute_forward
+    result = self.pipeline.forward(req, self.server_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/composed_pipeline_base.py", line 622, in forward
+    return self.executor.execute_with_profiling(self.stages, batch, server_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/executors/pipeline_executor.py", line 57, in execute_with_profiling
+    batch = self.execute(stages, batch, server_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/executors/parallel_executor.py", line 101, in execute
+    batch = self._execute(stages, batch, server_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/executors/parallel_executor.py", line 92, in _execute
+    batch = stage(batch, server_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/base.py", line 203, in __call__
+    result = self.forward(batch, server_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1075, in forward
+    noise_pred = self._predict_noise_with_cfg(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1568, in _predict_noise_with_cfg
+    noise_pred_cond = self._predict_noise(
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1514, in _predict_noise
+    return current_model(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 1111, in forward
+    hidden_states = block(
+                    ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 554, in forward
+    attn_output = self.attn1(query, key, value)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 452, in forward
+    out = ring_attn(
+          ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 241, in ring_attn
+    out, *_ = _templated_ring_attention(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/experimental/_attention.py", line 466, in _templated_ring_attention
+    out, logsumexp, *rest = op(
+                            ^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 214, in attn_callable_adapter
+    output, softmax_lse, *rest = attn_impl.forward(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/backends/sage_attn.py", line 72, in forward
+    output, softmax_lse = output
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)[0;0m
+[91m[04-21 03:39:00] Error executing request 930f2a0d-fed8-4fb7-86e8-6b09b80152a0: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 230, in execute_forward
+    result = self.pipeline.forward(req, self.server_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/composed_pipeline_base.py", line 622, in forward
+    return self.executor.execute_with_profiling(self.stages, batch, server_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/executors/pipeline_executor.py", line 57, in execute_with_profiling
+    batch = self.execute(stages, batch, server_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/executors/parallel_executor.py", line 101, in execute
+    batch = self._execute(stages, batch, server_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/executors/parallel_executor.py", line 92, in _execute
+    batch = stage(batch, server_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/base.py", line 203, in __call__
+    result = self.forward(batch, server_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1075, in forward
+    noise_pred = self._predict_noise_with_cfg(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1568, in _predict_noise_with_cfg
+    noise_pred_cond = self._predict_noise(
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1514, in _predict_noise
+    return current_model(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 1111, in forward
+    hidden_states = block(
+                    ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 554, in forward
+    attn_output = self.attn1(query, key, value)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 452, in forward
+    out = ring_attn(
+          ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 241, in ring_attn
+    out, *_ = _templated_ring_attention(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/experimental/_attention.py", line 466, in _templated_ring_attention
+    out, logsumexp, *rest = op(
+                            ^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 214, in attn_callable_adapter
+    output, softmax_lse, *rest = attn_impl.forward(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/backends/sage_attn.py", line 72, in forward
+    output, softmax_lse = output
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)[0;0m
+[91m[04-21 03:39:00] Error executing request 930f2a0d-fed8-4fb7-86e8-6b09b80152a0: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 230, in execute_forward
+    result = self.pipeline.forward(req, self.server_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/composed_pipeline_base.py", line 622, in forward
+    return self.executor.execute_with_profiling(self.stages, batch, server_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/executors/pipeline_executor.py", line 57, in execute_with_profiling
+    batch = self.execute(stages, batch, server_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/executors/parallel_executor.py", line 101, in execute
+    batch = self._execute(stages, batch, server_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/executors/parallel_executor.py", line 92, in _execute
+    batch = stage(batch, server_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/base.py", line 203, in __call__
+    result = self.forward(batch, server_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1075, in forward
+    noise_pred = self._predict_noise_with_cfg(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1568, in _predict_noise_with_cfg
+    noise_pred_cond = self._predict_noise(
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1514, in _predict_noise
+    return current_model(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 1111, in forward
+    hidden_states = block(
+                    ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 554, in forward
+    attn_output = self.attn1(query, key, value)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 452, in forward
+    out = ring_attn(
+          ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 241, in ring_attn
+    out, *_ = _templated_ring_attention(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/experimental/_attention.py", line 466, in _templated_ring_attention
+    out, logsumexp, *rest = op(
+                            ^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 214, in attn_callable_adapter
+    output, softmax_lse, *rest = attn_impl.forward(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/backends/sage_attn.py", line 72, in forward
+    output, softmax_lse = output
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)[0;0m
+[91m[04-21 03:39:00] Error executing request 930f2a0d-fed8-4fb7-86e8-6b09b80152a0: not enough values to unpack (expected 2, got 1)
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 230, in execute_forward
+    result = self.pipeline.forward(req, self.server_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/composed_pipeline_base.py", line 622, in forward
+    return self.executor.execute_with_profiling(self.stages, batch, server_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/executors/pipeline_executor.py", line 57, in execute_with_profiling
+    batch = self.execute(stages, batch, server_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/executors/parallel_executor.py", line 101, in execute
+    batch = self._execute(stages, batch, server_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/executors/parallel_executor.py", line 92, in _execute
+    batch = stage(batch, server_args)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/base.py", line 203, in __call__
+    result = self.forward(batch, server_args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1075, in forward
+    noise_pred = self._predict_noise_with_cfg(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1568, in _predict_noise_with_cfg
+    noise_pred_cond = self._predict_noise(
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/stages/denoising.py", line 1514, in _predict_noise
+    return current_model(
+           ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 1111, in forward
+    hidden_states = block(
+                    ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 554, in forward
+    attn_output = self.attn1(query, key, value)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1775, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/nn/modules/module.py", line 1786, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 452, in forward
+    out = ring_attn(
+          ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 241, in ring_attn
+    out, *_ = _templated_ring_attention(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/tensor/experimental/_attention.py", line 466, in _templated_ring_attention
+    out, logsumexp, *rest = op(
+                            ^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/usp.py", line 214, in attn_callable_adapter
+    output, softmax_lse, *rest = attn_impl.forward(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/backends/sage_attn.py", line 72, in forward
+    output, softmax_lse = output
+    ^^^^^^^^^^^^^^^^^^^
+ValueError: not enough values to unpack (expected 2, got 1)[0;0m
+[04-21 03:39:05] Worker 0: Shutdown complete.
+[W421 03:39:07.033961744 ProcessGroup.cpp:367] Warning: At the time of process termination, there are still 1 unwaited collective calls. Please review your program to ensure that:
+1. c10d_functional.wait_tensor() is invoked on all tensors returned from c10d_functional collective,
+2. c10d_functional.wait_tensor() is invoked on all output tensors of async_op=True torch.distributed collective called under `with allow_inflight_collective_as_graph_input_ctx():`,
+before the output tensors of the collective are used. (function ~WorkRegistry)
+[W421 03:39:07.113248311 ProcessGroup.cpp:367] Warning: At the time of process termination, there are still 1 unwaited collective calls. Please review your program to ensure that:
+1. c10d_functional.wait_tensor() is invoked on all tensors returned from c10d_functional collective,
+2. c10d_functional.wait_tensor() is invoked on all output tensors of async_op=True torch.distributed collective called under `with allow_inflight_collective_as_graph_input_ctx():`,
+before the output tensors of the collective are used. (function ~WorkRegistry)
+[W421 03:39:07.447356856 ProcessGroup.cpp:367] Warning: At the time of process termination, there are still 1 unwaited collective calls. Please review your program to ensure that:
+1. c10d_functional.wait_tensor() is invoked on all tensors returned from c10d_functional collective,
+2. c10d_functional.wait_tensor() is invoked on all output tensors of async_op=True torch.distributed collective called under `with allow_inflight_collective_as_graph_input_ctx():`,
+before the output tensors of the collective are used. (function ~WorkRegistry)
+[W421 03:39:07.476773971 ProcessGroup.cpp:367] Warning: At the time of process termination, there are still 1 unwaited collective calls. Please review your program to ensure that:
+1. c10d_functional.wait_tensor() is invoked on all tensors returned from c10d_functional collective,
+2. c10d_functional.wait_tensor() is invoked on all output tensors of async_op=True torch.distributed collective called under `with allow_inflight_collective_as_graph_input_ctx():`,
+before the output tensors of the collective are used. (function ~WorkRegistry)
+[W421 03:39:07.539704821 ProcessGroup.cpp:367] Warning: At the time of process termination, there are still 1 unwaited collective calls. Please review your program to ensure that:
+1. c10d_functional.wait_tensor() is invoked on all tensors returned from c10d_functional collective,
+2. c10d_functional.wait_tensor() is invoked on all output tensors of async_op=True torch.distributed collective called under `with allow_inflight_collective_as_graph_input_ctx():`,
+before the output tensors of the collective are used. (function ~WorkRegistry)
+[W421 03:39:07.575188335 ProcessGroup.cpp:367] Warning: At the time of process termination, there are still 1 unwaited collective calls. Please review your program to ensure that:
+1. c10d_functional.wait_tensor() is invoked on all tensors returned from c10d_functional collective,
+2. c10d_functional.wait_tensor() is invoked on all output tensors of async_op=True torch.distributed collective called under `with allow_inflight_collective_as_graph_input_ctx():`,
+before the output tensors of the collective are used. (function ~WorkRegistry)
+[W421 03:39:07.605558430 ProcessGroup.cpp:367] Warning: At the time of process termination, there are still 1 unwaited collective calls. Please review your program to ensure that:
+1. c10d_functional.wait_tensor() is invoked on all tensors returned from c10d_functional collective,
+2. c10d_functional.wait_tensor() is invoked on all output tensors of async_op=True torch.distributed collective called under `with allow_inflight_collective_as_graph_input_ctx():`,
+before the output tensors of the collective are used. (function ~WorkRegistry)
+[W421 03:39:08.493660084 ProcessGroup.cpp:367] Warning: At the time of process termination, there are still 1 unwaited collective calls. Please review your program to ensure that:
+1. c10d_functional.wait_tensor() is invoked on all tensors returned from c10d_functional collective,
+2. c10d_functional.wait_tensor() is invoked on all output tensors of async_op=True torch.distributed collective called under `with allow_inflight_collective_as_graph_input_ctx():`,
+before the output tensors of the collective are used. (function ~WorkRegistry)

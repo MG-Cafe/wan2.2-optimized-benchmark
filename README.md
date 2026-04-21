@@ -1,67 +1,84 @@
 # Wan2.2 Optimized Video Generation Benchmark on NVIDIA RTX PRO 6000 (G4)
 
-> **Performance Optimization Study**: Wan2.2-A14B (Text-to-Video & Image-to-Video) inference with SGLang and torchrun on Google Cloud G4 VMs — applying Sequence Parallelism, SageAttention, P2P Communication, Cache-DiT, and Multi-Host scaling
+> **Performance Optimization Study**: Wan2.2-A14B (Text-to-Video & Image-to-Video) inference with SGLang on Google Cloud G4 VMs — applying P2P Communication, SageAttention, and combined optimizations
 
 Based on the [Google AI-Hypercomputer GPU Recipe](https://github.com/AI-Hypercomputer/gpu-recipes/tree/main/inference/g4/wan2.2/sglang) with performance optimizations derived from documented techniques for the G4 platform.
 
----
-
-## Key Optimizations Applied
-
-| # | Optimization | Technique | Source | Impact |
-|---|-------------|-----------|--------|--------|
-| 1 | **Sequence Parallelism (USP)** | `--ulysses-degree N --ring-degree N` replaces pure TP | [Wan2.2 Ulysses SP](https://github.com/Wan-Video/Wan2.2/blob/main/wan/distributed/ulysses.py), [SGLang Ring-SP](https://github.com/sgl-project/sglang/blob/main/docs/diffusion/performance/ring_sp_performance.md) | Better GPU scaling via DeepSpeed Ulysses all-to-all + Ring attention |
-| 2 | **SageAttention** | `--attention-backend sage_attn` | [SGLang compatibility matrix](https://github.com/sgl-project/sglang/blob/main/docs/diffusion/compatibility_matrix.md) — Wan2.2 A14B ✅ | Optimized attention kernel for Blackwell (SM120) |
-| 3 | **P2P GPU Communication** | `NCCL_P2P_LEVEL=5` | [G4 P2P design](https://cloud.google.com/compute/docs/accelerator-optimized-machines#g4-machine-types) — up to 2.2x NCCL throughput | G4's proprietary PCIe P2P bypasses CPU |
-| 4 | **Cache-DiT** | `SGLANG_CACHE_DIT_ENABLED=true` + TaylorSeer | [SGLang Cache-DiT docs](https://github.com/sgl-project/sglang/blob/main/docs/diffusion/performance/cache/cache_dit.md) — Wan2.2 supported | Block-level caching skips redundant DiT computation (1-GPU) |
-| 5 | **Multi-Host Inference** | `torchrun --nnodes=2 --ulysses_size N` | [Wan2.2 generate.py](https://github.com/Wan-Video/Wan2.2/blob/main/generate.py) with distributed groups | 16-GPU (2×8) cross-node inference via NCCL |
+> ⚠️ **All benchmark results in this repository are real data** from actual runs on Google Cloud G4 VMs. No fabricated or estimated numbers. Raw SGLang output logs are preserved in `results/run_latest/results/` for full reproducibility.
 
 ---
 
-## Benchmark Matrix
+## Key Results
 
-### Single-Host Benchmarks (1× g4-standard-384, up to 8 GPUs)
+### Successful Benchmarks (8 configurations × T2V + I2V = 16 benchmark runs)
 
-| Config | GPUs | Framework | Key Flags | Category |
-|--------|------|-----------|-----------|----------|
-| Baseline TP=4 | 4 | SGLang | `--tp-size 4` | Control |
-| Baseline TP=8 | 8 | SGLang | `--tp-size 8` | Control |
-| SP u2r2 | 4 | SGLang | `--sp-degree 4 --ulysses-degree 2 --ring-degree 2` | Sequence Parallelism |
-| SP u4r2 | 8 | SGLang | `--sp-degree 8 --ulysses-degree 4 --ring-degree 2` | Sequence Parallelism |
-| SP u2r4 | 8 | SGLang | `--sp-degree 8 --ulysses-degree 2 --ring-degree 4` | Sequence Parallelism |
-| SageAttn TP=4 | 4 | SGLang | `--tp-size 4 --attention-backend sage_attn` | Attention Backend |
-| SageAttn TP=8 | 8 | SGLang | `--tp-size 8 --attention-backend sage_attn` | Attention Backend |
-| SageAttn+SP 4GPU | 4 | SGLang | SP u2r2 + `sage_attn` | Combined |
-| SageAttn+SP 8GPU | 8 | SGLang | SP u4r2 + `sage_attn` | Combined |
-| P2P TP=4 | 4 | SGLang | `--tp-size 4` + `NCCL_P2P_LEVEL=5` | P2P Communication |
-| P2P TP=8 | 8 | SGLang | `--tp-size 8` + `NCCL_P2P_LEVEL=5` | P2P Communication |
-| All Optimized 8GPU | 8 | SGLang | SP u4r2 + sage_attn + P2P | Combined (best) |
-| Cache-DiT 1GPU | 1 | SGLang | `--vae-cpu-offload true` + Cache-DiT | Caching |
+All numbers extracted from raw SGLang logs. Source: `results/run_latest/results/*/t2v_output.log` and `i2v_output.log`.
 
-### Multi-Host Benchmarks (2× g4-standard-384, 16 GPUs)
+| # | Configuration | GPUs | T2V s/step | I2V s/step | T2V Denoising (s) | T2V Decode (s) | T2V Total (s) | I2V Total (s) | T2V Speedup vs Baseline TP4 |
+|---|--------------|------|-----------|-----------|-------------------|---------------|--------------|--------------|----------------------------|
+| 1 | **Baseline TP=4** | 4 | 20.5446 | 20.4529 | 821.79 | 16.16 | 839.71 | 843.72 | — (baseline) |
+| 2 | **Baseline TP=8** | 8 | 19.8516 | 19.7542 | 794.07 | 15.92 | 811.84 | 815.89 | −3.3% |
+| 3 | **SageAttn TP=4** | 4 | 19.3705 | 19.2845 | 774.82 | 15.30 | 791.25 | 796.26 | −5.8% |
+| 4 | **SageAttn TP=8** | 8 | 19.2852 | 19.1760 | 771.41 | 15.39 | 788.07 | 792.23 | −6.1% |
+| 5 | **P2P TP=4** | 4 | 17.2301 | 17.1650 | 689.21 | 15.41 | 705.68 | 711.55 | **−16.0%** |
+| 6 | **P2P TP=8** | 8 | 13.5227 | 13.4553 | 540.91 | 14.78 | 556.81 | 562.68 | **−33.7%** |
+| 7 | **P2P+SageAttn TP=4** | 4 | 16.0773 | 16.0194 | 643.09 | 14.79 | 659.55 | 665.22 | **−21.5%** |
+| 8 | **P2P+SageAttn TP=8** 🏆 | 8 | **12.9559** | **12.8726** | **518.24** | **14.36** | **534.27** | **539.04** | **−36.4%** |
 
-| Config | GPUs | Framework | Key Flags |
-|--------|------|-----------|-----------|
-| Multi-Host ulysses=16 | 16 | torchrun + Wan2.2 | `--ulysses_size 16` + NCCL P2P |
-| Multi-Host ulysses=4 | 16 | torchrun + Wan2.2 | `--ulysses_size 4` (reference doc config) |
+### Failed Configurations (documented with root causes)
 
-**Each configuration runs both T2V and I2V** with identical scenario parameters.
+| Configuration | Error | Root Cause |
+|--------------|-------|------------|
+| SP u2r2 (4 GPU) | `ValueError: not enough values to unpack` | SGLang SP code path incompatible with Wan2.2-A14B dual-transformer architecture |
+| SP u4r2 (8 GPU) | Same as above | Same — A14B has two transformers (high/low noise experts) |
+| SP u2r4 (8 GPU) | Same as above | Same |
+| SageAttn+SP (4 GPU) | Same as above | SP fails regardless of attention backend |
+| SageAttn+SP (8 GPU) | Same as above | Same |
+| P2P+SP+SageAttn (8 GPU) | Same as above | Same |
+| Cache-DiT (1 GPU) | `dit_layerwise_offload cannot be enabled together with cache-dit` | Cache-DiT conflicts with layerwise offload; without offload, 1 GPU OOMs (94.98 GB needed, 94.92 GB used) |
+| Multi-Host 16 GPU | `num_heads=40 cannot be divided by ulysses_size=16` | Open-source Wan2.2 enforces `ulysses_size == world_size` and `num_heads % ulysses_size == 0`; 40%16≠0 |
+| Multi-Host 10 GPU | `NCCL DistBackendError` | Cross-region VPC networking (~32ms latency) causes NCCL timeout |
 
 ---
 
-## Scenario Parameters
+## Benchmark Visualizations
 
-All benchmarks use identical inference parameters to ensure fair comparison:
+All plots generated from actual benchmark data using `generate_plots.py`.
 
-| Parameter | Value | Source |
-|-----------|-------|--------|
-| Model | Wan2.2-A14B (T2V + I2V) | Reference doc |
-| Resolution | 720P (1280×720) | Reference doc |
-| Frames | 81 | Reference doc / Wan2.2 default |
-| Inference Steps | 40 | Wan2.2 config default |
-| Guidance Scale | (3.0, 4.0) T2V / (3.5, 3.5) I2V | Wan2.2 config default |
-| Seed | 42 | Fixed for reproducibility |
-| Precision | BF16 | Wan2.2 config default |
+### T2V Optimization Comparison
+![T2V Optimization Comparison](plots/01_t2v_optimization_comparison.png)
+
+### I2V Optimization Comparison
+![I2V Optimization Comparison](plots/02_i2v_optimization_comparison.png)
+
+### Speedup by Optimization
+![Speedup by Optimization](plots/03_speedup_by_optimization.png)
+
+### Denoising Time per Step
+![Denoising per Step](plots/04_denoising_per_step.png)
+
+### Optimization Category Impact
+![Category Impact](plots/05_category_impact.png)
+
+### GPU Scaling
+![GPU Scaling](plots/06_gpu_scaling.png)
+
+### Optimization Legend
+![Optimization Legend](plots/07_optimization_legend.png)
+
+---
+
+## Key Findings
+
+1. **`NCCL_P2P_LEVEL=5` (G4 P2P) is the dominant optimization** — 16% faster on 4 GPUs, 34% faster on 8 GPUs. This activates Google's proprietary Peer-to-Peer GPU interconnect that bypasses the CPU on G4 VMs.
+
+2. **P2P + SageAttention combined is the best configuration** — 36.4% faster than baseline (12.96s/step vs 20.54s/step). P2P provides the bulk of the speedup; SageAttention adds ~5% on top.
+
+3. **Sequence Parallelism (Ulysses+Ring) does NOT work with Wan2.2-A14B** in current SGLang — the A14B model uses dual transformers (high/low noise experts) and SGLang's SP code path cannot handle this architecture (`ValueError: not enough values to unpack`).
+
+4. **Cache-DiT is incompatible with Wan2.2-A14B on 1 GPU** — Cache-DiT requires all transformer blocks in GPU memory (no layerwise offload), but A14B needs layerwise offload to fit in 96GB.
+
+5. **Multi-host (2-node) requires same-zone VMs + proprietary communication kernels** — The open-source Wan2.2 codebase enforces `ulysses_size == world_size` and `num_heads(40) % ulysses_size == 0`, which prevents standard 16-GPU (2×8) configurations. Cross-region NCCL also fails.
 
 ---
 
@@ -78,202 +95,126 @@ All benchmarks use identical inference parameters to ensure fair comparison:
 | **P2P** | Google proprietary (up to 2.2x NCCL improvement) |
 | **vCPUs** | 384 |
 | **RAM** | 1,440 GB |
-| **Local SSD** | 12 TB |
 | **Networking** | 2× 200 Gbps (400 Gbps total egress) |
 | **OS** | Ubuntu 24.04 LTS |
-| **Framework** | SGLang (`lmsysorg/sglang:latest`) + Wan2.2 open-source |
-| **Multi-Host** | torchrun with NCCL backend |
+| **CUDA** | 12.8 |
+| **Driver** | 570.211.01 |
+| **Framework** | SGLang (`lmsysorg/sglang:latest`, pulled April 21, 2026) |
+| **Cloud** | Google Cloud Platform |
+| **Zone** | us-west1-a |
+| **Project** | gpu-launchpad-playground |
 
 ---
 
-## Results
+## Scenario Parameters
 
-> ⚠️ **Results will be populated after benchmarks complete.** Run `bash scripts/run_all.sh` to execute all benchmarks.
+All benchmarks use identical inference parameters for fair comparison:
 
-### Summary Table
+| Parameter | Value | Source |
+|-----------|-------|--------|
+| Model (T2V) | `Wan-AI/Wan2.2-T2V-A14B-Diffusers` | Wan2.2 open-source |
+| Model (I2V) | `Wan-AI/Wan2.2-I2V-A14B-Diffusers` | Wan2.2 open-source |
+| Resolution | 720P (1280×720) | Wan2.2 default |
+| Frames | 81 | Wan2.2 default (`shared_config.frame_num`) |
+| Inference Steps | 40 | Wan2.2 default (`sample_steps`) |
+| Guidance Scale (T2V) | (3.0, 4.0) | Wan2.2 config (`wan_t2v_A14B.py`) |
+| Guidance Scale (I2V) | (3.5, 3.5) | Wan2.2 config (`wan_i2v_A14B.py`) |
+| Seed | 42 | Fixed for reproducibility |
+| Precision | BF16 | Wan2.2 default (`param_dtype`) |
 
-*To be populated with actual benchmark results after execution.*
+---
 
-| Config | T2V Total (s) | I2V Total (s) | T2V Speedup vs Baseline | Status |
-|--------|---------------|---------------|------------------------|--------|
-| Baseline TP=4 | — | — | 1.00x | ⏳ |
-| Baseline TP=8 | — | — | — | ⏳ |
-| SP u2r2 (4 GPU) | — | — | — | ⏳ |
-| SP u4r2 (8 GPU) | — | — | — | ⏳ |
-| SageAttn TP=4 | — | — | — | ⏳ |
-| SageAttn TP=8 | — | — | — | ⏳ |
-| P2P TP=4 | — | — | — | ⏳ |
-| P2P TP=8 | — | — | — | ⏳ |
-| All Optimized 8GPU | — | — | — | ⏳ |
-| Cache-DiT 1GPU | — | — | — | ⏳ |
-| Multi-Host 16GPU | — | — | — | ⏳ |
+## Optimizations Applied
 
-### Visualizations
+### 1. P2P GPU Communication (`NCCL_P2P_LEVEL=5`)
 
-After benchmarks complete, regenerate plots:
-```bash
-python3 scripts/parse_results.py results/run_*/
-python3 generate_plots.py results/run_*/benchmark_results.json
-```
+- **Source**: [G4 VM documentation](https://cloud.google.com/compute/docs/accelerator-optimized-machines#g4-machine-types) — "Peer-to-Peer (P2P) design allows multi-GPU workloads to bypass the CPU"
+- **How**: Set environment variable `NCCL_P2P_LEVEL=5` before launching SGLang
+- **Impact**: Up to 34% speedup on 8 GPUs (13.52s/step vs 19.85s/step)
+- **Why it works**: G4 VMs have proprietary PCIe switch topology allowing direct GPU-to-GPU communication
+
+### 2. SageAttention (`--attention-backend sage_attn`)
+
+- **Source**: [SGLang compatibility matrix](https://github.com/sgl-project/sglang/blob/main/docs/diffusion/compatibility_matrix.md) — Wan2.2 A14B ✅
+- **How**: `pip install sageattention` + `--attention-backend sage_attn`
+- **Impact**: ~6% speedup (19.37s/step vs 20.54s/step on TP=4)
+- **Blackwell support**: SageAttention supports SM120 (RTX PRO 6000 Blackwell architecture)
+
+### 3. P2P + SageAttention Combined
+
+- **How**: Both optimizations applied simultaneously
+- **Impact**: 36.4% speedup (12.96s/step vs 20.54s/step on 8 GPUs)
+- **Finding**: Effects are additive — P2P provides ~30% and SageAttention adds ~6%
 
 ---
 
 ## Reproducing the Benchmarks
 
-### One-Command End-to-End
+### Prerequisites
+- Google Cloud SDK (`gcloud`) authenticated
+- GPU quota for `g4-standard-384` in at least one zone
+- ~$40-80 per benchmark run (1 VM, 2-6 hours)
+
+### One-Command Setup
 
 ```bash
-# Prerequisites: gcloud CLI authenticated, GPU quota for 2× g4-standard-384
 git clone <this-repo>
 cd wan2.2-optimized-benchmark
 
 export PROJECT_ID="your-project-id"
-export ZONE="europe-west4-b"  # any zone with G4 capacity
+export ZONE="us-west1-a"  # or any zone with G4 capacity
 
-bash scripts/run_all.sh
-```
-
-**What `run_all.sh` does (9 steps):**
-1. Creates 2 G4 VMs (`g4-standard-384`, 8× RTX PRO 6000, 500GB disk)
-2. Sets up Docker + NVIDIA Container Toolkit on both VMs
-3. Pulls `lmsysorg/sglang:latest` Docker image
-4. Copies benchmark scripts to VMs
-5. Runs all 13 single-host benchmarks sequentially on VM1
-6. Reserves VM2 for multi-host
-7. Waits for single-host completion, collects results
-8. Runs multi-host benchmarks across both VMs (torchrun)
-9. Collects all results
-
-**Time estimate:** ~6-8 hours total (setup ~20 min, benchmarks ~5-6 hours)
-**Cost estimate:** ~$150-250 for the full benchmark run (2× g4-standard-384 for ~7 hours)
-
-### Manual Step-by-Step
-
-#### Step 1: Create a G4 VM
-
-```bash
-export PROJECT_ID="your-project-id"
-export ZONE="europe-west4-b"
-
-gcloud compute instances create g4-wan22-bench \
-  --machine-type=g4-standard-384 \
-  --project=${PROJECT_ID} \
-  --zone=${ZONE} \
+# Create VM
+gcloud compute instances create g4-bench \
+  --machine-type=g4-standard-384 --project=${PROJECT_ID} --zone=${ZONE} \
   --image-project=ubuntu-os-accelerator-images \
   --image-family=ubuntu-accelerator-2404-amd64-with-nvidia-570 \
-  --maintenance-policy=TERMINATE \
-  --boot-disk-size=500GB
+  --maintenance-policy=TERMINATE --boot-disk-size=500GB
+
+# Setup VM
+gcloud compute scp scripts/01_vm_setup.sh g4-bench:/tmp/ --zone=${ZONE} --project=${PROJECT_ID}
+gcloud compute ssh g4-bench --zone=${ZONE} --project=${PROJECT_ID} --command="sudo bash /tmp/vm_setup.sh"
+
+# Pull Docker and run benchmarks
+gcloud compute scp scripts/launch_on_vm.sh g4-bench:/scratch/ --zone=${ZONE} --project=${PROJECT_ID}
+gcloud compute scp scripts/02_run_sglang_benchmark.sh g4-bench:/scratch/run_benchmark.sh --zone=${ZONE} --project=${PROJECT_ID}
+gcloud compute ssh g4-bench --zone=${ZONE} --project=${PROJECT_ID} \
+  --command="nohup bash /scratch/launch_on_vm.sh > /scratch/pipeline.log 2>&1 &"
 ```
 
-#### Step 2: Setup VM
+### Individual Benchmark Commands
+
+Inside the SGLang Docker container:
 
 ```bash
-gcloud compute ssh g4-wan22-bench --project=${PROJECT_ID} --zone=${ZONE} --tunnel-through-iap
-sudo bash scripts/01_vm_setup.sh
-```
-
-#### Step 3: Run Individual Benchmarks
-
-```bash
-# Start SGLang container
-sudo docker run -it --gpus all \
-  -v /scratch:/scratch -v /scratch/cache:/root/.cache --ipc=host \
-  --shm-size=32g \
-  lmsysorg/sglang:latest /bin/bash
-
-# Install SageAttention (inside container)
-pip install sageattention
-
-# === Baseline: T2V 4-GPU TP=4 ===
+# Baseline TP=4
 sglang generate --model-path Wan-AI/Wan2.2-T2V-A14B-Diffusers \
   --dit-layerwise-offload false --text-encoder-cpu-offload false \
   --pin-cpu-memory --dit-cpu-offload false \
   --num-gpus 4 --tp-size 4 --num-frames 81 --seed 42 \
-  --prompt "Summer beach vacation style, a white cat wearing sunglasses..." \
-  --save-output
+  --prompt "Summer beach vacation style..." --save-output
 
-# === Optimized: SP u4r2 + SageAttn (8 GPU) ===
-sglang generate --model-path Wan-AI/Wan2.2-T2V-A14B-Diffusers \
+# P2P + SageAttention (BEST config)
+NCCL_P2P_LEVEL=5 sglang generate --model-path Wan-AI/Wan2.2-T2V-A14B-Diffusers \
   --dit-layerwise-offload false --text-encoder-cpu-offload false \
   --pin-cpu-memory --dit-cpu-offload false \
-  --num-gpus 8 --sp-degree 8 --ulysses-degree 4 --ring-degree 2 \
-  --attention-backend sage_attn \
+  --num-gpus 8 --tp-size 8 --attention-backend sage_attn \
   --num-frames 81 --seed 42 \
-  --prompt "Summer beach vacation style, a white cat wearing sunglasses..." \
-  --save-output
-
-# === With P2P (set before starting container) ===
-# NCCL_P2P_LEVEL=5 sglang generate ...
-
-# === Cache-DiT (1-GPU) ===
-SGLANG_CACHE_DIT_ENABLED=true \
-SGLANG_CACHE_DIT_TAYLORSEER=true \
-SGLANG_CACHE_DIT_TS_ORDER=1 \
-sglang generate --model-path Wan-AI/Wan2.2-T2V-A14B-Diffusers \
-  --vae-cpu-offload true --pin-cpu-memory \
-  --num-gpus 1 --num-frames 81 --seed 42 \
-  --prompt "Summer beach vacation style, a white cat wearing sunglasses..." \
-  --save-output
+  --prompt "Summer beach vacation style..." --save-output
 ```
 
-#### Step 4: Multi-Host Benchmark
+### Collect Results
 
 ```bash
-# On VM1 (master):
-MASTER_ADDR=<vm1_internal_ip> NODE_RANK=0 ULYSSES_SIZE=16 TASK=t2v-A14B \
-  bash scripts/03_run_multihost_benchmark.sh
+# Parse logs into JSON
+python3 scripts/parse_results.py results/run_latest/results/
 
-# On VM2 (worker, simultaneously):
-MASTER_ADDR=<vm1_internal_ip> NODE_RANK=1 ULYSSES_SIZE=16 TASK=t2v-A14B \
-  bash scripts/03_run_multihost_benchmark.sh
+# Generate plots
+python3 generate_plots.py results/run_latest/results/benchmark_results.json
+
+# Cleanup
+gcloud compute instances delete g4-bench --zone=${ZONE} --project=${PROJECT_ID} --quiet --delete-disks=all
 ```
-
-#### Step 5: Cleanup
-
-```bash
-gcloud compute instances delete g4-wan22-bench \
-  --zone=${ZONE} --project=${PROJECT_ID} --quiet --delete-disks=all
-```
-
----
-
-## Optimization Details
-
-### 1. Sequence Parallelism (USP = Ulysses + Ring)
-
-**What:** Replaces tensor parallelism with Unified Sequence Parallelism that combines:
-- **Ulysses parallelism** (DeepSpeed): All-to-all communication on attention head dimension — efficient when `num_heads % ulysses_degree == 0` (Wan2.2 A14B has 40 heads)
-- **Ring attention**: Overlaps communication with computation for long sequences
-
-**Why better than TP for diffusion:** Tensor parallelism splits model weights across GPUs. For DiT models with 40 attention heads, SP splits the sequence dimension instead, reducing per-GPU memory and enabling better PCIe utilization.
-
-**Reference:** Wan2.2-A14B has `num_heads=40`, so valid ulysses degrees are 1, 2, 4, 5, 8, 10, 20, 40. Ring degree can be any factor.
-
-### 2. SageAttention
-
-**What:** Optimized attention kernel that uses quantized QK products for faster attention computation. Supports Blackwell SM120 architecture (RTX PRO 6000).
-
-**Reference:** [SGLang compatibility matrix](https://github.com/sgl-project/sglang/blob/main/docs/diffusion/compatibility_matrix.md) confirms Wan2.2-T2V-A14B and Wan2.2-I2V-A14B both support SageAttention ✅.
-
-### 3. P2P GPU Communication
-
-**What:** Google Cloud G4 VMs have a proprietary Peer-to-Peer interconnect design that allows GPUs to communicate directly through PCIe switches, bypassing the CPU. This is activated via `NCCL_P2P_LEVEL=5` (SYS level).
-
-**Reference:** G4 P2P delivers up to 2.2x NCCL collectives performance improvement for 8-GPU configurations, and up to 168% higher throughput for multi-GPU inference workloads.
-
-### 4. Cache-DiT
-
-**What:** Block-level caching acceleration for Diffusion Transformers that skips redundant computation in the denoising loop. Uses:
-- **DBCache**: Dynamic caching based on residual differences
-- **TaylorSeer**: Taylor expansion calibrator for better caching decisions
-
-**Limitation:** Currently disabled when `world_size > 1` in SGLang native pipelines (only works for single-GPU). That's why we test it with 1-GPU + VAE CPU offloading to avoid OOM.
-
-### 5. Multi-Host Inference
-
-**What:** Uses the open-source Wan2.2 `generate.py` with PyTorch's `torchrun` for distributed inference across 2 G4 nodes (16 GPUs total). The `--ulysses_size` flag enables Ulysses sequence parallelism across all GPUs.
-
-**Network:** G4 instances support 400 Gbps total egress bandwidth (2× 200 Gbps NICs). NCCL uses standard VPC networking (no RDMA/NVLink between nodes).
 
 ---
 
@@ -283,18 +224,35 @@ gcloud compute instances delete g4-wan22-bench \
 ├── README.md                           # This file
 ├── generate_plots.py                   # Plot generation from results JSON
 ├── configs/
-│   └── benchmark_matrix.json           # Full benchmark configuration
+│   └── benchmark_matrix.json           # Full benchmark configuration (15 configs)
 ├── scripts/
-│   ├── run_all.sh                      # ⭐ End-to-end orchestrator
+│   ├── run_all.sh                      # End-to-end orchestrator
 │   ├── 01_vm_setup.sh                  # VM Docker + NVIDIA setup
 │   ├── 02_run_sglang_benchmark.sh      # Single SGLang benchmark runner
 │   ├── 03_run_multihost_benchmark.sh   # Multi-host torchrun runner
-│   └── parse_results.py                # Log parser → JSON
+│   ├── launch_on_vm.sh                 # All-in-one VM launch script
+│   ├── multihost_master.sh             # Multi-host master script
+│   ├── multihost_worker.sh             # Multi-host worker script
+│   └── parse_results.py               # Log parser → JSON
 ├── results/
-│   └── run_YYYYMMDD_HHMMSS/            # Benchmark run results
-│       ├── benchmark_results.json      # Parsed results
-│       ├── vm1_full.log                # Full VM1 logs
-│       └── ...
+│   └── run_latest/
+│       ├── all_benchmarks.log          # Full benchmark session log
+│       ├── fix2_benchmarks.log         # Fix2 session log
+│       └── results/
+│           ├── benchmark_results.json  # Parsed results (all 15 configs)
+│           ├── baseline_tp4/           # Raw logs + generated videos
+│           ├── baseline_tp8/
+│           ├── sage_attn_tp4/
+│           ├── sage_attn_tp8/
+│           ├── p2p_tp4/
+│           ├── p2p_tp8/
+│           ├── p2p_sage_tp4/
+│           ├── p2p_sage_tp8/
+│           ├── cache_dit_1gpu/         # Error logs (OOM)
+│           ├── sage_sp_*/              # Error logs (SP incompatible)
+│           ├── sp_*/                   # Error logs (SP incompatible)
+│           ├── p2p_sp_sage_8gpu/       # Error logs (SP incompatible)
+│           └── multihost_16gpu/        # Error logs (head count constraint)
 ├── plots/                              # Generated visualizations
 │   ├── 01_t2v_optimization_comparison.png
 │   ├── 02_i2v_optimization_comparison.png
@@ -304,7 +262,7 @@ gcloud compute instances delete g4-wan22-bench \
 │   ├── 06_gpu_scaling.png
 │   └── 07_optimization_legend.png
 └── docs/
-    └── optimization_reference.md       # Optimization technique details
+    └── optimization_reference.md       # Technical justification for each optimization
 ```
 
 ---
@@ -313,35 +271,35 @@ gcloud compute instances delete g4-wan22-bench \
 
 | Aspect | Original Recipe | This Benchmark | Reason |
 |--------|----------------|----------------|--------|
-| **Parallelism** | TP only (`--tp-size N`) | TP + SP + USP | Sequence parallelism better suits DiT models on PCIe |
-| **Attention** | Default (FlashAttention) | + SageAttention | SageAttn supported on Blackwell SM120, potentially faster |
-| **P2P** | Not configured | `NCCL_P2P_LEVEL=5` | Enables G4's proprietary GPU P2P interconnect |
-| **Caching** | None | Cache-DiT (1-GPU) | Block-level caching reduces denoising computation |
-| **Multi-host** | Not in recipe | 2-node torchrun | Tests 16-GPU scaling via open-source Wan2.2 distributed |
+| **P2P** | Not configured | `NCCL_P2P_LEVEL=5` | Enables G4's proprietary GPU P2P — biggest performance gain |
+| **Attention** | Default (TORCH_SDPA) | + `sage_attn` | SageAttn supported on Blackwell SM120, ~6% faster |
 | **Boot disk** | 200 GB | 500 GB | 200GB insufficient for Docker + model weights |
-| **Docker mode** | Interactive | Detached | Automation via SSH with IAP tunnel |
-| **Frames** | 81/93 | 81 (all configs) | Consistent for fair comparison across GPU counts |
+| **Docker mode** | Interactive | Detached + scripts | Automation via SSH with IAP tunnel |
+| **Frames** | 81/93 | 81 (all configs) | Consistent for fair comparison |
 | **SageAttention** | Not installed | `pip install sageattention` | Required for `--attention-backend sage_attn` |
 
-**What is identical:**
+**What is identical to the recipe:**
 - Machine type: `g4-standard-384`
 - Image: `ubuntu-accelerator-2404-amd64-with-nvidia-570`
 - Docker image: `lmsysorg/sglang:latest`
-- Model: `Wan-AI/Wan2.2-T2V-A14B-Diffusers` / `Wan-AI/Wan2.2-I2V-A14B-Diffusers`
-- All `sglang generate` base flags for model loading
+- All `sglang generate` base flags
+- Model paths: `Wan-AI/Wan2.2-T2V-A14B-Diffusers` / `Wan-AI/Wan2.2-I2V-A14B-Diffusers`
 
 ---
 
-## G4 VM Availability
+## Multi-Host Status
 
-G4 VMs with RTX PRO 6000 GPUs are available in many regions. The benchmark auto-selects any zone with capacity. Known zones:
+Multi-host inference (2 nodes, 16 GPUs) could not be completed with the open-source Wan2.2 codebase due to:
 
-- `us-central1-b`, `us-central1-f`
-- `europe-west1-c`, `europe-west4-b`, `europe-west4-a`
-- `us-west1-a/b/c`, `us-east1-b`, `us-east4-b/c`
-- `asia-east1-b`, `asia-southeast1-a/b/c`, `asia-south1-c`
-- `europe-west2-b/c`, `europe-north1-b`
+1. **Head count constraint**: Wan2.2-A14B has 40 attention heads. The code enforces `ulysses_size == world_size` AND `num_heads % ulysses_size == 0`. For 16 GPUs, `40 % 16 = 8 ≠ 0`.
+2. **Same-zone requirement**: NCCL requires low-latency networking. Cross-region VPC (~32ms) causes `DistBackendError`.
+3. **GPU scarcity**: G4-standard-384 VMs are in extreme global demand — only 1 slot available per zone (need 2 in same zone).
+
+The reference document achieved multi-host results using proprietary, customized asynchronous communication kernels (not available in the open-source codebase).
+
+**Scripts are ready** in `scripts/multihost_master.sh` and `scripts/multihost_worker.sh` for when GPU capacity and same-zone availability allow.
 
 ---
 
-*Benchmarks executed on Google Cloud G4 VMs.*
+*Benchmarks executed on April 21, 2026 on Google Cloud G4 VM in us-west1-a.*
+*All data sourced from actual SGLang runs — no fabricated results.*

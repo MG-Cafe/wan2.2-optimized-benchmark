@@ -1,0 +1,62 @@
+W0421 06:33:08.477000 1377 torch/distributed/run.py:803] 
+W0421 06:33:08.477000 1377 torch/distributed/run.py:803] *****************************************
+W0421 06:33:08.477000 1377 torch/distributed/run.py:803] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0421 06:33:08.477000 1377 torch/distributed/run.py:803] *****************************************
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "/scratch/Wan2.2/generate.py", line 575, in <module>
+[rank0]:     generate(args)
+[rank0]:   File "/scratch/Wan2.2/generate.py", line 370, in generate
+[rank0]:     dist.broadcast_object_list(base_seed, src=0)
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 81, in wrapper
+[rank0]:     return func(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 3691, in broadcast_object_list
+[rank0]:     broadcast(object_sizes_tensor, group_src=group_src, group=group)
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/c10d_logger.py", line 81, in wrapper
+[rank0]:     return func(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/torch/distributed/distributed_c10d.py", line 2835, in broadcast
+[rank0]:     work = group.broadcast([tensor], opts)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]: torch.distributed.DistBackendError: NCCL error in: /pytorch/torch/csrc/distributed/c10d/ProcessGroupNCCL.cpp:3072, invalid usage (run with NCCL_DEBUG=WARN for details), NCCL version 2.27.5
+[rank0]: ncclInvalidUsage: This usually reflects invalid usage of NCCL library.
+[rank0]: Last error:
+[rank0]: Bootstrap : no socket interface found
+[rank0]:[W421 06:33:23.265284752 ProcessGroupNCCL.cpp:1524] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+W0421 06:33:24.196000 1377 torch/distributed/elastic/multiprocessing/api.py:908] Sending process 1445 closing signal SIGTERM
+W0421 06:33:24.196000 1377 torch/distributed/elastic/multiprocessing/api.py:908] Sending process 1446 closing signal SIGTERM
+W0421 06:33:24.197000 1377 torch/distributed/elastic/multiprocessing/api.py:908] Sending process 1447 closing signal SIGTERM
+W0421 06:33:24.197000 1377 torch/distributed/elastic/multiprocessing/api.py:908] Sending process 1448 closing signal SIGTERM
+E0421 06:33:24.576000 1377 torch/distributed/elastic/multiprocessing/api.py:882] failed (exitcode: 1) local_rank: 0 (pid: 1444) of binary: /usr/bin/python3
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 357, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 936, in main
+    run(args)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 927, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 156, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 293, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/scratch/Wan2.2/generate.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-04-21_06:33:24
+  host      : bench-g4-opt1.us-west1-a.c.gpu-launchpad-playground.internal
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 1444)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

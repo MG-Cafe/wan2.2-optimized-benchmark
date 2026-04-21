@@ -49,46 +49,36 @@ def parse_sglang_log(log_path: str) -> dict:
         error_lines = [l.strip() for l in content.split("\n") if "Error" in l or "FAILED" in l]
         result["errors"] = error_lines[:5]
 
-    # Parse stage timing (SGLang stage logging format)
-    # Pattern: "Stage: StageName took X.XXXs"  or similar
-    stage_patterns = [
-        r"(\w+(?:Stage)?)\s*(?:took|:)\s*([\d.]+)\s*s",
-        r"Stage\s+(\w+)\s*:\s*([\d.]+)\s*s",
-        r"\[(\w+)\]\s*([\d.]+)\s*s",
-    ]
-
-    for pattern in stage_patterns:
-        for match in re.finditer(pattern, content):
-            stage_name = match.group(1)
-            stage_time = float(match.group(2))
-            result["pipeline_stages"][stage_name] = stage_time
+    # Parse SGLang stage timing format: "[StageName] finished in X.XXXX seconds"
+    stage_pattern = r"\[(\w+(?:Stage)?)\] finished in ([\d.]+) seconds"
+    for match in re.finditer(stage_pattern, content):
+        stage_name = match.group(1)
+        stage_time = float(match.group(2))
+        result["pipeline_stages"][stage_name] = stage_time
 
     # Parse "average time per step" (SGLang denoising output)
-    step_match = re.search(r"average time per step[:\s]*([\d.]+)\s*s", content, re.IGNORECASE)
+    # Format: "[DenoisingStage] average time per step: 20.5446 seconds"
+    step_match = re.search(r"average time per step:\s*([\d.]+)\s*seconds", content)
     if step_match:
         result["denoising_sec_per_step"] = float(step_match.group(1))
 
-    # Parse total denoising time
-    denoise_match = re.search(r"[Dd]enoising[:\s]*([\d.]+)\s*s", content)
+    # Parse total denoising time from pipeline stages
+    # Format: "[DenoisingStage] finished in 821.7879 seconds"
+    denoise_match = re.search(r"\[DenoisingStage\] finished in ([\d.]+) seconds", content)
     if denoise_match:
         result["denoising_total_sec"] = float(denoise_match.group(1))
 
     # Parse decoding time
-    decode_match = re.search(r"[Dd]ecod(?:ing|er)[:\s]*([\d.]+)\s*s", content)
+    # Format: "[DecodingStage] finished in 16.1573 seconds"
+    decode_match = re.search(r"\[DecodingStage\] finished in ([\d.]+) seconds", content)
     if decode_match:
         result["decoding_sec"] = float(decode_match.group(1))
 
-    # Parse total generation time
-    total_patterns = [
-        r"[Tt]otal[:\s]*([\d.]+)\s*s",
-        r"Generated.*in\s*([\d.]+)\s*s",
-        r"Pixel data generated.*?([\d.]+)\s*s",
-    ]
-    for pattern in total_patterns:
-        total_match = re.search(pattern, content)
-        if total_match:
-            result["total_sec"] = float(total_match.group(1))
-            break
+    # Calculate total from pipeline stages
+    if result["pipeline_stages"]:
+        total = sum(result["pipeline_stages"].values())
+        if total > 10:  # sanity check
+            result["total_sec"] = round(total, 4)
 
     # Calculate denoising from per-step if not found directly
     if result["denoising_sec_per_step"] and not result["denoising_total_sec"]:

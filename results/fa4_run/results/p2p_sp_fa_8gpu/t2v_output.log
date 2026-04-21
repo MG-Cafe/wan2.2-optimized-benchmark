@@ -1,0 +1,858 @@
+/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/entrypoints/post_training/weights_api.py:10: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
+  from sglang.srt.utils.json_response import orjson_response
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[04-21 10:21:33] Enabled T5 text encoder parallel folding (mode=sp) for ServerArgs (tp_size=1, sp_degree=8).
+[04-21 10:21:33] server_args: {"model_path": "Wan-AI/Wan2.2-T2V-A14B-Diffusers", "model_id": null, "backend": "auto", "attention_backend": "fa", "attention_backend_config": {}, "cache_dit_config": null, "nccl_port": null, "trust_remote_code": false, "revision": null, "num_gpus": 8, "tp_size": 1, "sp_degree": 8, "ulysses_degree": 4, "ring_degree": 2, "dp_size": 1, "dp_degree": 1, "enable_cfg_parallel": false, "hsdp_replicate_dim": 1, "hsdp_shard_dim": 8, "dist_timeout": 3600, "pipeline_class_name": null, "lora_path": null, "lora_nickname": "default", "lora_scale": 1.0, "component_paths": {}, "transformer_weights_path": null, "lora_target_modules": null, "dit_cpu_offload": false, "dit_layerwise_offload": false, "dit_offload_prefetch_size": 0.0, "text_encoder_cpu_offload": false, "image_encoder_cpu_offload": true, "vae_cpu_offload": true, "use_fsdp_inference": false, "pin_cpu_memory": true, "comfyui_mode": false, "enable_torch_compile": false, "warmup": false, "warmup_resolutions": null, "warmup_steps": 1, "disable_autocast": false, "master_port": 30005, "host": "127.0.0.1", "port": 30000, "webui": false, "webui_port": 12312, "scheduler_port": 5586, "strict_ports": false, "output_path": "/scratch/results/p2p_sp_fa_8gpu", "input_save_path": "inputs/uploads", "prompt_file_path": null, "model_paths": {}, "model_loaded": {"transformer": true, "vae": true, "video_vae": true, "audio_vae": true, "video_dit": true, "audio_dit": true, "dual_tower_bridge": true}, "boundary_ratio": null, "log_level": "info", "uvicorn_access_log_exclude_prefixes": []}
+[04-21 10:21:33] Local mode: True
+[04-21 10:21:33] Starting server...
+/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/entrypoints/post_training/weights_api.py:10: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
+  from sglang.srt.utils.json_response import orjson_response
+/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/entrypoints/post_training/weights_api.py:10: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
+  from sglang.srt.utils.json_response import orjson_response
+/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/entrypoints/post_training/weights_api.py:10: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
+  from sglang.srt.utils.json_response import orjson_response
+/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/entrypoints/post_training/weights_api.py:10: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
+  from sglang.srt.utils.json_response import orjson_response
+[04-21 10:21:41] Scheduler bind at endpoint: tcp://127.0.0.1:5586
+/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/entrypoints/post_training/weights_api.py:10: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
+  from sglang.srt.utils.json_response import orjson_response
+[04-21 10:21:41] Initializing distributed environment with world_size=8, device=cuda:0, timeout=3600
+[04-21 10:21:41] Setting distributed timeout to 3600 seconds
+/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/entrypoints/post_training/weights_api.py:10: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
+  from sglang.srt.utils.json_response import orjson_response
+/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/entrypoints/post_training/weights_api.py:10: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
+  from sglang.srt.utils.json_response import orjson_response
+/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/entrypoints/post_training/weights_api.py:10: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
+  from sglang.srt.utils.json_response import orjson_response
+[04-21 10:21:42] Found nccl from library libnccl.so.2
+[04-21 10:21:42] sglang-diffusion is using nccl==2.28.3
+[04-21 10:21:43] Found nccl from library libnccl.so.2
+[04-21 10:21:43] sglang-diffusion is using nccl==2.28.3
+[04-21 10:21:43] No pipeline_class_name specified, using model_index.json
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[93m[04-21 10:21:43] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.[0;0m
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[93m[04-21 10:21:43] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.[0;0m
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[93m[04-21 10:21:43] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.[0;0m
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[93m[04-21 10:21:44] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.[0;0m
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[93m[04-21 10:21:44] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.[0;0m
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[93m[04-21 10:21:44] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.[0;0m
+[04-21 10:21:44] Using pipeline from model_index.json: WanPipeline
+[04-21 10:21:44] Loading pipeline modules...
+Loading required modules:   0%|          | 0/6 [00:00<?, ?it/s]Loading required modules:   0%|          | 0/6 [00:00<?, ?it/s]Loading required modules:   0%|          | 0/6 [00:00<?, ?it/s]Loading required modules:   0%|          | 0/6 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[93m[04-21 10:21:44] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.[0;0m
+Loading required modules:   0%|          | 0/6 [00:00<?, ?it/s]Loading required modules:   0%|          | 0/6 [00:00<?, ?it/s]Loading required modules:   0%|          | 0/6 [00:00<?, ?it/s][04-21 10:21:44] Checking for cached model in HF Hub cache for Wan-AI/Wan2.2-T2V-A14B-Diffusers...
+[04-21 10:21:44] Found complete model in cache at /root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7
+[04-21 10:21:44] Model path: /root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7
+[04-21 10:21:44] Diffusers version: 0.35.0.dev0
+[04-21 10:21:44] Loading pipeline modules from config: {'_class_name': 'WanPipeline', '_diffusers_version': '0.35.0.dev0', 'boundary_ratio': 0.875, 'scheduler': ['diffusers', 'UniPCMultistepScheduler'], 'text_encoder': ['transformers', 'UMT5EncoderModel'], 'tokenizer': ['transformers', 'T5TokenizerFast'], 'transformer': ['diffusers', 'WanTransformer3DModel'], 'transformer_2': ['diffusers', 'WanTransformer3DModel'], 'vae': ['diffusers', 'AutoencoderKLWan']}
+[04-21 10:21:44] MoE pipeline detected. Adding transformer_2 to self.required_config_modules...
+[04-21 10:21:44] Setting boundary ratio to 0.875
+[04-21 10:21:44] Loading required components: ['text_encoder', 'tokenizer', 'vae', 'transformer', 'scheduler', 'transformer_2']
+Loading required modules:   0%|          | 0/6 [00:00<?, ?it/s][04-21 10:21:44] Loading text_encoder from /root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7/text_encoder. avail mem: 91.68 GB
+[04-21 10:21:46] [RunAI Streamer] Overall time to stream 10.6 GiB of all files to cpu: 1.84s, 5.7 GiB/s
+Loading required modules:  17%|█▋        | 1/6 [00:01<00:09,  1.91s/it][04-21 10:21:46] [RunAI Streamer] Overall time to stream 10.6 GiB of all files to cpu: 2.0s, 5.3 GiB/s
+[04-21 10:21:46] [RunAI Streamer] Overall time to stream 10.6 GiB of all files to cpu: 1.95s, 5.4 GiB/s
+Loading required modules:  17%|█▋        | 1/6 [00:02<00:10,  2.06s/it][04-21 10:21:46] Loaded text_encoder: UMT5EncoderModel (sgl-diffusion version). model size: 2.65 GB, consumed GPU mem: 2.70 GB, avail GPU mem: 88.99 GB
+Loading required modules:  17%|█▋        | 1/6 [00:02<00:10,  2.02s/it][04-21 10:21:46] Loading tokenizer from /root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7/tokenizer. avail mem: 88.99 GB
+[04-21 10:21:46] [RunAI Streamer] Overall time to stream 10.6 GiB of all files to cpu: 2.07s, 5.1 GiB/s
+Loading required modules:  17%|█▋        | 1/6 [00:02<00:10,  2.14s/it][04-21 10:21:46] [RunAI Streamer] Overall time to stream 10.6 GiB of all files to cpu: 2.13s, 5.0 GiB/s
+[04-21 10:21:46] [RunAI Streamer] Overall time to stream 10.6 GiB of all files to cpu: 2.19s, 4.8 GiB/s
+Loading required modules:  17%|█▋        | 1/6 [00:02<00:11,  2.21s/it]Loading required modules:  17%|█▋        | 1/6 [00:02<00:11,  2.25s/it][04-21 10:21:46] [RunAI Streamer] Overall time to stream 10.6 GiB of all files to cpu: 2.2s, 4.8 GiB/s
+[04-21 10:21:46] [RunAI Streamer] Overall time to stream 10.6 GiB of all files to cpu: 2.21s, 4.8 GiB/s
+Loading required modules:  17%|█▋        | 1/6 [00:02<00:11,  2.27s/it]Loading required modules:  17%|█▋        | 1/6 [00:02<00:11,  2.28s/it]Loading required modules:  33%|███▎      | 2/6 [00:03<00:05,  1.45s/it]Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 94, in load
+    component = self.load_customized(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/transformer_loader.py", line 95, in load_customized
+    model = maybe_load_fsdp_model(
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/fsdp_load.py", line 123, in maybe_load_fsdp_model
+    model = model_cls(**init_params)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 864, in __init__
+    transformer_block(
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 407, in __init__
+    self.attn1 = USPAttention(
+                 ^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 370, in __init__
+    raise RuntimeError(
+RuntimeError: Ring Attention is only supported for FlashAttention or SageAttention backends, but got TORCH_SDPA. Please ensure your platform supports these backends.
+[91m[04-21 10:21:47] Error while loading customized transformer, falling back to native version[0;0m
+[91m[04-21 10:21:47] Error while loading component: transformer, component_model_path='/root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7/transformer'[0;0m
+Loading required modules:  50%|█████     | 3/6 [00:03<00:03,  1.04s/it]
+Loading required modules:  33%|███▎      | 2/6 [00:03<00:06,  1.52s/it]Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 94, in load
+    component = self.load_customized(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/transformer_loader.py", line 95, in load_customized
+    model = maybe_load_fsdp_model(
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/fsdp_load.py", line 123, in maybe_load_fsdp_model
+    model = model_cls(**init_params)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 864, in __init__
+    transformer_block(
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 407, in __init__
+    self.attn1 = USPAttention(
+                 ^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 370, in __init__
+    raise RuntimeError(
+RuntimeError: Ring Attention is only supported for FlashAttention or SageAttention backends, but got TORCH_SDPA. Please ensure your platform supports these backends.
+[91m[04-21 10:21:47] Error while loading customized transformer, falling back to native version[0;0m
+[91m[04-21 10:21:47] Error while loading component: transformer, component_model_path='/root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7/transformer'[0;0m
+Loading required modules:  50%|█████     | 3/6 [00:03<00:03,  1.09s/it]
+Loading required modules:  33%|███▎      | 2/6 [00:03<00:06,  1.57s/it]Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 94, in load
+    component = self.load_customized(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/transformer_loader.py", line 95, in load_customized
+    model = maybe_load_fsdp_model(
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/fsdp_load.py", line 123, in maybe_load_fsdp_model
+    model = model_cls(**init_params)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 864, in __init__
+    transformer_block(
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 407, in __init__
+    self.attn1 = USPAttention(
+                 ^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 370, in __init__
+    raise RuntimeError(
+RuntimeError: Ring Attention is only supported for FlashAttention or SageAttention backends, but got TORCH_SDPA. Please ensure your platform supports these backends.
+[91m[04-21 10:21:47] Error while loading customized transformer, falling back to native version[0;0m
+[91m[04-21 10:21:47] Error while loading component: transformer, component_model_path='/root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7/transformer'[0;0m
+Loading required modules:  50%|█████     | 3/6 [00:03<00:03,  1.12s/it]
+[04-21 10:21:47] Loaded tokenizer: T5Tokenizer (sgl-diffusion version). model size: NA GB, consumed GPU mem: 0.00 GB, avail GPU mem: 88.99 GB
+Loading required modules:  33%|███▎      | 2/6 [00:03<00:06,  1.60s/it][04-21 10:21:47] Loading vae from /root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7/vae. avail mem: 88.99 GB
+[04-21 10:21:47] Loaded vae: AutoencoderKLWan (sgl-diffusion version). model size: 0.47 GB, consumed GPU mem: 0.00 GB, avail GPU mem: 88.99 GB
+[04-21 10:21:47] Loading transformer from /root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7/transformer. avail mem: 88.99 GB
+[04-21 10:21:47] Loading WanTransformer3DModel from 12 safetensors file(s) , param_dtype: torch.bfloat16
+[04-21 10:21:47] FlashAttention is not supported on SM12.x in this build; falling back to Torch SDPA.
+[04-21 10:21:47] Using Torch SDPA backend
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 94, in load
+    component = self.load_customized(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/transformer_loader.py", line 95, in load_customized
+    model = maybe_load_fsdp_model(
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/fsdp_load.py", line 123, in maybe_load_fsdp_model
+    model = model_cls(**init_params)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 864, in __init__
+    transformer_block(
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 407, in __init__
+    self.attn1 = USPAttention(
+                 ^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 370, in __init__
+    raise RuntimeError(
+RuntimeError: Ring Attention is only supported for FlashAttention or SageAttention backends, but got TORCH_SDPA. Please ensure your platform supports these backends.
+[91m[04-21 10:21:47] Error while loading customized transformer, falling back to native version[0;0m
+Cannot initialize model with low cpu memory usage because `accelerate` was not found in the environment. Defaulting to `low_cpu_mem_usage=False`. It is strongly recommended to install `accelerate` for faster and less memory-intense model loading. You can do so with: 
+```
+pip install accelerate
+```
+.
+[91m[04-21 10:21:47] Error while loading component: transformer, component_model_path='/root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7/transformer'[0;0m
+Loading required modules:  50%|█████     | 3/6 [00:03<00:03,  1.13s/it]
+Loading required modules:  33%|███▎      | 2/6 [00:03<00:06,  1.66s/it]Loading required modules:  33%|███▎      | 2/6 [00:03<00:06,  1.67s/it]Loading required modules:  33%|███▎      | 2/6 [00:03<00:06,  1.67s/it]Loading required modules:  33%|███▎      | 2/6 [00:03<00:06,  1.68s/it]Loading required modules:  50%|█████     | 3/6 [00:04<00:04,  1.40s/it]Loading required modules:  50%|█████     | 3/6 [00:04<00:04,  1.38s/it]Traceback (most recent call last):
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 94, in load
+    component = self.load_customized(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 94, in load
+    component = self.load_customized(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/transformer_loader.py", line 95, in load_customized
+    model = maybe_load_fsdp_model(
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/fsdp_load.py", line 123, in maybe_load_fsdp_model
+    model = model_cls(**init_params)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 864, in __init__
+    transformer_block(
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 407, in __init__
+    self.attn1 = USPAttention(
+                 ^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 370, in __init__
+    raise RuntimeError(
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/transformer_loader.py", line 95, in load_customized
+    model = maybe_load_fsdp_model(
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/fsdp_load.py", line 123, in maybe_load_fsdp_model
+    model = model_cls(**init_params)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 864, in __init__
+    transformer_block(
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 407, in __init__
+    self.attn1 = USPAttention(
+                 ^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 370, in __init__
+    raise RuntimeError(
+RuntimeError: Ring Attention is only supported for FlashAttention or SageAttention backends, but got TORCH_SDPA. Please ensure your platform supports these backends.
+RuntimeError: Ring Attention is only supported for FlashAttention or SageAttention backends, but got TORCH_SDPA. Please ensure your platform supports these backends.
+[91m[04-21 10:21:48] Error while loading customized transformer, falling back to native version[0;0m
+[91m[04-21 10:21:48] Error while loading customized transformer, falling back to native version[0;0m
+[91m[04-21 10:21:48] Error while loading component: transformer, component_model_path='/root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7/transformer'[0;0m
+Loading required modules:  50%|█████     | 3/6 [00:04<00:04,  1.54s/it]
+[91m[04-21 10:21:48] Error while loading component: transformer, component_model_path='/root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7/transformer'[0;0m
+Loading required modules:  50%|█████     | 3/6 [00:04<00:04,  1.53s/it]
+Loading required modules:  50%|█████     | 3/6 [00:04<00:04,  1.42s/it]Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 94, in load
+    component = self.load_customized(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/transformer_loader.py", line 95, in load_customized
+    model = maybe_load_fsdp_model(
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/fsdp_load.py", line 123, in maybe_load_fsdp_model
+    model = model_cls(**init_params)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 864, in __init__
+    transformer_block(
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 407, in __init__
+    self.attn1 = USPAttention(
+                 ^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 370, in __init__
+    raise RuntimeError(
+RuntimeError: Ring Attention is only supported for FlashAttention or SageAttention backends, but got TORCH_SDPA. Please ensure your platform supports these backends.
+[91m[04-21 10:21:48] Error while loading customized transformer, falling back to native version[0;0m
+Loading required modules:  50%|█████     | 3/6 [00:04<00:04,  1.39s/it][91m[04-21 10:21:48] Error while loading component: transformer, component_model_path='/root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7/transformer'[0;0m
+Loading required modules:  50%|█████     | 3/6 [00:04<00:04,  1.54s/it]
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 94, in load
+    component = self.load_customized(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/transformer_loader.py", line 95, in load_customized
+    model = maybe_load_fsdp_model(
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/fsdp_load.py", line 123, in maybe_load_fsdp_model
+    model = model_cls(**init_params)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 864, in __init__
+    transformer_block(
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 407, in __init__
+    self.attn1 = USPAttention(
+                 ^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 370, in __init__
+    raise RuntimeError(
+RuntimeError: Ring Attention is only supported for FlashAttention or SageAttention backends, but got TORCH_SDPA. Please ensure your platform supports these backends.
+[91m[04-21 10:21:48] Error while loading customized transformer, falling back to native version[0;0m
+[91m[04-21 10:21:48] Error while loading component: transformer, component_model_path='/root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7/transformer'[0;0m
+Loading required modules:  50%|█████     | 3/6 [00:04<00:04,  1.53s/it]
+Process sglang-diffusionWorker-1:
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 94, in load
+    component = self.load_customized(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/transformer_loader.py", line 95, in load_customized
+    model = maybe_load_fsdp_model(
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/fsdp_load.py", line 123, in maybe_load_fsdp_model
+    model = model_cls(**init_params)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 864, in __init__
+    transformer_block(
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 407, in __init__
+    self.attn1 = USPAttention(
+                 ^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 370, in __init__
+    raise RuntimeError(
+RuntimeError: Ring Attention is only supported for FlashAttention or SageAttention backends, but got TORCH_SDPA. Please ensure your platform supports these backends.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 520, in run_scheduler_process
+    scheduler = Scheduler(
+                ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/scheduler.py", line 77, in __init__
+    worker = GPUWorker(
+             ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 85, in __init__
+    self.init_device_and_model()
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 136, in init_device_and_model
+    self.pipeline = build_pipeline(self.server_args)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/__init__.py", line 78, in build_pipeline
+    pipeline = pipeline_cls(model_path, server_args)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/lora_pipeline.py", line 71, in __init__
+    super().__init__(*args, **kwargs)
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/composed_pipeline_base.py", line 101, in __init__
+    self.modules = self.load_modules(server_args, loaded_modules)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/composed_pipeline_base.py", line 302, in load_modules
+    module, memory_usage = PipelineComponentLoader.load_component(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 357, in load_component
+    raise e
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 347, in load_component
+    return loader.load(
+           ^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 109, in load
+    component = self.load_native(
+                ^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 167, in load_native
+    return AutoModel.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/diffusers/models/auto_model.py", line 338, in from_pretrained
+    model = model_cls.from_pretrained(pretrained_model_or_path, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/diffusers/models/modeling_utils.py", line 1141, in from_pretrained
+    raise ValueError("`low_cpu_mem_usage` cannot be False when `keep_in_fp32_modules` is True.")
+ValueError: `low_cpu_mem_usage` cannot be False when `keep_in_fp32_modules` is True.
+Process sglang-diffusionWorker-2:
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 94, in load
+    component = self.load_customized(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/transformer_loader.py", line 95, in load_customized
+    model = maybe_load_fsdp_model(
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/fsdp_load.py", line 123, in maybe_load_fsdp_model
+    model = model_cls(**init_params)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 864, in __init__
+    transformer_block(
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 407, in __init__
+    self.attn1 = USPAttention(
+                 ^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 370, in __init__
+    raise RuntimeError(
+RuntimeError: Ring Attention is only supported for FlashAttention or SageAttention backends, but got TORCH_SDPA. Please ensure your platform supports these backends.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+[04-21 10:21:51] Worker 0: Shutdown complete.
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 520, in run_scheduler_process
+    scheduler = Scheduler(
+                ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/scheduler.py", line 77, in __init__
+    worker = GPUWorker(
+             ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 85, in __init__
+    self.init_device_and_model()
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 136, in init_device_and_model
+    self.pipeline = build_pipeline(self.server_args)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/__init__.py", line 78, in build_pipeline
+    pipeline = pipeline_cls(model_path, server_args)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/lora_pipeline.py", line 71, in __init__
+    super().__init__(*args, **kwargs)
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/composed_pipeline_base.py", line 101, in __init__
+    self.modules = self.load_modules(server_args, loaded_modules)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/composed_pipeline_base.py", line 302, in load_modules
+    module, memory_usage = PipelineComponentLoader.load_component(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 357, in load_component
+    raise e
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 347, in load_component
+    return loader.load(
+           ^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 109, in load
+    component = self.load_native(
+                ^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 167, in load_native
+    return AutoModel.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/diffusers/models/auto_model.py", line 338, in from_pretrained
+    model = model_cls.from_pretrained(pretrained_model_or_path, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/diffusers/models/modeling_utils.py", line 1141, in from_pretrained
+    raise ValueError("`low_cpu_mem_usage` cannot be False when `keep_in_fp32_modules` is True.")
+ValueError: `low_cpu_mem_usage` cannot be False when `keep_in_fp32_modules` is True.
+Process sglang-diffusionWorker-0:
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 94, in load
+    component = self.load_customized(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/transformer_loader.py", line 95, in load_customized
+    model = maybe_load_fsdp_model(
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/fsdp_load.py", line 123, in maybe_load_fsdp_model
+    model = model_cls(**init_params)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 864, in __init__
+    transformer_block(
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 407, in __init__
+    self.attn1 = USPAttention(
+                 ^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 370, in __init__
+    raise RuntimeError(
+RuntimeError: Ring Attention is only supported for FlashAttention or SageAttention backends, but got TORCH_SDPA. Please ensure your platform supports these backends.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 520, in run_scheduler_process
+    scheduler = Scheduler(
+                ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/scheduler.py", line 77, in __init__
+    worker = GPUWorker(
+             ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 85, in __init__
+    self.init_device_and_model()
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 136, in init_device_and_model
+    self.pipeline = build_pipeline(self.server_args)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/__init__.py", line 78, in build_pipeline
+    pipeline = pipeline_cls(model_path, server_args)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/lora_pipeline.py", line 71, in __init__
+    super().__init__(*args, **kwargs)
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/composed_pipeline_base.py", line 101, in __init__
+    self.modules = self.load_modules(server_args, loaded_modules)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/composed_pipeline_base.py", line 302, in load_modules
+    module, memory_usage = PipelineComponentLoader.load_component(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 357, in load_component
+    raise e
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 347, in load_component
+    return loader.load(
+           ^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 109, in load
+    component = self.load_native(
+                ^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 167, in load_native
+    return AutoModel.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/diffusers/models/auto_model.py", line 338, in from_pretrained
+    model = model_cls.from_pretrained(pretrained_model_or_path, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/diffusers/models/modeling_utils.py", line 1141, in from_pretrained
+    raise ValueError("`low_cpu_mem_usage` cannot be False when `keep_in_fp32_modules` is True.")
+ValueError: `low_cpu_mem_usage` cannot be False when `keep_in_fp32_modules` is True.
+Process sglang-diffusionWorker-5:
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 94, in load
+    component = self.load_customized(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/transformer_loader.py", line 95, in load_customized
+    model = maybe_load_fsdp_model(
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/fsdp_load.py", line 123, in maybe_load_fsdp_model
+    model = model_cls(**init_params)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 864, in __init__
+    transformer_block(
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 407, in __init__
+    self.attn1 = USPAttention(
+                 ^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 370, in __init__
+    raise RuntimeError(
+RuntimeError: Ring Attention is only supported for FlashAttention or SageAttention backends, but got TORCH_SDPA. Please ensure your platform supports these backends.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 520, in run_scheduler_process
+    scheduler = Scheduler(
+                ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/scheduler.py", line 77, in __init__
+    worker = GPUWorker(
+             ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 85, in __init__
+    self.init_device_and_model()
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 136, in init_device_and_model
+    self.pipeline = build_pipeline(self.server_args)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/__init__.py", line 78, in build_pipeline
+    pipeline = pipeline_cls(model_path, server_args)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/lora_pipeline.py", line 71, in __init__
+    super().__init__(*args, **kwargs)
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/composed_pipeline_base.py", line 101, in __init__
+    self.modules = self.load_modules(server_args, loaded_modules)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/composed_pipeline_base.py", line 302, in load_modules
+    module, memory_usage = PipelineComponentLoader.load_component(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 357, in load_component
+    raise e
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 347, in load_component
+    return loader.load(
+           ^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 109, in load
+    component = self.load_native(
+                ^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 167, in load_native
+    return AutoModel.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/diffusers/models/auto_model.py", line 338, in from_pretrained
+    model = model_cls.from_pretrained(pretrained_model_or_path, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/diffusers/models/modeling_utils.py", line 1141, in from_pretrained
+    raise ValueError("`low_cpu_mem_usage` cannot be False when `keep_in_fp32_modules` is True.")
+ValueError: `low_cpu_mem_usage` cannot be False when `keep_in_fp32_modules` is True.
+Process sglang-diffusionWorker-3:
+Process sglang-diffusionWorker-7:
+Process sglang-diffusionWorker-6:
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 94, in load
+    component = self.load_customized(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/transformer_loader.py", line 95, in load_customized
+    model = maybe_load_fsdp_model(
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/fsdp_load.py", line 123, in maybe_load_fsdp_model
+    model = model_cls(**init_params)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 864, in __init__
+    transformer_block(
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 407, in __init__
+    self.attn1 = USPAttention(
+                 ^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 370, in __init__
+    raise RuntimeError(
+RuntimeError: Ring Attention is only supported for FlashAttention or SageAttention backends, but got TORCH_SDPA. Please ensure your platform supports these backends.
+Traceback (most recent call last):
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 94, in load
+    component = self.load_customized(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/transformer_loader.py", line 95, in load_customized
+    model = maybe_load_fsdp_model(
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/fsdp_load.py", line 123, in maybe_load_fsdp_model
+    model = model_cls(**init_params)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 864, in __init__
+    transformer_block(
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 407, in __init__
+    self.attn1 = USPAttention(
+                 ^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 370, in __init__
+    raise RuntimeError(
+RuntimeError: Ring Attention is only supported for FlashAttention or SageAttention backends, but got TORCH_SDPA. Please ensure your platform supports these backends.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 520, in run_scheduler_process
+    scheduler = Scheduler(
+                ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/scheduler.py", line 77, in __init__
+    worker = GPUWorker(
+             ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 85, in __init__
+    self.init_device_and_model()
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 136, in init_device_and_model
+    self.pipeline = build_pipeline(self.server_args)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/__init__.py", line 78, in build_pipeline
+    pipeline = pipeline_cls(model_path, server_args)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/lora_pipeline.py", line 71, in __init__
+    super().__init__(*args, **kwargs)
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/composed_pipeline_base.py", line 101, in __init__
+    self.modules = self.load_modules(server_args, loaded_modules)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/composed_pipeline_base.py", line 302, in load_modules
+    module, memory_usage = PipelineComponentLoader.load_component(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 357, in load_component
+    raise e
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 347, in load_component
+    return loader.load(
+           ^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 109, in load
+    component = self.load_native(
+                ^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 167, in load_native
+    return AutoModel.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/diffusers/models/auto_model.py", line 338, in from_pretrained
+    model = model_cls.from_pretrained(pretrained_model_or_path, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/diffusers/models/modeling_utils.py", line 1141, in from_pretrained
+    raise ValueError("`low_cpu_mem_usage` cannot be False when `keep_in_fp32_modules` is True.")
+ValueError: `low_cpu_mem_usage` cannot be False when `keep_in_fp32_modules` is True.
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 520, in run_scheduler_process
+    scheduler = Scheduler(
+                ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/scheduler.py", line 77, in __init__
+    worker = GPUWorker(
+             ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 85, in __init__
+    self.init_device_and_model()
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 136, in init_device_and_model
+    self.pipeline = build_pipeline(self.server_args)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/__init__.py", line 78, in build_pipeline
+    pipeline = pipeline_cls(model_path, server_args)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/lora_pipeline.py", line 71, in __init__
+    super().__init__(*args, **kwargs)
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/composed_pipeline_base.py", line 101, in __init__
+    self.modules = self.load_modules(server_args, loaded_modules)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/composed_pipeline_base.py", line 302, in load_modules
+    module, memory_usage = PipelineComponentLoader.load_component(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 357, in load_component
+    raise e
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 347, in load_component
+    return loader.load(
+           ^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 109, in load
+    component = self.load_native(
+                ^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 167, in load_native
+    return AutoModel.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/diffusers/models/auto_model.py", line 338, in from_pretrained
+    model = model_cls.from_pretrained(pretrained_model_or_path, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/diffusers/models/modeling_utils.py", line 1141, in from_pretrained
+    raise ValueError("`low_cpu_mem_usage` cannot be False when `keep_in_fp32_modules` is True.")
+ValueError: `low_cpu_mem_usage` cannot be False when `keep_in_fp32_modules` is True.
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 94, in load
+    component = self.load_customized(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/transformer_loader.py", line 95, in load_customized
+    model = maybe_load_fsdp_model(
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/fsdp_load.py", line 123, in maybe_load_fsdp_model
+    model = model_cls(**init_params)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 864, in __init__
+    transformer_block(
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 407, in __init__
+    self.attn1 = USPAttention(
+                 ^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 370, in __init__
+    raise RuntimeError(
+RuntimeError: Ring Attention is only supported for FlashAttention or SageAttention backends, but got TORCH_SDPA. Please ensure your platform supports these backends.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 520, in run_scheduler_process
+    scheduler = Scheduler(
+                ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/scheduler.py", line 77, in __init__
+    worker = GPUWorker(
+             ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 85, in __init__
+    self.init_device_and_model()
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 136, in init_device_and_model
+    self.pipeline = build_pipeline(self.server_args)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/__init__.py", line 78, in build_pipeline
+    pipeline = pipeline_cls(model_path, server_args)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/lora_pipeline.py", line 71, in __init__
+    super().__init__(*args, **kwargs)
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/composed_pipeline_base.py", line 101, in __init__
+    self.modules = self.load_modules(server_args, loaded_modules)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/composed_pipeline_base.py", line 302, in load_modules
+    module, memory_usage = PipelineComponentLoader.load_component(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 357, in load_component
+    raise e
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 347, in load_component
+    return loader.load(
+           ^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 109, in load
+    component = self.load_native(
+                ^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 167, in load_native
+    return AutoModel.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/diffusers/models/auto_model.py", line 338, in from_pretrained
+    model = model_cls.from_pretrained(pretrained_model_or_path, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/diffusers/models/modeling_utils.py", line 1141, in from_pretrained
+    raise ValueError("`low_cpu_mem_usage` cannot be False when `keep_in_fp32_modules` is True.")
+ValueError: `low_cpu_mem_usage` cannot be False when `keep_in_fp32_modules` is True.
+Process sglang-diffusionWorker-4:
+Traceback (most recent call last):
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 94, in load
+    component = self.load_customized(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/transformer_loader.py", line 95, in load_customized
+    model = maybe_load_fsdp_model(
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/fsdp_load.py", line 123, in maybe_load_fsdp_model
+    model = model_cls(**init_params)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 864, in __init__
+    transformer_block(
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/models/dits/wanvideo.py", line 407, in __init__
+    self.attn1 = USPAttention(
+                 ^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/layers/attention/layer.py", line 370, in __init__
+    raise RuntimeError(
+RuntimeError: Ring Attention is only supported for FlashAttention or SageAttention backends, but got TORCH_SDPA. Please ensure your platform supports these backends.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 520, in run_scheduler_process
+    scheduler = Scheduler(
+                ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/scheduler.py", line 77, in __init__
+    worker = GPUWorker(
+             ^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 85, in __init__
+    self.init_device_and_model()
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/managers/gpu_worker.py", line 136, in init_device_and_model
+    self.pipeline = build_pipeline(self.server_args)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/__init__.py", line 78, in build_pipeline
+    pipeline = pipeline_cls(model_path, server_args)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/lora_pipeline.py", line 71, in __init__
+    super().__init__(*args, **kwargs)
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/composed_pipeline_base.py", line 101, in __init__
+    self.modules = self.load_modules(server_args, loaded_modules)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/pipelines_core/composed_pipeline_base.py", line 302, in load_modules
+    module, memory_usage = PipelineComponentLoader.load_component(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 357, in load_component
+    raise e
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 347, in load_component
+    return loader.load(
+           ^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 109, in load
+    component = self.load_native(
+                ^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/loader/component_loaders/component_loader.py", line 167, in load_native
+    return AutoModel.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/diffusers/models/auto_model.py", line 338, in from_pretrained
+    model = model_cls.from_pretrained(pretrained_model_or_path, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/diffusers/models/modeling_utils.py", line 1141, in from_pretrained
+    raise ValueError("`low_cpu_mem_usage` cannot be False when `keep_in_fp32_modules` is True.")
+ValueError: `low_cpu_mem_usage` cannot be False when `keep_in_fp32_modules` is True.
+[91m[04-21 10:21:53] Rank 0 scheduler is dead. Please check if there are relevant logs.[0;0m
+[91m[04-21 10:21:54] Exit code: 1[0;0m
+Traceback (most recent call last):
+  File "/usr/local/bin/sglang", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/cli/main.py", line 44, in main
+    generate(args, extra_argv)
+  File "/sgl-workspace/sglang/python/sglang/cli/generate.py", line 29, in generate
+    generate_cmd(parsed_args, unknown_args)
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/entrypoints/cli/generate.py", line 150, in generate_cmd
+    generator = DiffGenerator.from_pretrained(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/entrypoints/diffusion_generator.py", line 104, in from_pretrained
+    return cls.from_server_args(server_args, local_mode=local_mode)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/entrypoints/diffusion_generator.py", line 124, in from_server_args
+    instance.local_scheduler_process = instance._start_local_server_if_needed()
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/entrypoints/diffusion_generator.py", line 141, in _start_local_server_if_needed
+    processes = launch_server(self.server_args, launch_http_server=False)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/launch_server.py", line 153, in launch_server
+    data = reader.recv()
+           ^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/multiprocessing/connection.py", line 250, in recv
+    buf = self._recv_bytes()
+          ^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/multiprocessing/connection.py", line 430, in _recv_bytes
+    buf = self._recv(4)
+          ^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/multiprocessing/connection.py", line 399, in _recv
+    raise EOFError
+EOFError

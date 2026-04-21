@@ -1,0 +1,336 @@
+{
+  "run_dir": "results/fa4_run/results/",
+  "benchmarks": [
+    {
+      "benchmark_id": "fa_tp4",
+      "t2v": {
+        "log_file": "results/fa4_run/results/fa_tp4/t2v_output.log",
+        "status": "success",
+        "denoising_sec_per_step": 17.2472,
+        "denoising_total_sec": 689.8894,
+        "decoding_sec": 15.3558,
+        "total_sec": 706.9182,
+        "pipeline_stages": {
+          "InputValidationStage": 0.0,
+          "TextEncodingStage": 1.6719,
+          "LatentPreparationStage": 0.0009,
+          "TimestepPreparationStage": 0.0002,
+          "DenoisingStage": 689.8894,
+          "DecodingStage": 15.3558
+        },
+        "oom_stage": null,
+        "errors": []
+      },
+      "i2v": {
+        "log_file": "results/fa4_run/results/fa_tp4/i2v_output.log",
+        "status": "success",
+        "denoising_sec_per_step": 17.1776,
+        "denoising_total_sec": 687.1047,
+        "decoding_sec": 15.3097,
+        "total_sec": 712.0063,
+        "pipeline_stages": {
+          "InputValidationStage": 0.0092,
+          "TextEncodingStage": 1.0239,
+          "ImageVAEEncodingStage": 8.5571,
+          "LatentPreparationStage": 0.0013,
+          "TimestepPreparationStage": 0.0004,
+          "DenoisingStage": 687.1047,
+          "DecodingStage": 15.3097
+        },
+        "oom_stage": null,
+        "errors": []
+      },
+      "t2v_wall_time_sec": 925.423,
+      "i2v_wall_time_sec": 930.209
+    },
+    {
+      "benchmark_id": "fa_tp8",
+      "t2v": {
+        "log_file": "results/fa4_run/results/fa_tp8/t2v_output.log",
+        "status": "success",
+        "denoising_sec_per_step": 13.5343,
+        "denoising_total_sec": 541.375,
+        "decoding_sec": 14.7202,
+        "total_sec": 557.8424,
+        "pipeline_stages": {
+          "InputValidationStage": 0.0001,
+          "TextEncodingStage": 1.7459,
+          "LatentPreparationStage": 0.0009,
+          "TimestepPreparationStage": 0.0003,
+          "DenoisingStage": 541.375,
+          "DecodingStage": 14.7202
+        },
+        "oom_stage": null,
+        "errors": []
+      },
+      "i2v": {
+        "log_file": "results/fa4_run/results/fa_tp8/i2v_output.log",
+        "status": "success",
+        "denoising_sec_per_step": 13.4626,
+        "denoising_total_sec": 538.5076,
+        "decoding_sec": 14.6818,
+        "total_sec": 562.8573,
+        "pipeline_stages": {
+          "InputValidationStage": 0.0079,
+          "TextEncodingStage": 1.126,
+          "ImageVAEEncodingStage": 8.5326,
+          "LatentPreparationStage": 0.001,
+          "TimestepPreparationStage": 0.0004,
+          "DenoisingStage": 538.5076,
+          "DecodingStage": 14.6818
+        },
+        "oom_stage": null,
+        "errors": []
+      },
+      "t2v_wall_time_sec": 672.129,
+      "i2v_wall_time_sec": 676.788
+    },
+    {
+      "benchmark_id": "p2p_fa_tp4",
+      "t2v": {
+        "log_file": "results/fa4_run/results/p2p_fa_tp4/t2v_output.log",
+        "status": "success",
+        "denoising_sec_per_step": 17.2334,
+        "denoising_total_sec": 689.3383,
+        "decoding_sec": 15.4503,
+        "total_sec": 705.8493,
+        "pipeline_stages": {
+          "InputValidationStage": 0.0001,
+          "TextEncodingStage": 1.0595,
+          "LatentPreparationStage": 0.0009,
+          "TimestepPreparationStage": 0.0002,
+          "DenoisingStage": 689.3383,
+          "DecodingStage": 15.4503
+        },
+        "oom_stage": null,
+        "errors": []
+      },
+      "i2v": {
+        "log_file": "results/fa4_run/results/p2p_fa_tp4/i2v_output.log",
+        "status": "success",
+        "denoising_sec_per_step": 17.1707,
+        "denoising_total_sec": 686.8297,
+        "decoding_sec": 15.3039,
+        "total_sec": 711.695,
+        "pipeline_stages": {
+          "InputValidationStage": 0.0073,
+          "TextEncodingStage": 1.0242,
+          "ImageVAEEncodingStage": 8.5288,
+          "LatentPreparationStage": 0.0008,
+          "TimestepPreparationStage": 0.0003,
+          "DenoisingStage": 686.8297,
+          "DecodingStage": 15.3039
+        },
+        "oom_stage": null,
+        "errors": []
+      },
+      "t2v_wall_time_sec": 777.606,
+      "i2v_wall_time_sec": 782.535
+    },
+    {
+      "benchmark_id": "p2p_fa_tp8",
+      "t2v": {
+        "log_file": "results/fa4_run/results/p2p_fa_tp8/t2v_output.log",
+        "status": "success",
+        "denoising_sec_per_step": 13.5233,
+        "denoising_total_sec": 540.9359,
+        "decoding_sec": 14.7939,
+        "total_sec": 556.8488,
+        "pipeline_stages": {
+          "InputValidationStage": 0.0001,
+          "TextEncodingStage": 1.1177,
+          "LatentPreparationStage": 0.0009,
+          "TimestepPreparationStage": 0.0003,
+          "DenoisingStage": 540.9359,
+          "DecodingStage": 14.7939
+        },
+        "oom_stage": null,
+        "errors": []
+      },
+      "i2v": {
+        "log_file": "results/fa4_run/results/p2p_fa_tp8/i2v_output.log",
+        "status": "success",
+        "denoising_sec_per_step": 13.4582,
+        "denoising_total_sec": 538.3314,
+        "decoding_sec": 14.6863,
+        "total_sec": 562.8596,
+        "pipeline_stages": {
+          "InputValidationStage": 0.0084,
+          "TextEncodingStage": 1.1094,
+          "ImageVAEEncodingStage": 8.7222,
+          "LatentPreparationStage": 0.0014,
+          "TimestepPreparationStage": 0.0005,
+          "DenoisingStage": 538.3314,
+          "DecodingStage": 14.6863
+        },
+        "oom_stage": null,
+        "errors": []
+      },
+      "t2v_wall_time_sec": 669.881,
+      "i2v_wall_time_sec": 676.791
+    },
+    {
+      "benchmark_id": "p2p_sp_fa_8gpu",
+      "t2v": {
+        "log_file": "results/fa4_run/results/p2p_sp_fa_8gpu/t2v_output.log",
+        "status": "error",
+        "denoising_sec_per_step": null,
+        "denoising_total_sec": null,
+        "decoding_sec": null,
+        "total_sec": null,
+        "pipeline_stages": {},
+        "oom_stage": null,
+        "errors": [
+          "raise RuntimeError(",
+          "RuntimeError: Ring Attention is only supported for FlashAttention or SageAttention backends, but got TORCH_SDPA. Please ensure your platform supports these backends.",
+          "\u001b[91m[04-21 10:21:47] Error while loading customized transformer, falling back to native version\u001b[0;0m",
+          "\u001b[91m[04-21 10:21:47] Error while loading component: transformer, component_model_path='/root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7/transformer'\u001b[0;0m",
+          "raise RuntimeError("
+        ]
+      },
+      "i2v": {
+        "log_file": "results/fa4_run/results/p2p_sp_fa_8gpu/i2v_output.log",
+        "status": "error",
+        "denoising_sec_per_step": null,
+        "denoising_total_sec": null,
+        "decoding_sec": null,
+        "total_sec": null,
+        "pipeline_stages": {},
+        "oom_stage": null,
+        "errors": [
+          "raise RuntimeError(",
+          "RuntimeError: Ring Attention is only supported for FlashAttention or SageAttention backends, but got TORCH_SDPA. Please ensure your platform supports these backends.",
+          "\u001b[91m[04-21 10:22:21] Error while loading customized transformer, falling back to native version\u001b[0;0m",
+          "\u001b[91m[04-21 10:22:21] Error while loading component: transformer, component_model_path='/root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-I2V-A14B-Diffusers/snapshots/596658fd9ca6b7b71d5057529bbf319ecbc61d74/transformer'\u001b[0;0m",
+          "raise RuntimeError("
+        ]
+      },
+      "t2v_wall_time_sec": 31.314,
+      "i2v_wall_time_sec": 33.608
+    },
+    {
+      "benchmark_id": "sp_fa_4gpu_u2r2",
+      "t2v": {
+        "log_file": "results/fa4_run/results/sp_fa_4gpu_u2r2/t2v_output.log",
+        "status": "error",
+        "denoising_sec_per_step": null,
+        "denoising_total_sec": null,
+        "decoding_sec": null,
+        "total_sec": null,
+        "pipeline_stages": {},
+        "oom_stage": null,
+        "errors": [
+          "raise RuntimeError(",
+          "RuntimeError: Ring Attention is only supported for FlashAttention or SageAttention backends, but got TORCH_SDPA. Please ensure your platform supports these backends.",
+          "\u001b[91m[04-21 10:19:38] Error while loading customized transformer, falling back to native version\u001b[0;0m",
+          "\u001b[91m[04-21 10:19:38] Error while loading component: transformer, component_model_path='/root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7/transformer'\u001b[0;0m",
+          "raise RuntimeError("
+        ]
+      },
+      "i2v": {
+        "log_file": "results/fa4_run/results/sp_fa_4gpu_u2r2/i2v_output.log",
+        "status": "error",
+        "denoising_sec_per_step": null,
+        "denoising_total_sec": null,
+        "decoding_sec": null,
+        "total_sec": null,
+        "pipeline_stages": {},
+        "oom_stage": null,
+        "errors": [
+          "raise RuntimeError(",
+          "RuntimeError: Ring Attention is only supported for FlashAttention or SageAttention backends, but got TORCH_SDPA. Please ensure your platform supports these backends.",
+          "\u001b[91m[04-21 10:20:08] Error while loading customized transformer, falling back to native version\u001b[0;0m",
+          "\u001b[91m[04-21 10:20:08] Error while loading component: transformer, component_model_path='/root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-I2V-A14B-Diffusers/snapshots/596658fd9ca6b7b71d5057529bbf319ecbc61d74/transformer'\u001b[0;0m",
+          "raise RuntimeError("
+        ]
+      },
+      "t2v_wall_time_sec": 29.432,
+      "i2v_wall_time_sec": 29.322
+    },
+    {
+      "benchmark_id": "sp_fa_8gpu_u4r2",
+      "t2v": {
+        "log_file": "results/fa4_run/results/sp_fa_8gpu_u4r2/t2v_output.log",
+        "status": "error",
+        "denoising_sec_per_step": null,
+        "denoising_total_sec": null,
+        "decoding_sec": null,
+        "total_sec": null,
+        "pipeline_stages": {},
+        "oom_stage": null,
+        "errors": [
+          "raise RuntimeError(",
+          "RuntimeError: Ring Attention is only supported for FlashAttention or SageAttention backends, but got TORCH_SDPA. Please ensure your platform supports these backends.",
+          "\u001b[91m[04-21 10:20:40] Error while loading customized transformer, falling back to native version\u001b[0;0m",
+          "\u001b[91m[04-21 10:20:40] Error while loading component: transformer, component_model_path='/root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7/transformer'\u001b[0;0m",
+          "raise RuntimeError("
+        ]
+      },
+      "i2v": {
+        "log_file": "results/fa4_run/results/sp_fa_8gpu_u4r2/i2v_output.log",
+        "status": "error",
+        "denoising_sec_per_step": null,
+        "denoising_total_sec": null,
+        "decoding_sec": null,
+        "total_sec": null,
+        "pipeline_stages": {},
+        "oom_stage": null,
+        "errors": [
+          "raise RuntimeError(",
+          "RuntimeError: Ring Attention is only supported for FlashAttention or SageAttention backends, but got TORCH_SDPA. Please ensure your platform supports these backends.",
+          "\u001b[91m[04-21 10:21:14] Error while loading customized transformer, falling back to native version\u001b[0;0m",
+          "\u001b[91m[04-21 10:21:14] Error while loading component: transformer, component_model_path='/root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-I2V-A14B-Diffusers/snapshots/596658fd9ca6b7b71d5057529bbf319ecbc61d74/transformer'\u001b[0;0m",
+          "raise RuntimeError("
+        ]
+      },
+      "t2v_wall_time_sec": 31.652,
+      "i2v_wall_time_sec": 33.191
+    },
+    {
+      "benchmark_id": "torchrun_fsdp_only",
+      "t2v": {
+        "log_file": "results/fa4_run/results/torchrun_fsdp_only/t2v_output.log",
+        "status": "error",
+        "denoising_sec_per_step": null,
+        "denoising_total_sec": null,
+        "decoding_sec": null,
+        "total_sec": null,
+        "pipeline_stages": {},
+        "oom_stage": null,
+        "errors": [
+          "ModuleNotFoundError: No module named 'dashscope'",
+          "ModuleNotFoundError: No module named 'dashscope'",
+          "ModuleNotFoundError: No module named 'dashscope'",
+          "ModuleNotFoundError: No module named 'dashscope'",
+          "ModuleNotFoundError: No module named 'dashscope'"
+        ]
+      },
+      "i2v": null,
+      "t2v_wall_time_sec": 8.209,
+      "i2v_wall_time_sec": null
+    },
+    {
+      "benchmark_id": "torchrun_fsdp_ulysses8",
+      "t2v": {
+        "log_file": "results/fa4_run/results/torchrun_fsdp_ulysses8/t2v_output.log",
+        "status": "error",
+        "denoising_sec_per_step": null,
+        "denoising_total_sec": null,
+        "decoding_sec": null,
+        "total_sec": null,
+        "pipeline_stages": {},
+        "oom_stage": null,
+        "errors": [
+          "ModuleNotFoundError: No module named 'dashscope'",
+          "ModuleNotFoundError: No module named 'dashscope'",
+          "ModuleNotFoundError: No module named 'dashscope'",
+          "ModuleNotFoundError: No module named 'dashscope'",
+          "ModuleNotFoundError: No module named 'dashscope'"
+        ]
+      },
+      "i2v": null,
+      "t2v_wall_time_sec": 8.286,
+      "i2v_wall_time_sec": null
+    }
+  ]
+}

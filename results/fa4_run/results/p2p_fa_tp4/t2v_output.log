@@ -1,0 +1,125 @@
+/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/entrypoints/post_training/weights_api.py:10: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
+  from sglang.srt.utils.json_response import orjson_response
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[04-21 09:30:55] server_args: {"model_path": "Wan-AI/Wan2.2-T2V-A14B-Diffusers", "model_id": null, "backend": "auto", "attention_backend": "fa", "attention_backend_config": {}, "cache_dit_config": null, "nccl_port": null, "trust_remote_code": false, "revision": null, "num_gpus": 4, "tp_size": 4, "sp_degree": 1, "ulysses_degree": 1, "ring_degree": 1, "dp_size": 1, "dp_degree": 1, "enable_cfg_parallel": false, "hsdp_replicate_dim": 1, "hsdp_shard_dim": 4, "dist_timeout": 3600, "pipeline_class_name": null, "lora_path": null, "lora_nickname": "default", "lora_scale": 1.0, "component_paths": {}, "transformer_weights_path": null, "lora_target_modules": null, "dit_cpu_offload": false, "dit_layerwise_offload": false, "dit_offload_prefetch_size": 0.0, "text_encoder_cpu_offload": false, "image_encoder_cpu_offload": true, "vae_cpu_offload": true, "use_fsdp_inference": false, "pin_cpu_memory": true, "comfyui_mode": false, "enable_torch_compile": false, "warmup": false, "warmup_resolutions": null, "warmup_steps": 1, "disable_autocast": false, "master_port": 30005, "host": "127.0.0.1", "port": 30000, "webui": false, "webui_port": 12312, "scheduler_port": 5633, "strict_ports": false, "output_path": "/scratch/results/p2p_fa_tp4", "input_save_path": "inputs/uploads", "prompt_file_path": null, "model_paths": {}, "model_loaded": {"transformer": true, "vae": true, "video_vae": true, "audio_vae": true, "video_dit": true, "audio_dit": true, "dual_tower_bridge": true}, "boundary_ratio": null, "log_level": "info", "uvicorn_access_log_exclude_prefixes": []}
+[04-21 09:30:55] Local mode: True
+[04-21 09:30:55] Starting server...
+/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/entrypoints/post_training/weights_api.py:10: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
+  from sglang.srt.utils.json_response import orjson_response
+[04-21 09:31:02] Scheduler bind at endpoint: tcp://127.0.0.1:5633
+[04-21 09:31:02] Initializing distributed environment with world_size=4, device=cuda:0, timeout=3600
+[04-21 09:31:02] Setting distributed timeout to 3600 seconds
+/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/entrypoints/post_training/weights_api.py:10: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
+  from sglang.srt.utils.json_response import orjson_response
+/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/entrypoints/post_training/weights_api.py:10: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
+  from sglang.srt.utils.json_response import orjson_response
+/sgl-workspace/sglang/python/sglang/multimodal_gen/runtime/entrypoints/post_training/weights_api.py:10: FastAPIDeprecationWarning: ORJSONResponse is deprecated, FastAPI now serializes data directly to JSON bytes via Pydantic when a return type or response model is set, which is faster and doesn't need a custom response class. Read more in the FastAPI docs: https://fastapi.tiangolo.com/advanced/custom-response/#orjson-or-response-model and https://fastapi.tiangolo.com/tutorial/response-model/
+  from sglang.srt.utils.json_response import orjson_response
+[04-21 09:31:03] Found nccl from library libnccl.so.2
+[04-21 09:31:03] sglang-diffusion is using nccl==2.28.3
+[04-21 09:31:04] Found nccl from library libnccl.so.2
+[04-21 09:31:04] sglang-diffusion is using nccl==2.28.3
+[04-21 09:31:04] No pipeline_class_name specified, using model_index.json
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[93m[04-21 09:31:04] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.[0;0m
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[93m[04-21 09:31:04] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.[0;0m
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[93m[04-21 09:31:04] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.[0;0m
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[93m[04-21 09:31:04] Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.[0;0m
+[04-21 09:31:04] Using pipeline from model_index.json: WanPipeline
+[04-21 09:31:04] Loading pipeline modules...
+Loading required modules:   0%|          | 0/6 [00:00<?, ?it/s]Loading required modules:   0%|          | 0/6 [00:00<?, ?it/s][04-21 09:31:04] Checking for cached model in HF Hub cache for Wan-AI/Wan2.2-T2V-A14B-Diffusers...
+[04-21 09:31:04] Found complete model in cache at /root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7
+[04-21 09:31:04] Model path: /root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7
+[04-21 09:31:04] Diffusers version: 0.35.0.dev0
+[04-21 09:31:04] Loading pipeline modules from config: {'_class_name': 'WanPipeline', '_diffusers_version': '0.35.0.dev0', 'boundary_ratio': 0.875, 'scheduler': ['diffusers', 'UniPCMultistepScheduler'], 'text_encoder': ['transformers', 'UMT5EncoderModel'], 'tokenizer': ['transformers', 'T5TokenizerFast'], 'transformer': ['diffusers', 'WanTransformer3DModel'], 'transformer_2': ['diffusers', 'WanTransformer3DModel'], 'vae': ['diffusers', 'AutoencoderKLWan']}
+[04-21 09:31:04] MoE pipeline detected. Adding transformer_2 to self.required_config_modules...
+[04-21 09:31:04] Setting boundary ratio to 0.875
+[04-21 09:31:04] Loading required components: ['text_encoder', 'tokenizer', 'vae', 'transformer', 'scheduler', 'transformer_2']
+Loading required modules:   0%|          | 0/6 [00:00<?, ?it/s][04-21 09:31:04] Loading text_encoder from /root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7/text_encoder. avail mem: 90.85 GB
+Loading required modules:   0%|          | 0/6 [00:00<?, ?it/s][04-21 09:31:06] [RunAI Streamer] Overall time to stream 10.6 GiB of all files to cpu: 1.35s, 7.8 GiB/s
+Loading required modules:  17%|█▋        | 1/6 [00:01<00:07,  1.40s/it][04-21 09:31:06] [RunAI Streamer] Overall time to stream 10.6 GiB of all files to cpu: 1.47s, 7.2 GiB/s
+Loading required modules:  17%|█▋        | 1/6 [00:01<00:07,  1.53s/it][04-21 09:31:06] [RunAI Streamer] Overall time to stream 10.6 GiB of all files to cpu: 1.49s, 7.1 GiB/s
+[04-21 09:31:06] [RunAI Streamer] Overall time to stream 10.6 GiB of all files to cpu: 1.5s, 7.0 GiB/s
+[04-21 09:31:06] Loaded text_encoder: UMT5EncoderModel (sgl-diffusion version). model size: 5.29 GB, consumed GPU mem: 5.29 GB, avail GPU mem: 85.56 GB
+Loading required modules:  17%|█▋        | 1/6 [00:01<00:07,  1.54s/it][04-21 09:31:06] Loading tokenizer from /root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7/tokenizer. avail mem: 85.56 GB
+Loading required modules:  17%|█▋        | 1/6 [00:01<00:07,  1.56s/it]Loading required modules:  33%|███▎      | 2/6 [00:02<00:05,  1.29s/it]Loading required modules:  33%|███▎      | 2/6 [00:02<00:05,  1.36s/it][04-21 09:31:07] Loaded tokenizer: T5Tokenizer (sgl-diffusion version). model size: NA GB, consumed GPU mem: 0.00 GB, avail GPU mem: 85.56 GB
+Loading required modules:  33%|███▎      | 2/6 [00:02<00:05,  1.40s/it][04-21 09:31:07] Loading vae from /root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7/vae. avail mem: 85.56 GB
+Loading required modules:  33%|███▎      | 2/6 [00:02<00:05,  1.40s/it][04-21 09:31:07] Loaded vae: AutoencoderKLWan (sgl-diffusion version). model size: 0.47 GB, consumed GPU mem: 0.00 GB, avail GPU mem: 85.56 GB
+Loading required modules:  50%|█████     | 3/6 [00:03<00:02,  1.13it/s][04-21 09:31:07] Loading transformer from /root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7/transformer. avail mem: 85.56 GB
+[04-21 09:31:07] Loading WanTransformer3DModel from 12 safetensors file(s) , param_dtype: torch.bfloat16
+[04-21 09:31:07] FlashAttention is not supported on SM12.x in this build; falling back to Torch SDPA.
+[04-21 09:31:07] Using Torch SDPA backend
+[04-21 09:31:07] FlashAttention is not supported on SM12.x in this build; falling back to Torch SDPA.
+[04-21 09:31:07] Using Torch SDPA backend
+Loading required modules:  50%|█████     | 3/6 [00:03<00:02,  1.13it/s][04-21 09:31:16] [RunAI Streamer] Overall time to stream 53.2 GiB of all files to cpu: 9.12s, 5.8 GiB/s
+[04-21 09:31:17] [RunAI Streamer] Overall time to stream 53.2 GiB of all files to cpu: 9.08s, 5.9 GiB/s
+[04-21 09:31:17] [RunAI Streamer] Overall time to stream 53.2 GiB of all files to cpu: 9.51s, 5.6 GiB/s
+[04-21 09:31:17] [RunAI Streamer] Overall time to stream 53.2 GiB of all files to cpu: 9.12s, 5.8 GiB/s
+Loading required modules:  67%|██████▋   | 4/6 [00:22<00:13,  6.62s/it]Loading required modules:  67%|██████▋   | 4/6 [00:22<00:13,  6.64s/it][04-21 09:31:27] Loaded model with 3.57B parameters
+[04-21 09:31:27] Loaded transformer: WanTransformer3DModel (sgl-diffusion version). model size: 6.66 GB, consumed GPU mem: 7.36 GB, avail GPU mem: 78.20 GB
+Loading required modules:  67%|██████▋   | 4/6 [00:22<00:16,  8.17s/it][04-21 09:31:27] Loading scheduler from /root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7/scheduler. avail mem: 78.20 GB
+[04-21 09:31:27] Loaded scheduler: UniPCMultistepScheduler (sgl-diffusion version). model size: NA GB, consumed GPU mem: 0.00 GB, avail GPU mem: 78.20 GB
+[04-21 09:31:27] Loading transformer_2 from /root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-T2V-A14B-Diffusers/snapshots/5be7df9619b54f4e2667b2755bc6a756675b5cd7/transformer_2. avail mem: 78.20 GB
+[04-21 09:31:27] Loading WanTransformer3DModel from 12 safetensors file(s) , param_dtype: torch.bfloat16
+Loading required modules:  67%|██████▋   | 4/6 [00:22<00:16,  8.26s/it][04-21 09:31:36] [RunAI Streamer] Overall time to stream 53.2 GiB of all files to cpu: 9.0s, 5.9 GiB/s
+[04-21 09:31:36] [RunAI Streamer] Overall time to stream 53.2 GiB of all files to cpu: 9.49s, 5.6 GiB/s
+[04-21 09:31:36] [RunAI Streamer] Overall time to stream 53.2 GiB of all files to cpu: 9.63s, 5.5 GiB/s
+[04-21 09:31:36] [RunAI Streamer] Overall time to stream 53.2 GiB of all files to cpu: 9.46s, 5.6 GiB/s
+Loading required modules: 100%|██████████| 6/6 [00:42<00:00,  9.00s/it]Loading required modules: 100%|██████████| 6/6 [00:42<00:00,  7.00s/it]
+Loading required modules: 100%|██████████| 6/6 [00:42<00:00,  8.21s/it]Loading required modules: 100%|██████████| 6/6 [00:42<00:00,  7.03s/it]
+Loading required modules: 100%|██████████| 6/6 [00:42<00:00,  8.23s/it]Loading required modules: 100%|██████████| 6/6 [00:42<00:00,  7.05s/it]
+[04-21 09:31:47] Loaded model with 3.57B parameters
+[04-21 09:31:47] Loaded transformer_2: WanTransformer3DModel (sgl-diffusion version). model size: 6.66 GB, consumed GPU mem: 7.30 GB, avail GPU mem: 70.90 GB
+Loading required modules: 100%|██████████| 6/6 [00:42<00:00,  9.17s/it]Loading required modules: 100%|██████████| 6/6 [00:42<00:00,  7.09s/it]
+[04-21 09:31:47] Creating pipeline stages...
+[04-21 09:31:47] FlashAttention is not supported on SM12.x in this build; falling back to Torch SDPA.
+[04-21 09:31:47] Using Torch SDPA backend
+[04-21 09:31:47] Pipeline instantiated
+[04-21 09:31:47] Worker 0: Initialized device, model, and distributed environment.
+[04-21 09:31:47] Worker 0: Scheduler loop started.
+[04-21 09:31:47] Resolution unspecified, using default: (1280, 720)
+[04-21 09:31:47] Sequence dimension shard is enabled, disabling frame adjustment for better performance
+[04-21 09:31:47] Adjusting number of frames from 81 to 81 based on model
+[04-21 09:31:47] Processing prompt 1/1: <redacted, len=494>
+[04-21 09:31:47] Sampling params:
+                       width: 1280
+                      height: 720
+                  num_frames: 81
+                         fps: 16
+                      prompt: <redacted, len=494>
+                  neg_prompt: <redacted, len=137>
+                        seed: 42
+                 infer_steps: 40
+      num_outputs_per_prompt: 1
+              guidance_scale: 4.0
+     embedded_guidance_scale: 6.0
+                    n_tokens: None
+                  flow_shift: 12.0
+                  image_path: None
+                 save_output: True
+            output_file_path: /scratch/results/p2p_fa_tp4/Summer_beach_vacation_style_a_white_cat_wearing_sunglasses_sits_on_a_surfboard._The_fluffy-furred_f_20260421-093147_290e5486.mp4
+        
+[04-21 09:31:47] Running pipeline stages: ['InputValidationStage', 'TextEncodingStage', 'LatentPreparationStage', 'TimestepPreparationStage', 'DenoisingStage', 'DecodingStage']
+[04-21 09:31:47] [InputValidationStage] started...
+[04-21 09:31:47] [InputValidationStage] finished in 0.0001 seconds
+[04-21 09:31:47] [TextEncodingStage] started...
+[04-21 09:31:48] [TextEncodingStage] finished in 1.0595 seconds
+[04-21 09:31:48] [LatentPreparationStage] started...
+[04-21 09:31:48] [LatentPreparationStage] finished in 0.0009 seconds
+[04-21 09:31:48] [TimestepPreparationStage] started...
+[04-21 09:31:48] [TimestepPreparationStage] finished in 0.0002 seconds
+[04-21 09:31:48] [DenoisingStage] started...
+  0%|          | 0/40 [00:00<?, ?it/s]  2%|▎         | 1/40 [00:18<11:46, 18.12s/it]  5%|▌         | 2/40 [00:32<10:05, 15.92s/it]  8%|▊         | 3/40 [00:49<10:12, 16.54s/it] 10%|█         | 4/40 [01:07<10:06, 16.84s/it] 12%|█▎        | 5/40 [01:24<09:54, 17.00s/it] 15%|█▌        | 6/40 [01:41<09:41, 17.10s/it] 18%|█▊        | 7/40 [01:58<09:26, 17.16s/it] 20%|██        | 8/40 [02:16<09:10, 17.20s/it] 22%|██▎       | 9/40 [02:33<08:54, 17.23s/it] 25%|██▌       | 10/40 [02:50<08:37, 17.25s/it] 28%|██▊       | 11/40 [03:08<08:20, 17.26s/it] 30%|███       | 12/40 [03:25<08:03, 17.27s/it] 32%|███▎      | 13/40 [03:42<07:46, 17.27s/it] 35%|███▌      | 14/40 [03:59<07:29, 17.28s/it] 38%|███▊      | 15/40 [04:17<07:12, 17.28s/it] 40%|████      | 16/40 [04:34<06:54, 17.28s/it] 42%|████▎     | 17/40 [04:51<06:37, 17.28s/it] 45%|████▌     | 18/40 [05:09<06:20, 17.29s/it] 48%|████▊     | 19/40 [05:26<06:02, 17.28s/it] 50%|█████     | 20/40 [05:43<05:45, 17.29s/it] 52%|█████▎    | 21/40 [06:00<05:28, 17.29s/it] 55%|█████▌    | 22/40 [06:18<05:11, 17.29s/it] 57%|█████▊    | 23/40 [06:35<04:53, 17.29s/it] 60%|██████    | 24/40 [06:52<04:36, 17.29s/it] 62%|██████▎   | 25/40 [07:10<04:19, 17.29s/it] 65%|██████▌   | 26/40 [07:27<04:02, 17.29s/it] 68%|██████▊   | 27/40 [07:44<03:44, 17.29s/it] 70%|███████   | 28/40 [08:01<03:27, 17.29s/it] 72%|███████▎  | 29/40 [08:19<03:10, 17.29s/it] 75%|███████▌  | 30/40 [08:36<02:52, 17.29s/it] 78%|███████▊  | 31/40 [08:53<02:35, 17.29s/it] 80%|████████  | 32/40 [09:11<02:18, 17.29s/it] 82%|████████▎ | 33/40 [09:28<02:01, 17.29s/it] 85%|████████▌ | 34/40 [09:45<01:43, 17.29s/it] 88%|████████▊ | 35/40 [10:03<01:26, 17.29s/it] 90%|█████████ | 36/40 [10:20<01:09, 17.29s/it] 92%|█████████▎| 37/40 [10:37<00:51, 17.29s/it] 95%|█████████▌| 38/40 [10:54<00:34, 17.29s/it] 98%|█████████▊| 39/40 [11:12<00:17, 17.29s/it]100%|██████████| 40/40 [11:29<00:00, 17.25s/it]100%|██████████| 40/40 [11:29<00:00, 17.23s/it]
+[04-21 09:43:18] [DenoisingStage] average time per step: 17.2334 seconds
+[04-21 09:43:18] [DenoisingStage] finished in 689.3383 seconds
+[04-21 09:43:18] [DecodingStage] started...
+[04-21 09:43:33] [DecodingStage] finished in 15.4503 seconds
+[04-21 09:43:35] Output saved to [1;36m/scratch/results/p2p_fa_tp4/Summer_beach_vacation_style_a_white_cat_wearing_sunglasses_sits_on_a_surfboard._The_fluffy-furred_f_20260421-093147_290e5486.mp4[0;0m
+[04-21 09:43:35] Pixel data generated successfully in [92m707.77[0;0m seconds
+[04-21 09:43:35] Completed batch processing. Generated 1 outputs in [92m707.77[0;0m seconds
+[93m[04-21 09:43:35] Generator was garbage collected without being shut down. Attempting to shut down the local server and client.[0;0m
+[04-21 09:43:39] Worker 0: Shutdown complete.

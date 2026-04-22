@@ -25,7 +25,7 @@ All numbers extracted from raw SGLang logs. Source: `results/run_latest/results/
 | 7 | **P2P+SageAttn TP=4** | 4 | 16.0773 | 16.0194 | 643.09 | 14.79 | 659.55 | 665.22 | **−21.5%** |
 | 8 | **P2P+SageAttn TP=8** 🏆 | 8 | **12.9559** | **12.8726** | **518.24** | **14.36** | **534.27** | **539.04** | **−36.4%** |
 
-### Flash Attention 4 Benchmarks (VM2: northam-ce-mlai-tpu, europe-west4-b)
+### Flash Attention 4 Benchmarks (VM2: second G4 VM, europe-west4-b)
 
 FA4 (`flash-attn v4.0.0.beta4`) was installed from source with SM120 (Blackwell) support. Source: `results/fa4_run/results/*/t2v_output.log`.
 
@@ -33,7 +33,7 @@ FA4 (`flash-attn v4.0.0.beta4`) was installed from source with SM120 (Blackwell)
 |---|--------------|------|-----------|-----------|--------------|--------------|----------------------------|
 | 9 | **FA4 TP=4** | 4 | 17.2472 | 17.1776 | 706.9 | 712.0 | −15.8% |
 | 10 | **FA4 TP=8** | 8 | 13.5343 | 13.4626 | 557.8 | 562.9 | −33.6% |
-| 11 | **P2P+FA4 TP=4** | 4 | 17.2334 | 17.1707 | 705.8 | 711.7 | −16.0% |
+| 11 | **P2P+FA4 TP=4** | 4 | 17.2334 | 17.1707 | 705.8 | 711.7 | −15.9% |
 | 12 | **P2P+FA4 TP=8** | 8 | 13.5233 | 13.4582 | 556.8 | 562.9 | −33.7% |
 
 > **Key Finding:** FA4 alone gives the **same speedup** as P2P alone (~16% on 4 GPU, ~34% on 8 GPU). Combining P2P+FA4 provides **no additional benefit** — they do not stack. This suggests both optimizations address the same underlying bottleneck (inter-GPU communication latency).
@@ -115,7 +115,7 @@ All plots generated from actual benchmark data using `generate_plots.py`.
 | **Framework** | SGLang (`lmsysorg/sglang:latest`, pulled April 21, 2026) |
 | **Cloud** | Google Cloud Platform |
 | **Zone** | us-west1-a |
-| **Project** | gpu-launchpad-playground |
+| **Project** | (your GCP project) |
 
 ---
 

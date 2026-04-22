@@ -71,6 +71,10 @@ run_bench "sage_sp_8gpu" "--num-gpus 8 --sp-degree 8 --ulysses-degree 4 --ring-d
 run_bench "p2p_tp4" "--num-gpus 4 --tp-size 4" "NCCL_P2P_LEVEL=5"
 run_bench "p2p_tp8" "--num-gpus 8 --tp-size 8" "NCCL_P2P_LEVEL=5"
 
+# P2P + SageAttention combined
+run_bench "p2p_sage_tp4" "--num-gpus 4 --tp-size 4 --attention-backend sage_attn" "NCCL_P2P_LEVEL=5"
+run_bench "p2p_sage_tp8" "--num-gpus 8 --tp-size 8 --attention-backend sage_attn" "NCCL_P2P_LEVEL=5"
+
 # All optimizations combined
 run_bench "p2p_sp_sage_8gpu" "--num-gpus 8 --sp-degree 8 --ulysses-degree 4 --ring-degree 2 --attention-backend sage_attn" "NCCL_P2P_LEVEL=5"
 

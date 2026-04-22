@@ -19,11 +19,24 @@ All numbers extracted from raw SGLang logs. Source: `results/run_latest/results/
 | 1 | **Baseline TP=4** | 4 | 20.5446 | 20.4529 | 821.79 | 16.16 | 839.71 | 843.72 | — (baseline) |
 | 2 | **Baseline TP=8** | 8 | 19.8516 | 19.7542 | 794.07 | 15.92 | 811.84 | 815.89 | −3.3% |
 | 3 | **SageAttn TP=4** | 4 | 19.3705 | 19.2845 | 774.82 | 15.30 | 791.25 | 796.26 | −5.8% |
-| 4 | **SageAttn TP=8** | 8 | 19.2852 | 19.1760 | 771.41 | 15.39 | 788.07 | 792.23 | −6.1% |
+| 4 | **SageAttn TP=8** | 8 | 19.2852 | 19.1760 | 771.41 | 15.39 | 788.07 | 792.23 | −6.2% |
 | 5 | **P2P TP=4** | 4 | 17.2301 | 17.1650 | 689.21 | 15.41 | 705.68 | 711.55 | **−16.0%** |
 | 6 | **P2P TP=8** | 8 | 13.5227 | 13.4553 | 540.91 | 14.78 | 556.81 | 562.68 | **−33.7%** |
 | 7 | **P2P+SageAttn TP=4** | 4 | 16.0773 | 16.0194 | 643.09 | 14.79 | 659.55 | 665.22 | **−21.5%** |
 | 8 | **P2P+SageAttn TP=8** 🏆 | 8 | **12.9559** | **12.8726** | **518.24** | **14.36** | **534.27** | **539.04** | **−36.4%** |
+
+### Flash Attention 4 Benchmarks (VM2: northam-ce-mlai-tpu, europe-west4-b)
+
+FA4 (`flash-attn v4.0.0.beta4`) was installed from source with SM120 (Blackwell) support. Source: `results/fa4_run/results/*/t2v_output.log`.
+
+| # | Configuration | GPUs | T2V s/step | I2V s/step | T2V Total (s) | I2V Total (s) | T2V Speedup vs Baseline TP4 |
+|---|--------------|------|-----------|-----------|--------------|--------------|----------------------------|
+| 9 | **FA4 TP=4** | 4 | 17.2472 | 17.1776 | 706.9 | 712.0 | −15.8% |
+| 10 | **FA4 TP=8** | 8 | 13.5343 | 13.4626 | 557.8 | 562.9 | −33.6% |
+| 11 | **P2P+FA4 TP=4** | 4 | 17.2334 | 17.1707 | 705.8 | 711.7 | −16.0% |
+| 12 | **P2P+FA4 TP=8** | 8 | 13.5233 | 13.4582 | 556.8 | 562.9 | −33.7% |
+
+> **Key Finding:** FA4 alone gives the **same speedup** as P2P alone (~16% on 4 GPU, ~34% on 8 GPU). Combining P2P+FA4 provides **no additional benefit** — they do not stack. This suggests both optimizations address the same underlying bottleneck (inter-GPU communication latency).
 
 ### Failed Configurations (documented with root causes)
 

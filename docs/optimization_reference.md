@@ -15,7 +15,7 @@ This document provides detailed technical justification for each optimization ap
 - Wan2.2-A14B has `num_heads=40`, `num_layers=40`, `dim=5120` (from `wan/configs/wan_t2v_A14B.py`).
 - Valid ulysses degrees: 1, 2, 4, 5, 8, 10, 20, 40.
 - Ring attention: overlaps communication with computation for long sequences.
-- Reference doc mentioned: `--ulysses_size 4` with Ring 2 for 16-GPU configuration.
+- Valid ulysses degrees for 40 heads: 1, 2, 4, 5, 8, 10, 20, 40.
 
 ### Why Better than TP for DiT
 Tensor parallelism splits weight matrices. For diffusion transformers operating on video sequences, sequence parallelism splits the token/spatial dimension, which:
@@ -74,7 +74,7 @@ SGLANG_CACHE_DIT_TS_ORDER=1
 ### Source
 - **Wan2.2 `generate.py`**: [github.com/Wan-Video/Wan2.2/blob/main/generate.py](https://github.com/Wan-Video/Wan2.2/blob/main/generate.py) — supports `torchrun` with `RANK`, `WORLD_SIZE`, `LOCAL_RANK` environment variables
 - **Wan2.2 distributed init**: [`wan/distributed/util.py`](https://github.com/Wan-Video/Wan2.2/blob/main/wan/distributed/util.py) — `init_distributed_group()` initializes NCCL process group
-- **Reference doc**: Described 2-node (16 GPU) deployment with `--ulysses_size 4` and Ring 2
+- Multi-host requires `ulysses_size == world_size` (per generate.py assertion)
 
 ### Technical Details
 - `torchrun --nproc_per_node=8 --nnodes=2` launches 16 processes across 2 nodes.
@@ -82,7 +82,7 @@ SGLANG_CACHE_DIT_TS_ORDER=1
 - NCCL backend handles cross-node communication over VPC networking (400 Gbps total egress per G4 host).
 - `--ulysses_size` must equal `world_size` (per Wan2.2 generate.py assertion: `ulysses_size == world_size`).
 - Actually, looking at the code: `assert args.ulysses_size == world_size` — so for 16 GPUs, we use `--ulysses_size 16`.
-- For the reference doc config with `--ulysses_size 4`, the team may have used a different code path (proprietary).
+- For 16 GPUs, `ulysses_size=16` but `40 % 16 != 0`, so multi-host with 2×8 GPUs is not possible without code modification.
 
 ### Network Configuration
 - `NCCL_SOCKET_IFNAME=eth0` — use the primary network interface

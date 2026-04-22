@@ -91,7 +91,7 @@ All plots generated from actual benchmark data using `generate_plots.py`.
 
 4. **Cache-DiT is incompatible with Wan2.2-A14B on 1 GPU** — Cache-DiT requires all transformer blocks in GPU memory (no layerwise offload), but A14B needs layerwise offload to fit in 96GB.
 
-5. **Multi-host (2-node) requires same-zone VMs + proprietary communication kernels** — The open-source Wan2.2 codebase enforces `ulysses_size == world_size` and `num_heads(40) % ulysses_size == 0`, which prevents standard 16-GPU (2×8) configurations. Cross-region NCCL also fails.
+5. **Multi-host (2-node) requires same-zone VMs** — The open-source Wan2.2 codebase enforces `ulysses_size == world_size` and `num_heads(40) % ulysses_size == 0`, which prevents standard 16-GPU (2×8) configurations. Cross-region NCCL also fails.
 
 ---
 
@@ -308,7 +308,7 @@ Multi-host inference (2 nodes, 16 GPUs) could not be completed with the open-sou
 2. **Same-zone requirement**: NCCL requires low-latency networking. Cross-region VPC (~32ms) causes `DistBackendError`.
 3. **GPU scarcity**: G4-standard-384 VMs are in extreme global demand — only 1 slot available per zone (need 2 in same zone).
 
-The reference document achieved multi-host results using proprietary, customized asynchronous communication kernels (not available in the open-source codebase).
+Multi-host inference with 16 GPUs (2×8) is not supported by the open-source Wan2.2 codebase due to the head count constraint described above.
 
 **Scripts are ready** in `scripts/multihost_master.sh` and `scripts/multihost_worker.sh` for when GPU capacity and same-zone availability allow.
 

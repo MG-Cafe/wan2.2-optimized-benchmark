@@ -1,0 +1,102 @@
+W0427 09:24:42.440000 5589 torch/distributed/run.py:803] 
+W0427 09:24:42.440000 5589 torch/distributed/run.py:803] *****************************************
+W0427 09:24:42.440000 5589 torch/distributed/run.py:803] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0427 09:24:42.440000 5589 torch/distributed/run.py:803] *****************************************
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/242 [00:00<?, ?it/s]Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Loading weights:   0%|          | 0/242 [00:00<?, ?it/s]Loading weights: 100%|██████████| 242/242 [00:00<00:00, 15496.99it/s]
+Loading weights:   0%|          | 0/242 [00:00<?, ?it/s]Loading weights: 100%|██████████| 242/242 [00:00<00:00, 15183.57it/s]
+Loading weights: 100%|██████████| 242/242 [00:00<00:00, 12822.57it/s]
+
+Loading weights:   0%|          | 0/242 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 242/242 [00:00<00:00, 12636.75it/s]
+Loading pipeline components...:  33%|███▎      | 2/6 [00:01<00:02,  1.46it/s]
+Loading checkpoint shards:   0%|          | 0/12 [00:00<?, ?it/s][A
+Loading checkpoint shards:   8%|▊         | 1/12 [00:00<00:07,  1.50it/s][A
+Loading checkpoint shards:  17%|█▋        | 2/12 [00:01<00:06,  1.46it/s][A
+Loading checkpoint shards:  25%|██▌       | 3/12 [00:01<00:05,  1.56it/s][A
+Loading checkpoint shards:  33%|███▎      | 4/12 [00:02<00:05,  1.52it/s][A
+Loading checkpoint shards:  42%|████▏     | 5/12 [00:03<00:04,  1.50it/s][A
+Loading checkpoint shards:  50%|█████     | 6/12 [00:03<00:04,  1.49it/s][A
+Loading checkpoint shards:  58%|█████▊    | 7/12 [00:04<00:03,  1.54it/s][A
+Loading checkpoint shards:  67%|██████▋   | 8/12 [00:05<00:02,  1.53it/s][A
+Loading checkpoint shards:  75%|███████▌  | 9/12 [00:05<00:01,  1.51it/s][A
+Loading checkpoint shards:  83%|████████▎ | 10/12 [00:06<00:01,  1.55it/s][A
+Loading checkpoint shards:  92%|█████████▏| 11/12 [00:07<00:00,  1.59it/s][A
+Loading checkpoint shards: 100%|██████████| 12/12 [00:07<00:00,  1.81it/s][ALoading checkpoint shards: 100%|██████████| 12/12 [00:07<00:00,  1.60it/s]
+Loading pipeline components...:  67%|██████▋   | 4/6 [00:08<00:05,  2.51s/it]
+Loading checkpoint shards:   0%|          | 0/12 [00:00<?, ?it/s][A
+Loading checkpoint shards:   8%|▊         | 1/12 [00:00<00:06,  1.74it/s][A
+Loading checkpoint shards:  17%|█▋        | 2/12 [00:01<00:06,  1.57it/s][A
+Loading checkpoint shards:  25%|██▌       | 3/12 [00:01<00:05,  1.61it/s][A
+Loading checkpoint shards:  33%|███▎      | 4/12 [00:02<00:05,  1.55it/s][A
+Loading checkpoint shards:  42%|████▏     | 5/12 [00:03<00:04,  1.55it/s][A
+Loading checkpoint shards:  50%|█████     | 6/12 [00:03<00:03,  1.59it/s][A
+Loading checkpoint shards:  58%|█████▊    | 7/12 [00:04<00:03,  1.59it/s][A
+Loading checkpoint shards:  67%|██████▋   | 8/12 [00:05<00:02,  1.55it/s][A
+Loading checkpoint shards:  75%|███████▌  | 9/12 [00:05<00:01,  1.53it/s][A
+Loading checkpoint shards:  83%|████████▎ | 10/12 [00:06<00:01,  1.51it/s][A
+Loading checkpoint shards:  92%|█████████▏| 11/12 [00:07<00:00,  1.56it/s][ALoading weights:   0%|          | 0/242 [00:00<?, ?it/s]Loading weights: 100%|██████████| 242/242 [00:00<00:00, 17931.66it/s]
+
+Loading checkpoint shards: 100%|██████████| 12/12 [00:07<00:00,  1.79it/s][ALoading checkpoint shards: 100%|██████████| 12/12 [00:07<00:00,  1.62it/s]
+Loading pipeline components...: 100%|██████████| 6/6 [00:16<00:00,  3.09s/it]Loading pipeline components...: 100%|██████████| 6/6 [00:16<00:00,  2.75s/it]
+[04-27 09:25:06] [Cache-DiT] Auto selected parallelism backend for transformer: Native_PyTorch
+[04-27 09:25:06] [Cache-DiT] WanPipeline is officially supported by cache-dit. Use it's pre-defined BlockAdapter directly!
+[04-27 09:25:06] [Cache-DiT] Auto fill blocks_name: ['blocks', 'blocks'].
+[04-27 09:25:06] [Cache-DiT] Match Block Forward Pattern: WanTransformerBlock, ForwardPattern.Pattern_2
+[04-27 09:25:06] [Cache-DiT] IN:('hidden_states', 'encoder_hidden_states'), OUT:('hidden_states',))
+[04-27 09:25:06] [Cache-DiT] Match Block Forward Pattern: WanTransformerBlock, ForwardPattern.Pattern_2
+[04-27 09:25:06] [Cache-DiT] IN:('hidden_states', 'encoder_hidden_states'), OUT:('hidden_states',))
+[04-27 09:25:06] [Cache-DiT] Use custom 'enable_separate_cfg' from BlockAdapter: True. Pipeline: WanPipeline.
+[04-27 09:25:06] [Cache-DiT] Collected Context Config: DBCache_F1B0_W4I1M8MC3_R0.12_CFG1, Calibrator Config: None
+[04-27 09:25:06] [Cache-DiT] Collected Context Config: DBCache_F1B0_W2I1M20MC3_R0.12_CFG1, Calibrator Config: None
+[04-27 09:25:06] [Cache-DiT] Match Blocks: CachedBlocks_Pattern_0_1_2, for blocks, cache_context: blocks_132680620512880, context_manager: WanPipeline_132681749656016.
+[04-27 09:25:06] [Cache-DiT] Match Blocks: CachedBlocks_Pattern_0_1_2, for blocks, cache_context: blocks_132681674567184, context_manager: WanPipeline_132681749656016.
+[04-27 09:25:06] [Cache-DiT] Auto fill blocks_name: ['blocks', 'blocks'].
+[04-27 09:25:06] [Cache-DiT] Multiple transformers are detected in the BlockAdapter, all transformers will be enabled for parallelism or quantization.
+[04-27 09:25:06] [Cache-DiT] Registered custom attn backends: native, _sdpa_cudnn, sage, _native_npu, _npu_fia.
+Loading weights:   0%|          | 0/242 [00:00<?, ?it/s]Loading weights: 100%|██████████| 242/242 [00:00<00:00, 16760.59it/s]
+Loading weights:   0%|          | 0/242 [00:00<?, ?it/s]Loading weights: 100%|██████████| 242/242 [00:00<00:00, 18720.08it/s]
+Loading weights:   0%|          | 0/242 [00:00<?, ?it/s]Loading weights: 100%|██████████| 242/242 [00:00<00:00, 19325.65it/s]
+[04-27 09:25:10] [Cache-DiT] Parallelize Transformer: WanTransformer3DModel, id:132681676242432, ParallelismConfig(backend=Native_PyTorch, tp_size=8)
+[04-27 09:25:10] [Cache-DiT] Set attention backend to <native> for module: WanTransformer3DModel.
+[04-27 09:25:15] [Cache-DiT] Parallelize Transformer: WanTransformer3DModel, id:132680249043776, ParallelismConfig(backend=Native_PyTorch, tp_size=8)
+[04-27 09:25:15] [Cache-DiT] Set attention backend to <native> for module: WanTransformer3DModel.
+  0%|          | 0/40 [00:00<?, ?it/s]  2%|▎         | 1/40 [00:18<12:19, 18.96s/it]  5%|▌         | 2/40 [00:37<11:49, 18.66s/it]  8%|▊         | 3/40 [00:56<11:29, 18.63s/it] 10%|█         | 4/40 [01:14<11:08, 18.56s/it] 12%|█▎        | 5/40 [01:14<07:02, 12.06s/it] 15%|█▌        | 6/40 [01:33<08:04, 14.25s/it] 18%|█▊        | 7/40 [01:34<05:22,  9.77s/it] 20%|██        | 8/40 [01:52<06:41, 12.55s/it] 22%|██▎       | 9/40 [01:53<04:32,  8.79s/it] 25%|██▌       | 10/40 [02:11<05:53, 11.78s/it] 28%|██▊       | 11/40 [02:12<04:01,  8.34s/it] 30%|███       | 12/40 [02:12<02:47,  5.97s/it] 32%|███▎      | 13/40 [02:31<04:23,  9.77s/it] 35%|███▌      | 14/40 [02:49<05:22, 12.40s/it] 38%|███▊      | 15/40 [03:08<05:56, 14.25s/it] 40%|████      | 16/40 [03:08<04:02, 10.12s/it] 42%|████▎     | 17/40 [03:09<02:46,  7.24s/it] 45%|████▌     | 18/40 [03:09<01:55,  5.23s/it] 48%|████▊     | 19/40 [03:28<03:13,  9.20s/it] 50%|█████     | 20/40 [03:28<02:12,  6.60s/it] 52%|█████▎    | 21/40 [03:29<01:30,  4.78s/it] 55%|█████▌    | 22/40 [03:29<01:03,  3.51s/it] 57%|█████▊    | 23/40 [03:48<02:15,  8.00s/it] 60%|██████    | 24/40 [03:48<01:32,  5.76s/it] 62%|██████▎   | 25/40 [03:49<01:02,  4.20s/it] 65%|██████▌   | 26/40 [03:49<00:43,  3.10s/it] 68%|██████▊   | 27/40 [04:08<01:40,  7.72s/it] 70%|███████   | 28/40 [04:09<01:06,  5.57s/it] 72%|███████▎  | 29/40 [04:09<00:44,  4.06s/it] 75%|███████▌  | 30/40 [04:28<01:23,  8.38s/it] 78%|███████▊  | 31/40 [04:28<00:54,  6.03s/it] 80%|████████  | 32/40 [04:29<00:35,  4.38s/it] 82%|████████▎ | 33/40 [04:47<01:00,  8.61s/it] 85%|████████▌ | 34/40 [04:48<00:37,  6.19s/it] 88%|████████▊ | 35/40 [05:06<00:49,  9.88s/it] 90%|█████████ | 36/40 [05:07<00:28,  7.08s/it] 92%|█████████▎| 37/40 [05:25<00:31, 10.50s/it] 95%|█████████▌| 38/40 [05:44<00:25, 12.90s/it] 98%|█████████▊| 39/40 [06:02<00:14, 14.58s/it]100%|██████████| 40/40 [06:21<00:00, 15.76s/it]100%|██████████| 40/40 [06:21<00:00,  9.53s/it]
+  0%|          | 0/40 [00:00<?, ?it/s]  2%|▎         | 1/40 [00:18<12:00, 18.48s/it]  5%|▌         | 2/40 [00:36<11:42, 18.50s/it]  8%|▊         | 3/40 [00:55<11:24, 18.50s/it] 10%|█         | 4/40 [01:13<11:05, 18.48s/it] 12%|█▎        | 5/40 [01:14<07:00, 12.01s/it] 15%|█▌        | 6/40 [01:32<08:03, 14.22s/it] 18%|█▊        | 7/40 [01:33<05:21,  9.75s/it] 20%|██        | 8/40 [01:52<06:40, 12.53s/it] 22%|██▎       | 9/40 [01:52<04:32,  8.78s/it] 25%|██▌       | 10/40 [02:11<05:53, 11.77s/it] 28%|██▊       | 11/40 [02:11<04:01,  8.34s/it] 30%|███       | 12/40 [02:12<02:47,  5.97s/it] 32%|███▎      | 13/40 [02:30<04:23,  9.76s/it] 35%|███▌      | 14/40 [02:49<05:22, 12.40s/it] 38%|███▊      | 15/40 [03:07<05:56, 14.24s/it] 40%|████      | 16/40 [03:08<04:02, 10.12s/it] 42%|████▎     | 17/40 [03:08<02:46,  7.24s/it] 45%|████▌     | 18/40 [03:09<01:55,  5.23s/it] 48%|████▊     | 19/40 [03:27<03:13,  9.22s/it] 50%|█████     | 20/40 [03:28<02:12,  6.61s/it] 52%|█████▎    | 21/40 [03:28<01:31,  4.79s/it] 55%|█████▌    | 22/40 [03:29<01:03,  3.52s/it] 57%|█████▊    | 23/40 [03:47<02:16,  8.01s/it] 60%|██████    | 24/40 [03:48<01:32,  5.77s/it] 62%|██████▎   | 25/40 [03:48<01:03,  4.20s/it] 65%|██████▌   | 26/40 [03:49<00:43,  3.10s/it] 68%|██████▊   | 27/40 [04:08<01:40,  7.72s/it] 70%|███████   | 28/40 [04:08<01:06,  5.57s/it] 72%|███████▎  | 29/40 [04:09<00:44,  4.06s/it] 75%|███████▌  | 30/40 [04:27<01:23,  8.38s/it] 78%|███████▊  | 31/40 [04:28<00:54,  6.03s/it] 80%|████████  | 32/40 [04:28<00:35,  4.39s/it] 82%|████████▎ | 33/40 [04:47<01:00,  8.62s/it] 85%|████████▌ | 34/40 [04:47<00:37,  6.20s/it] 88%|████████▊ | 35/40 [05:06<00:49,  9.90s/it] 90%|█████████ | 36/40 [05:06<00:28,  7.09s/it] 92%|█████████▎| 37/40 [05:25<00:31, 10.52s/it] 95%|█████████▌| 38/40 [05:43<00:25, 12.91s/it] 98%|█████████▊| 39/40 [06:02<00:14, 14.59s/it]100%|██████████| 40/40 [06:20<00:00, 15.77s/it]100%|██████████| 40/40 [06:20<00:00,  9.52s/it]
+[04-27 09:38:23] [Cache-DiT] 🤖 Example Init Config Summary:
+[04-27 09:38:23] [Cache-DiT] - Model: Wan-AI/Wan2.2-T2V-A14B-Diffusers
+[04-27 09:38:23] [Cache-DiT] - Task Type: T2V - Text to Video
+[04-27 09:38:23] [Cache-DiT] - Torch Dtype: torch.bfloat16
+[04-27 09:38:23] [Cache-DiT] - Warmup Seed: None
+[04-27 09:38:23] [Cache-DiT] - Warmup Prompt: None
+[04-27 09:38:23] [Cache-DiT] - LoRA Weights: None
+[04-27 09:38:23] [Cache-DiT] 🤖 Example Input Summary:
+[04-27 09:38:23] [Cache-DiT] - prompt: Summer beach vacation style, a white cat wearing sunglasses sits on a surfboard. The fluffy-furred feline gazes toward the camera.
+[04-27 09:38:23] [Cache-DiT] - negative_prompt: Bright tones, overexposed, static, blurred details, subtitles, style, works, paintings, images, static, overall gray, worst quality, low quality, JPEG compression residue, ugly, incomplete, extra fingers, poorly drawn hands, poorly drawn faces, deformed, disfigured, misshapen limbs, fused fingers, still picture, messy background, three legs, many people in the background, walking backwards
+[04-27 09:38:23] [Cache-DiT] - height: 720
+[04-27 09:38:23] [Cache-DiT] - width: 1280
+[04-27 09:38:23] [Cache-DiT] - guidance_scale: 5.0
+[04-27 09:38:23] [Cache-DiT] - num_inference_steps: 40
+[04-27 09:38:23] [Cache-DiT] - num_frames: 81
+[04-27 09:38:23] [Cache-DiT] - generator: device cpu, seed 42
+[04-27 09:38:23] [Cache-DiT] 🤖 Example Output Summary:
+[04-27 09:38:23] [Cache-DiT] - Model: wan2.2_t2v
+[04-27 09:38:23] [Cache-DiT] - Optimization: C0_DBCache_F1B0_W2I1M20MC3_R0.12_CFG1_T0O0_TP8_S15
+[04-27 09:38:23] [Cache-DiT] - Device: NVIDIA RTX PRO 6000 Blackwell Server Edition x 8
+[04-27 09:38:23] [Cache-DiT] - Load Time: 16.76s
+[04-27 09:38:23] [Cache-DiT] - Warmup Time: 392.65s
+[04-27 09:38:23] [Cache-DiT] - Inference Time: 391.59s
+[04-27 09:38:24] [Cache-DiT] Video saved to /scratch/results/cfg5_cd_tp8_cache_40s/t2v_output.mp4
+[W427 09:38:25.934856223 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+[W427 09:38:25.937884172 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+[W427 09:38:25.943265550 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+[W427 09:38:25.973017380 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+[W427 09:38:25.984755777 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+[W427 09:38:25.994404373 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+[W427 09:38:25.124564991 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+[W427 09:38:25.138942607 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+[W427 09:38:27.360031202 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())

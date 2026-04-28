@@ -1,0 +1,91 @@
+W0428 20:14:16.467000 1707 torch/distributed/run.py:803] 
+W0428 20:14:16.467000 1707 torch/distributed/run.py:803] *****************************************
+W0428 20:14:16.467000 1707 torch/distributed/run.py:803] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0428 20:14:16.467000 1707 torch/distributed/run.py:803] *****************************************
+Traceback (most recent call last):
+  File "/scratch/Wan2.2/generate.py", line 17, in <module>
+    import wan
+  File "/scratch/Wan2.2/wan/__init__.py", line 2, in <module>
+    from . import configs, distributed, modules
+  File "/scratch/Wan2.2/wan/modules/__init__.py", line 4, in <module>
+    from .t5 import T5Decoder, T5Encoder, T5EncoderModel, T5Model
+  File "/scratch/Wan2.2/wan/modules/t5.py", line 10, in <module>
+    from .tokenizers import HuggingfaceTokenizer
+  File "/scratch/Wan2.2/wan/modules/tokenizers.py", line 5, in <module>
+    import ftfy
+ModuleNotFoundError: No module named 'ftfy'
+Traceback (most recent call last):
+  File "/scratch/Wan2.2/generate.py", line 17, in <module>
+    import wan
+  File "/scratch/Wan2.2/wan/__init__.py", line 2, in <module>
+    from . import configs, distributed, modules
+  File "/scratch/Wan2.2/wan/modules/__init__.py", line 4, in <module>
+    from .t5 import T5Decoder, T5Encoder, T5EncoderModel, T5Model
+  File "/scratch/Wan2.2/wan/modules/t5.py", line 10, in <module>
+    from .tokenizers import HuggingfaceTokenizer
+  File "/scratch/Wan2.2/wan/modules/tokenizers.py", line 5, in <module>
+    import ftfy
+ModuleNotFoundError: No module named 'ftfy'
+Traceback (most recent call last):
+  File "/scratch/Wan2.2/generate.py", line 17, in <module>
+    import wan
+  File "/scratch/Wan2.2/wan/__init__.py", line 2, in <module>
+    from . import configs, distributed, modules
+  File "/scratch/Wan2.2/wan/modules/__init__.py", line 4, in <module>
+    from .t5 import T5Decoder, T5Encoder, T5EncoderModel, T5Model
+  File "/scratch/Wan2.2/wan/modules/t5.py", line 10, in <module>
+    from .tokenizers import HuggingfaceTokenizer
+  File "/scratch/Wan2.2/wan/modules/tokenizers.py", line 5, in <module>
+    import ftfy
+ModuleNotFoundError: No module named 'ftfy'
+Traceback (most recent call last):
+  File "/scratch/Wan2.2/generate.py", line 17, in <module>
+    import wan
+  File "/scratch/Wan2.2/wan/__init__.py", line 2, in <module>
+    from . import configs, distributed, modules
+  File "/scratch/Wan2.2/wan/modules/__init__.py", line 4, in <module>
+    from .t5 import T5Decoder, T5Encoder, T5EncoderModel, T5Model
+  File "/scratch/Wan2.2/wan/modules/t5.py", line 10, in <module>
+    from .tokenizers import HuggingfaceTokenizer
+  File "/scratch/Wan2.2/wan/modules/tokenizers.py", line 5, in <module>
+    import ftfy
+ModuleNotFoundError: No module named 'ftfy'
+[W428 20:14:21.506530315 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+[W428 20:14:21.673849185 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+W0428 20:14:21.304000 1707 torch/distributed/elastic/multiprocessing/api.py:908] Sending process 1775 closing signal SIGTERM
+W0428 20:14:21.305000 1707 torch/distributed/elastic/multiprocessing/api.py:908] Sending process 1776 closing signal SIGTERM
+W0428 20:14:21.305000 1707 torch/distributed/elastic/multiprocessing/api.py:908] Sending process 1777 closing signal SIGTERM
+E0428 20:14:21.469000 1707 torch/distributed/elastic/multiprocessing/api.py:882] failed (exitcode: 1) local_rank: 0 (pid: 1774) of binary: /usr/bin/python3
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 357, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 936, in main
+    run(args)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 927, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 156, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 293, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+/scratch/Wan2.2/generate.py FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-04-28_20:14:21
+  host      : 24679b45b1e2
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 1774)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+[W428 20:14:21.999072378 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())

@@ -38,6 +38,31 @@ FA4 (`flash-attn v4.0.0.beta4`) was installed from source with SM120 (Blackwell)
 
 > **Key Finding:** FA4 alone gives the **same speedup** as P2P alone (~16% on 4 GPU, ~34% on 8 GPU). Combining P2P+FA4 provides **no additional benefit** — they do not stack. This suggests both optimizations address the same underlying bottleneck (inter-GPU communication latency).
 
+### cache-dit Optimized Benchmarks (VM3: gpu-launchpad-playground, us-west1-a)
+
+Using [cache-dit](https://github.com/vipshop/cache-dit) library with DiT block caching + torch.compile + tensor parallelism. Source: `results/cachedit_run/results/cfg*/t2v_output.log` and `i2v_output.log`.
+
+| # | Configuration | GPUs | Steps | T2V s/step | I2V s/step | T2V Wall (s) | I2V Wall (s) | Video | T2V Speedup vs SGLang Best |
+|---|--------------|------|-------|-----------|-----------|-------------|-------------|-------|--------------------------|
+| 13 | cache-dit TP=4 + cache | 4 | 40 | 11.41 | — | 1117 | ❌ | T2V ✅ | — |
+| 14 | cache-dit TP=8 + cache | 8 | 40 | 9.52 | 9.07 | 827 | 943 | ✅ ✅ | −26.6% |
+| 15 | **cache-dit TP=8 + cache + compile** 🏆 | **8** | **40** | **6.92** | **6.59** | **691** | **674** | **✅ ✅** | **−46.6%** |
+| 16 | cache-dit TP=8 + cache (5 steps) | 8 | 5 | 18.49 | 18.50 | 253 | 268 | ✅ ✅ | (fewer steps) |
+| 17 | cache-dit TP=8 + cache + compile (5 steps) | 8 | 5 | 13.43 | 13.44 | 221 | 248 | ✅ ✅ | (fewer steps) |
+
+> **🏆 NEW BEST: cache-dit TP=8 + cache + compile achieves 6.92 s/step T2V and 6.59 s/step I2V — 47% faster than SGLang P2P+SageAttn!**
+> 
+> cache-dit's DiT block caching reuses hidden states from previous denoising steps, skipping ~60% of redundant transformer computation. Combined with `torch.compile` for kernel fusion, this is the fastest single-host configuration achieved.
+
+#### cache-dit Failed Configurations
+
+| Configuration | Error | Root Cause |
+|--------------|-------|------------|
+| FSDP + Ulysses=4 (4 GPU) | `flash_attn_varlen_func` not found | Wan2.2 generate.py requires full flash-attn (not available in SGLang Docker) |
+| FSDP + Ulysses=8 (8 GPU) | Same as above | Same — flash-attn can't compile from source in SGLang Docker (missing build tools) |
+| cache-dit Ulysses (no TP) | CUDA OOM | Ulysses keeps full model per GPU; VAE decode OOMs at 720P |
+| cache-dit USP + cache | Tensor size mismatch | cache-dit cache doesn't handle Ulysses-split tensor dimensions |
+
 ### Failed Configurations (documented with root causes)
 
 | Configuration | Error | Root Cause |

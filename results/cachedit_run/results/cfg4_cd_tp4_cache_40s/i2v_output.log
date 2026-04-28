@@ -1,0 +1,132 @@
+W0427 09:22:16.618000 5253 torch/distributed/run.py:803] 
+W0427 09:22:16.618000 5253 torch/distributed/run.py:803] *****************************************
+W0427 09:22:16.618000 5253 torch/distributed/run.py:803] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0427 09:22:16.618000 5253 torch/distributed/run.py:803] *****************************************
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 41 files:   0%|          | 0/41 [00:00<?, ?it/s]Fetching 41 files:   0%|          | 0/41 [00:00<?, ?it/s]Fetching 41 files:   0%|          | 0/41 [00:00<?, ?it/s]Fetching 41 files:   0%|          | 0/41 [00:00<?, ?it/s]Fetching 41 files:   7%|▋         | 3/41 [00:00<00:01, 29.66it/s]Fetching 41 files:   5%|▍         | 2/41 [00:00<00:02, 19.27it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 41 files:   7%|▋         | 3/41 [00:19<00:01, 29.66it/s]Fetching 41 files:   5%|▍         | 2/41 [00:19<00:02, 19.27it/s]Fetching 41 files:  10%|▉         | 4/41 [00:43<08:44, 14.18s/it]Fetching 41 files:  10%|▉         | 4/41 [00:43<06:46, 10.99s/it]Fetching 41 files:  10%|▉         | 4/41 [00:43<06:46, 11.00s/it]Fetching 41 files:  10%|▉         | 4/41 [00:44<07:59, 12.96s/it]Fetching 41 files:  32%|███▏      | 13/41 [00:46<01:22,  2.95s/it]Fetching 41 files:  32%|███▏      | 13/41 [00:46<01:18,  2.80s/it]Fetching 41 files:  32%|███▏      | 13/41 [00:46<01:18,  2.80s/it]Fetching 41 files:  32%|███▏      | 13/41 [00:46<01:21,  2.90s/it]Fetching 41 files:  44%|████▍     | 18/41 [00:48<00:46,  2.01s/it]Fetching 41 files:  44%|████▍     | 18/41 [00:48<00:44,  1.95s/it]Fetching 41 files:  44%|████▍     | 18/41 [00:48<00:45,  1.99s/it]Fetching 41 files:  44%|████▍     | 18/41 [00:48<00:44,  1.95s/it]Fetching 41 files:  46%|████▋     | 19/41 [01:17<01:43,  4.71s/it]Fetching 41 files:  46%|████▋     | 19/41 [01:17<01:40,  4.57s/it]Fetching 41 files:  46%|████▋     | 19/41 [01:17<01:40,  4.57s/it]Fetching 41 files:  46%|████▋     | 19/41 [01:17<01:42,  4.66s/it]Fetching 41 files:  49%|████▉     | 20/41 [01:23<01:40,  4.77s/it]Fetching 41 files:  49%|████▉     | 20/41 [01:23<01:38,  4.69s/it]Fetching 41 files:  49%|████▉     | 20/41 [01:23<01:38,  4.69s/it]Fetching 41 files:  49%|████▉     | 20/41 [01:23<01:41,  4.82s/it]Fetching 41 files:  51%|█████     | 21/41 [01:26<01:31,  4.55s/it]Fetching 41 files:  51%|█████     | 21/41 [01:26<01:29,  4.45s/it]Fetching 41 files:  51%|█████     | 21/41 [01:26<01:30,  4.52s/it]Fetching 41 files:  51%|█████     | 21/41 [01:26<01:29,  4.45s/it]Fetching 41 files:  66%|██████▌   | 27/41 [01:34<00:38,  2.73s/it]Fetching 41 files:  66%|██████▌   | 27/41 [01:34<00:37,  2.71s/it]Fetching 41 files:  66%|██████▌   | 27/41 [01:34<00:38,  2.73s/it]Fetching 41 files:  66%|██████▌   | 27/41 [01:34<00:37,  2.71s/it]Fetching 41 files:  71%|███████   | 29/41 [01:44<00:38,  3.19s/it]Fetching 41 files:  71%|███████   | 29/41 [01:44<00:38,  3.22s/it]Fetching 41 files:  71%|███████   | 29/41 [01:44<00:38,  3.21s/it]Fetching 41 files:  71%|███████   | 29/41 [01:44<00:38,  3.20s/it]Fetching 41 files:  73%|███████▎  | 30/41 [01:51<00:41,  3.77s/it]Fetching 41 files:  73%|███████▎  | 30/41 [01:51<00:41,  3.74s/it]Fetching 41 files:  73%|███████▎  | 30/41 [01:51<00:41,  3.74s/it]Fetching 41 files:  73%|███████▎  | 30/41 [01:51<00:41,  3.76s/it]Fetching 41 files:  76%|███████▌  | 31/41 [01:55<00:37,  3.76s/it]Fetching 41 files:  76%|███████▌  | 31/41 [01:55<00:37,  3.76s/it]Fetching 41 files:  76%|███████▌  | 31/41 [01:55<00:37,  3.78s/it]Fetching 41 files:  76%|███████▌  | 31/41 [01:55<00:37,  3.78s/it]Fetching 41 files:  78%|███████▊  | 32/41 [01:59<00:33,  3.75s/it]Fetching 41 files:  78%|███████▊  | 32/41 [01:59<00:33,  3.75s/it]Fetching 41 files:  78%|███████▊  | 32/41 [01:59<00:33,  3.75s/it]Fetching 41 files:  78%|███████▊  | 32/41 [01:59<00:33,  3.77s/it]Fetching 41 files:  80%|████████  | 33/41 [02:02<00:28,  3.58s/it]Fetching 41 files:  80%|████████  | 33/41 [02:02<00:28,  3.58s/it]Fetching 41 files:  80%|████████  | 33/41 [02:02<00:28,  3.57s/it]Fetching 41 files:  80%|████████  | 33/41 [02:02<00:28,  3.58s/it]Fetching 41 files:  83%|████████▎ | 34/41 [02:03<00:20,  2.99s/it]Fetching 41 files:  83%|████████▎ | 34/41 [02:03<00:20,  2.99s/it]Fetching 41 files:  83%|████████▎ | 34/41 [02:03<00:21,  3.00s/it]Fetching 41 files:  83%|████████▎ | 34/41 [02:03<00:20,  2.99s/it]/usr/local/lib/python3.12/dist-packages/huggingface_hub/file_download.py:731: UserWarning: Not enough free disk space to download the file. The expected file size is: 4919.59 MB. The target location /root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-I2V-A14B-Diffusers/blobs only has 1.17 MB free disk space.
+  warnings.warn(
+Fetching 41 files:  85%|████████▌ | 35/41 [02:15<00:32,  5.35s/it]Fetching 41 files:  85%|████████▌ | 35/41 [02:15<00:23,  3.88s/it]
+Fetching 41 files:  85%|████████▌ | 35/41 [02:15<00:32,  5.33s/it]Fetching 41 files:  85%|████████▌ | 35/41 [02:15<00:32,  5.35s/it]Fetching 41 files:  85%|████████▌ | 35/41 [02:15<00:32,  5.34s/it]Fetching 41 files:  85%|████████▌ | 35/41 [02:17<00:23,  3.92s/it]
+/usr/local/lib/python3.12/dist-packages/huggingface_hub/file_download.py:731: UserWarning: Not enough free disk space to download the file. The expected file size is: 4919.59 MB. The target location /root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-I2V-A14B-Diffusers/blobs only has 1.05 MB free disk space.
+  warnings.warn(
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank0]:   File "<frozen runpy>", line 88, in _run_code
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/cache_dit/generate.py", line 9, in <module>
+[rank0]:     main()
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/cache_dit/generate.py", line 5, in main
+[rank0]:     entrypoint()
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/cache_dit/_utils/generate.py", line 86, in entrypoint
+[rank0]:     example.run()
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/cache_dit/_utils/registers.py", line 535, in run
+[rank0]:     pipe = self.init_config.get_pipe(self.args)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/cache_dit/_utils/registers.py", line 377, in get_pipe
+[rank0]:     pipe = self.pipeline_class.from_pretrained(
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/diffusers/pipelines/pipeline_utils.py", line 853, in from_pretrained
+[rank0]:     cached_folder = cls.download(
+[rank0]:                     ^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/diffusers/pipelines/pipeline_utils.py", line 1778, in download
+[rank0]:     cached_folder = snapshot_download(
+[rank0]:                     ^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/_snapshot_download.py", line 451, in snapshot_download
+[rank0]:     thread_map(
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/tqdm/contrib/concurrent.py", line 69, in thread_map
+[rank0]:     return _executor_map(ThreadPoolExecutor, fn, *iterables, **tqdm_kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/tqdm/contrib/concurrent.py", line 51, in _executor_map
+[rank0]:     return list(tqdm_class(ex.map(fn, *iterables, chunksize=chunksize), **kwargs))
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/tqdm/std.py", line 1181, in __iter__
+[rank0]:     for obj in iterable:
+[rank0]:   File "/usr/lib/python3.12/concurrent/futures/_base.py", line 619, in result_iterator
+[rank0]:     yield _result_or_cancel(fs.pop())
+[rank0]:           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/lib/python3.12/concurrent/futures/_base.py", line 317, in _result_or_cancel
+[rank0]:     return fut.result(timeout)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+[rank0]:     return self.__get_result()
+[rank0]:            ^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+[rank0]:     raise self._exception
+[rank0]:   File "/usr/lib/python3.12/concurrent/futures/thread.py", line 58, in run
+[rank0]:     result = self.fn(*self.args, **self.kwargs)
+[rank0]:              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/_snapshot_download.py", line 431, in _inner_hf_hub_download
+[rank0]:     hf_hub_download(  # type: ignore
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/file_download.py", line 995, in hf_hub_download
+[rank0]:     return _hf_hub_download_to_cache_dir(
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/file_download.py", line 1214, in _hf_hub_download_to_cache_dir
+[rank0]:     _download_to_tmp_and_move(
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/file_download.py", line 1838, in _download_to_tmp_and_move
+[rank0]:     xet_get(
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/file_download.py", line 558, in xet_get
+[rank0]:     download_files(
+[rank0]: RuntimeError: Data processing error: File reconstruction error: IO Error: No space left on device (os error 28)
+/usr/local/lib/python3.12/dist-packages/huggingface_hub/file_download.py:731: UserWarning: Not enough free disk space to download the file. The expected file size is: 507.59 MB. The target location /root/.cache/huggingface/hub/models--Wan-AI--Wan2.2-I2V-A14B-Diffusers/blobs only has 1.04 MB free disk space.
+  warnings.warn(
+Fatal Python error: _PyImport_Init: global import state already initialized
+Python runtime state: preinitialized
+
+Thread 0x00007e58913b8300 (most recent call first):
+  <no Python frame>
+[rank0]:[W427 09:24:40.895096477 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+W0427 09:24:40.826000 5253 torch/distributed/elastic/multiprocessing/api.py:908] Sending process 5321 closing signal SIGTERM
+W0427 09:24:40.827000 5253 torch/distributed/elastic/multiprocessing/api.py:908] Sending process 5322 closing signal SIGTERM
+W0427 09:24:40.828000 5253 torch/distributed/elastic/multiprocessing/api.py:908] Sending process 5323 closing signal SIGTERM
+E0427 09:24:41.155000 5253 torch/distributed/elastic/multiprocessing/api.py:882] failed (exitcode: 1) local_rank: 0 (pid: 5320) of binary: /usr/bin/python3
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 357, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 936, in main
+    run(args)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 927, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 156, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 293, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+cache_dit.generate FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-04-27_09:24:40
+  host      : 0eeb8f091339
+  rank      : 0 (local_rank: 0)
+  exitcode  : 1 (pid: 5320)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================
+[W427 09:24:41.680938030 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())

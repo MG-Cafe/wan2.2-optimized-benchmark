@@ -1,0 +1,168 @@
+W0422 07:28:39.127000 2579 torch/distributed/run.py:803] 
+W0422 07:28:39.127000 2579 torch/distributed/run.py:803] *****************************************
+W0422 07:28:39.127000 2579 torch/distributed/run.py:803] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0422 07:28:39.127000 2579 torch/distributed/run.py:803] *****************************************
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s][rank2]: Traceback (most recent call last):
+[rank2]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank2]:   File "<frozen runpy>", line 88, in _run_code
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/cache_dit/generate.py", line 9, in <module>
+[rank2]:     main()
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/cache_dit/generate.py", line 5, in main
+[rank2]:     entrypoint()
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/cache_dit/_utils/generate.py", line 86, in entrypoint
+[rank2]:     example.run()
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/cache_dit/_utils/registers.py", line 535, in run
+[rank2]:     pipe = self.init_config.get_pipe(self.args)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/cache_dit/_utils/registers.py", line 377, in get_pipe
+[rank2]:     pipe = self.pipeline_class.from_pretrained(
+[rank2]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+[rank2]:     return fn(*args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/diffusers/pipelines/pipeline_utils.py", line 1054, in from_pretrained
+[rank2]:     loaded_sub_model = load_sub_model(
+[rank2]:                        ^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/diffusers/pipelines/pipeline_loading_utils.py", line 894, in load_sub_model
+[rank2]:     loaded_sub_model = load_method(os.path.join(cached_folder, name), **loading_kwargs)
+[rank2]:                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+[rank2]:     return fn(*args, **kwargs)
+[rank2]:            ^^^^^^^^^^^^^^^^^^^
+[rank2]:   File "/usr/local/lib/python3.12/dist-packages/diffusers/models/modeling_utils.py", line 1173, in from_pretrained
+[rank2]:     raise ValueError("`low_cpu_mem_usage` cannot be False when `keep_in_fp32_modules` is True.")
+[rank2]: ValueError: `low_cpu_mem_usage` cannot be False when `keep_in_fp32_modules` is True.
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]
+[rank0]: Traceback (most recent call last):
+[rank0]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank0]:   File "<frozen runpy>", line 88, in _run_code
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/cache_dit/generate.py", line 9, in <module>
+[rank0]:     main()
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/cache_dit/generate.py", line 5, in main
+[rank0]:     entrypoint()
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/cache_dit/_utils/generate.py", line 86, in entrypoint
+[rank0]:     example.run()
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/cache_dit/_utils/registers.py", line 535, in run
+[rank0]:     pipe = self.init_config.get_pipe(self.args)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/cache_dit/_utils/registers.py", line 377, in get_pipe
+[rank0]:     pipe = self.pipeline_class.from_pretrained(
+[rank0]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/diffusers/pipelines/pipeline_utils.py", line 1054, in from_pretrained
+[rank0]:     loaded_sub_model = load_sub_model(
+[rank0]:                        ^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/diffusers/pipelines/pipeline_loading_utils.py", line 894, in load_sub_model
+[rank0]:     loaded_sub_model = load_method(os.path.join(cached_folder, name), **loading_kwargs)
+[rank0]:                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+[rank0]:     return fn(*args, **kwargs)
+[rank0]:            ^^^^^^^^^^^^^^^^^^^
+[rank0]:   File "/usr/local/lib/python3.12/dist-packages/diffusers/models/modeling_utils.py", line 1173, in from_pretrained
+[rank0]:     raise ValueError("`low_cpu_mem_usage` cannot be False when `keep_in_fp32_modules` is True.")
+[rank0]: ValueError: `low_cpu_mem_usage` cannot be False when `keep_in_fp32_modules` is True.
+[rank1]: Traceback (most recent call last):
+[rank1]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank1]:   File "<frozen runpy>", line 88, in _run_code
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/cache_dit/generate.py", line 9, in <module>
+[rank1]:     main()
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/cache_dit/generate.py", line 5, in main
+[rank1]:     entrypoint()
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/cache_dit/_utils/generate.py", line 86, in entrypoint
+[rank1]:     example.run()
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/cache_dit/_utils/registers.py", line 535, in run
+[rank1]:     pipe = self.init_config.get_pipe(self.args)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/cache_dit/_utils/registers.py", line 377, in get_pipe
+[rank1]:     pipe = self.pipeline_class.from_pretrained(
+[rank1]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+[rank1]:     return fn(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/diffusers/pipelines/pipeline_utils.py", line 1054, in from_pretrained
+[rank1]:     loaded_sub_model = load_sub_model(
+[rank1]:                        ^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/diffusers/pipelines/pipeline_loading_utils.py", line 894, in load_sub_model
+[rank1]:     loaded_sub_model = load_method(os.path.join(cached_folder, name), **loading_kwargs)
+[rank1]:                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+[rank1]:     return fn(*args, **kwargs)
+[rank1]:            ^^^^^^^^^^^^^^^^^^^
+[rank1]:   File "/usr/local/lib/python3.12/dist-packages/diffusers/models/modeling_utils.py", line 1173, in from_pretrained
+[rank1]:     raise ValueError("`low_cpu_mem_usage` cannot be False when `keep_in_fp32_modules` is True.")
+[rank1]: ValueError: `low_cpu_mem_usage` cannot be False when `keep_in_fp32_modules` is True.
+[rank3]: Traceback (most recent call last):
+[rank3]:   File "<frozen runpy>", line 198, in _run_module_as_main
+[rank3]:   File "<frozen runpy>", line 88, in _run_code
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/cache_dit/generate.py", line 9, in <module>
+[rank3]:     main()
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/cache_dit/generate.py", line 5, in main
+[rank3]:     entrypoint()
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/cache_dit/_utils/generate.py", line 86, in entrypoint
+[rank3]:     example.run()
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/cache_dit/_utils/registers.py", line 535, in run
+[rank3]:     pipe = self.init_config.get_pipe(self.args)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/cache_dit/_utils/registers.py", line 377, in get_pipe
+[rank3]:     pipe = self.pipeline_class.from_pretrained(
+[rank3]:            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+[rank3]:     return fn(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/diffusers/pipelines/pipeline_utils.py", line 1054, in from_pretrained
+[rank3]:     loaded_sub_model = load_sub_model(
+[rank3]:                        ^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/diffusers/pipelines/pipeline_loading_utils.py", line 894, in load_sub_model
+[rank3]:     loaded_sub_model = load_method(os.path.join(cached_folder, name), **loading_kwargs)
+[rank3]:                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+[rank3]:     return fn(*args, **kwargs)
+[rank3]:            ^^^^^^^^^^^^^^^^^^^
+[rank3]:   File "/usr/local/lib/python3.12/dist-packages/diffusers/models/modeling_utils.py", line 1173, in from_pretrained
+[rank3]:     raise ValueError("`low_cpu_mem_usage` cannot be False when `keep_in_fp32_modules` is True.")
+[rank3]: ValueError: `low_cpu_mem_usage` cannot be False when `keep_in_fp32_modules` is True.
+[rank0]:[W422 07:28:46.860219859 ProcessGroupNCCL.cpp:1524] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+W0422 07:28:47.081000 2579 torch/distributed/elastic/multiprocessing/api.py:908] Sending process 2646 closing signal SIGTERM
+W0422 07:28:47.082000 2579 torch/distributed/elastic/multiprocessing/api.py:908] Sending process 2647 closing signal SIGTERM
+W0422 07:28:47.082000 2579 torch/distributed/elastic/multiprocessing/api.py:908] Sending process 2649 closing signal SIGTERM
+E0422 07:28:47.309000 2579 torch/distributed/elastic/multiprocessing/api.py:882] failed (exitcode: 1) local_rank: 2 (pid: 2648) of binary: /usr/bin/python3
+Traceback (most recent call last):
+  File "/usr/local/bin/torchrun", line 6, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/elastic/multiprocessing/errors/__init__.py", line 357, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 936, in main
+    run(args)
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/run.py", line 927, in run
+    elastic_launch(
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 156, in __call__
+    return launch_agent(self._config, self._entrypoint, list(args))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/dist-packages/torch/distributed/launcher/api.py", line 293, in launch_agent
+    raise ChildFailedError(
+torch.distributed.elastic.multiprocessing.errors.ChildFailedError: 
+============================================================
+cache_dit.generate FAILED
+------------------------------------------------------------
+Failures:
+  <NO_OTHER_FAILURES>
+------------------------------------------------------------
+Root Cause (first observed failure):
+[0]:
+  time      : 2026-04-22_07:28:47
+  host      : 6b7a2796b008
+  rank      : 2 (local_rank: 2)
+  exitcode  : 1 (pid: 2648)
+  error_file: <N/A>
+  traceback : To enable traceback see: https://pytorch.org/docs/stable/elastic/errors.html
+============================================================

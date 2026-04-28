@@ -1,0 +1,109 @@
+W0428 19:03:25.754000 32003 torch/distributed/run.py:803] 
+W0428 19:03:25.754000 32003 torch/distributed/run.py:803] *****************************************
+W0428 19:03:25.754000 32003 torch/distributed/run.py:803] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0428 19:03:25.754000 32003 torch/distributed/run.py:803] *****************************************
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading pipeline components...:   0%|          | 0/6 [00:00<?, ?it/s]Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+
+Loading checkpoint shards:   0%|          | 0/12 [00:00<?, ?it/s][ALoading weights:   0%|          | 0/242 [00:00<?, ?it/s]Loading weights:   0%|          | 0/242 [00:00<?, ?it/s]Loading weights: 100%|██████████| 242/242 [00:00<00:00, 13472.01it/s]
+Loading weights: 100%|██████████| 242/242 [00:00<00:00, 13605.82it/s]
+
+Loading checkpoint shards:   8%|▊         | 1/12 [00:00<00:06,  1.66it/s][ALoading weights:   0%|          | 0/242 [00:00<?, ?it/s]Loading weights: 100%|██████████| 242/242 [00:00<00:00, 19139.79it/s]
+
+Loading checkpoint shards:  17%|█▋        | 2/12 [00:01<00:06,  1.52it/s][A
+Loading checkpoint shards:  25%|██▌       | 3/12 [00:01<00:05,  1.55it/s][A
+Loading checkpoint shards:  33%|███▎      | 4/12 [00:02<00:05,  1.56it/s][A
+Loading checkpoint shards:  42%|████▏     | 5/12 [00:03<00:04,  1.50it/s][A
+Loading checkpoint shards:  50%|█████     | 6/12 [00:03<00:03,  1.54it/s][A
+Loading checkpoint shards:  58%|█████▊    | 7/12 [00:04<00:03,  1.50it/s][A
+Loading checkpoint shards:  67%|██████▋   | 8/12 [00:05<00:02,  1.53it/s][A
+Loading checkpoint shards:  75%|███████▌  | 9/12 [00:05<00:01,  1.56it/s][A
+Loading checkpoint shards:  83%|████████▎ | 10/12 [00:06<00:01,  1.58it/s][A
+Loading checkpoint shards:  92%|█████████▏| 11/12 [00:07<00:00,  1.53it/s][A
+Loading checkpoint shards: 100%|██████████| 12/12 [00:07<00:00,  1.70it/s][ALoading checkpoint shards: 100%|██████████| 12/12 [00:07<00:00,  1.58it/s]
+Loading pipeline components...:  17%|█▋        | 1/6 [00:07<00:38,  7.63s/it]
+Loading weights:   0%|          | 0/242 [00:00<?, ?it/s][ALoading weights: 100%|██████████| 242/242 [00:00<00:00, 17123.94it/s]
+Loading weights:   0%|          | 0/242 [00:00<?, ?it/s]Loading weights: 100%|██████████| 242/242 [00:00<00:00, 19102.33it/s]
+Loading weights:   0%|          | 0/242 [00:00<?, ?it/s]Loading weights: 100%|██████████| 242/242 [00:00<00:00, 14248.72it/s]
+Loading pipeline components...:  50%|█████     | 3/6 [00:08<00:07,  2.40s/it]
+Loading checkpoint shards:   0%|          | 0/12 [00:00<?, ?it/s][A
+Loading checkpoint shards:   8%|▊         | 1/12 [00:00<00:06,  1.69it/s][A
+Loading checkpoint shards:  17%|█▋        | 2/12 [00:01<00:06,  1.64it/s][A
+Loading checkpoint shards:  25%|██▌       | 3/12 [00:01<00:05,  1.53it/s][A
+Loading checkpoint shards:  33%|███▎      | 4/12 [00:02<00:05,  1.57it/s][A
+Loading checkpoint shards:  42%|████▏     | 5/12 [00:03<00:04,  1.59it/s][A
+Loading checkpoint shards:  50%|█████     | 6/12 [00:03<00:03,  1.61it/s][A
+Loading checkpoint shards:  58%|█████▊    | 7/12 [00:04<00:03,  1.62it/s][A
+Loading checkpoint shards:  67%|██████▋   | 8/12 [00:05<00:02,  1.56it/s][A
+Loading checkpoint shards:  75%|███████▌  | 9/12 [00:05<00:01,  1.58it/s][A
+Loading checkpoint shards:  83%|████████▎ | 10/12 [00:06<00:01,  1.60it/s][A
+Loading checkpoint shards:  92%|█████████▏| 11/12 [00:06<00:00,  1.61it/s][ALoading weights:   0%|          | 0/242 [00:00<?, ?it/s]Loading weights: 100%|██████████| 242/242 [00:00<00:00, 17570.65it/s]
+
+Loading checkpoint shards: 100%|██████████| 12/12 [00:07<00:00,  1.83it/s][ALoading checkpoint shards: 100%|██████████| 12/12 [00:07<00:00,  1.65it/s]
+Loading pipeline components...:  83%|████████▎ | 5/6 [00:16<00:03,  3.06s/it]Loading pipeline components...: 100%|██████████| 6/6 [00:16<00:00,  2.69s/it]
+[04-28 19:03:49] [Cache-DiT] Auto selected parallelism backend for transformer: Native_PyTorch
+[04-28 19:03:49] [Cache-DiT] WanImageToVideoPipeline is officially supported by cache-dit. Use it's pre-defined BlockAdapter directly!
+[04-28 19:03:49] [Cache-DiT] Auto fill blocks_name: ['blocks', 'blocks'].
+[04-28 19:03:49] [Cache-DiT] Match Block Forward Pattern: WanTransformerBlock, ForwardPattern.Pattern_2
+[04-28 19:03:49] [Cache-DiT] IN:('hidden_states', 'encoder_hidden_states'), OUT:('hidden_states',))
+[04-28 19:03:49] [Cache-DiT] Match Block Forward Pattern: WanTransformerBlock, ForwardPattern.Pattern_2
+[04-28 19:03:49] [Cache-DiT] IN:('hidden_states', 'encoder_hidden_states'), OUT:('hidden_states',))
+[04-28 19:03:49] [Cache-DiT] Use custom 'enable_separate_cfg' from BlockAdapter: True. Pipeline: WanImageToVideoPipeline.
+[04-28 19:03:49] [Cache-DiT] Collected Context Config: DBCache_F1B0_W4I1M8MC3_R0.12_CFG1, Calibrator Config: None
+[04-28 19:03:49] [Cache-DiT] Collected Context Config: DBCache_F1B0_W2I1M20MC3_R0.12_CFG1, Calibrator Config: None
+[04-28 19:03:49] [Cache-DiT] Match Blocks: CachedBlocks_Pattern_0_1_2, for blocks, cache_context: blocks_135187812711456, context_manager: WanImageToVideoPipeline_135188105540528.
+[04-28 19:03:49] [Cache-DiT] Match Blocks: CachedBlocks_Pattern_0_1_2, for blocks, cache_context: blocks_135188100826368, context_manager: WanImageToVideoPipeline_135188105540528.
+[04-28 19:03:49] [Cache-DiT] Auto fill blocks_name: ['blocks', 'blocks'].
+[04-28 19:03:49] [Cache-DiT] Multiple transformers are detected in the BlockAdapter, all transformers will be enabled for parallelism or quantization.
+[04-28 19:03:49] [Cache-DiT] Registered custom attn backends: native, _sdpa_cudnn, sage, _native_npu, _npu_fia.
+Loading weights:   0%|          | 0/242 [00:00<?, ?it/s]Loading weights: 100%|██████████| 242/242 [00:00<00:00, 17085.03it/s]
+[04-28 19:03:57] [Cache-DiT] Parallelize Transformer: WanTransformer3DModel, id:135133848059152, ParallelismConfig(backend=Native_PyTorch, tp_size=8)
+[04-28 19:03:57] [Cache-DiT] Set attention backend to <native> for module: WanTransformer3DModel.
+[04-28 19:04:04] [Cache-DiT] Parallelize Transformer: WanTransformer3DModel, id:135188100752800, ParallelismConfig(backend=Native_PyTorch, tp_size=8)
+[04-28 19:04:04] [Cache-DiT] Set attention backend to <native> for module: WanTransformer3DModel.
+  0%|          | 0/5 [00:00<?, ?it/s] 20%|██        | 1/5 [00:18<01:14, 18.62s/it] 40%|████      | 2/5 [00:37<00:55, 18.53s/it] 60%|██████    | 3/5 [00:55<00:37, 18.55s/it] 80%|████████  | 4/5 [01:14<00:18, 18.54s/it]100%|██████████| 5/5 [01:32<00:00, 18.54s/it]100%|██████████| 5/5 [01:32<00:00, 18.55s/it]
+  0%|          | 0/5 [00:00<?, ?it/s] 20%|██        | 1/5 [00:18<01:14, 18.51s/it] 40%|████      | 2/5 [00:36<00:55, 18.49s/it] 60%|██████    | 3/5 [00:55<00:36, 18.48s/it] 80%|████████  | 4/5 [01:13<00:18, 18.50s/it]100%|██████████| 5/5 [01:32<00:00, 18.50s/it]100%|██████████| 5/5 [01:32<00:00, 18.50s/it]
+[04-28 19:07:47] [Cache-DiT] 🤖 Example Init Config Summary:
+[04-28 19:07:47] [Cache-DiT] - Model: Wan-AI/Wan2.2-I2V-A14B-Diffusers
+[04-28 19:07:47] [Cache-DiT] - Task Type: I2V - Image to Video
+[04-28 19:07:47] [Cache-DiT] - Torch Dtype: torch.bfloat16
+[04-28 19:07:47] [Cache-DiT] - Warmup Seed: None
+[04-28 19:07:47] [Cache-DiT] - Warmup Prompt: None
+[04-28 19:07:47] [Cache-DiT] - LoRA Weights: None
+[04-28 19:07:47] [Cache-DiT] 🤖 Example Input Summary:
+[04-28 19:07:47] [Cache-DiT] - prompt: A curious raccoon peeks from behind a tree, eyes wide with wonder.
+[04-28 19:07:47] [Cache-DiT] - negative_prompt: 色调艳丽，过曝，静态，细节模糊不清，字幕，风格，作品，画作，画面，静止，整体发灰，最差质量，低质量，JPEG压缩残留，丑陋的，残缺的，多余的手指，画得不好的手部，画得不好的脸部，畸形的，毁容的，形态畸形的肢体，手指融合，静止不动的画面，杂乱的背景，三条腿，背景人很多，倒着走
+[04-28 19:07:47] [Cache-DiT] - height: 720
+[04-28 19:07:47] [Cache-DiT] - width: 1280
+[04-28 19:07:47] [Cache-DiT] - guidance_scale: 3.5
+[04-28 19:07:47] [Cache-DiT] - num_inference_steps: 5
+[04-28 19:07:47] [Cache-DiT] - num_frames: 81
+[04-28 19:07:47] [Cache-DiT] - image: Single Image (720x544)
+[04-28 19:07:47] [Cache-DiT] - generator: device cpu, seed 42
+[04-28 19:07:47] [Cache-DiT] 🤖 Example Output Summary:
+[04-28 19:07:47] [Cache-DiT] - Model: wan2.2_i2v
+[04-28 19:07:47] [Cache-DiT] - Optimization: C0_DBCache_F1B0_W2I1M20MC3_R0.12_CFG1_T0O0_TP8
+[04-28 19:07:47] [Cache-DiT] - Device: NVIDIA RTX PRO 6000 Blackwell Server Edition x 8
+[04-28 19:07:47] [Cache-DiT] - Load Time: 16.35s
+[04-28 19:07:47] [Cache-DiT] - Warmup Time: 110.46s
+[04-28 19:07:47] [Cache-DiT] - Inference Time: 109.25s
+[04-28 19:07:48] [Cache-DiT] Video saved to /scratch/results/cfg7_cd_tp8_cache_5s/i2v_output.mp4
+[W428 19:07:49.226827526 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+[W428 19:07:49.252143158 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+[W428 19:07:49.278424939 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+[W428 19:07:49.303645830 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+[W428 19:07:49.309862848 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+[W428 19:07:49.316625865 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+[W428 19:07:49.350550704 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+[W428 19:07:50.697658826 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())
+[W428 19:07:52.546314745 AllocatorConfig.cpp:28] Warning: PYTORCH_CUDA_ALLOC_CONF is deprecated, use PYTORCH_ALLOC_CONF instead (function operator())

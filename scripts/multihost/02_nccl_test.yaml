@@ -1,0 +1,91 @@
+# NCCL Inter-Node Bandwidth Test
+# Tests all-reduce across 2 G4 nodes (16 GPUs) with dual-NIC NCCL config
+# Prerequisites: GKE cluster created with 01_create_gke_cluster.sh
+#
+# Usage:
+#   kubectl create configmap nccl-script --from-file=scripts/multihost/nccl_bench.py
+#   kubectl apply -f scripts/multihost/02_nccl_test.yaml
+#   # Wait ~4 min
+#   kubectl logs nccl-node0 | tail -15
+#
+# Expected results on G4 with dual NIC (2x200 Gbps):
+#   4MB:    algBW=5.80 GB/s
+#   16MB:   algBW=13.98 GB/s
+#   64MB:   algBW=16.77 GB/s
+#   256MB:  algBW=18.63 GB/s
+#   1024MB: algBW=31.17 GB/s (~249 Gbps, bus BW ~467 Gbps)
+#
+# NOTE: Update nodeSelector hostnames to match your cluster's node names:
+#   kubectl get nodes -l cloud.google.com/gke-nodepool=g4-pool
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nccl-node0
+spec:
+  restartPolicy: Never
+  hostNetwork: true
+  dnsPolicy: ClusterFirstWithHostNet
+  nodeSelector:
+    kubernetes.io/hostname: NODE0_HOSTNAME  # Replace with actual node name
+  containers:
+  - name: nccl
+    image: nvcr.io/nvidia/pytorch:25.04-py3
+    command: ["bash", "-c", "echo Node0 ready; sleep 90; torchrun --nproc_per_node=8 --nnodes=2 --node_rank=0 --master_addr=$(hostname -I | awk '{print $1}') --master_port=29500 /tmp/nccl_bench.py 2>&1; echo DONE"]
+    volumeMounts:
+    - name: script
+      mountPath: /tmp/nccl_bench.py
+      subPath: nccl_bench.py
+    resources:
+      limits:
+        nvidia.com/gpu: "8"
+    env:
+    - {name: NCCL_SOCKET_IFNAME, value: "ens3,enp128s4"}
+    - {name: GLOO_SOCKET_IFNAME, value: "ens3"}
+    - {name: NCCL_IB_DISABLE, value: "1"}
+    - {name: NCCL_P2P_LEVEL, value: "SYS"}
+    - {name: NCCL_SOCKET_NTHREADS, value: "4"}
+    - {name: NCCL_NSOCKS_PERTHREAD, value: "4"}
+    - {name: NCCL_MIN_NCHANNELS, value: "4"}
+    securityContext:
+      privileged: true
+  volumes:
+  - name: script
+    configMap:
+      name: nccl-script
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nccl-node1
+spec:
+  restartPolicy: Never
+  hostNetwork: true
+  dnsPolicy: ClusterFirstWithHostNet
+  nodeSelector:
+    kubernetes.io/hostname: NODE1_HOSTNAME  # Replace with actual node name
+  containers:
+  - name: nccl
+    image: nvcr.io/nvidia/pytorch:25.04-py3
+    command: ["bash", "-c", "echo Node1 ready; sleep 60; torchrun --nproc_per_node=8 --nnodes=2 --node_rank=1 --master_addr=MASTER_IP --master_port=29500 /tmp/nccl_bench.py 2>&1; echo DONE"]
+    volumeMounts:
+    - name: script
+      mountPath: /tmp/nccl_bench.py
+      subPath: nccl_bench.py
+    resources:
+      limits:
+        nvidia.com/gpu: "8"
+    env:
+    - {name: NCCL_SOCKET_IFNAME, value: "ens3,enp128s4"}
+    - {name: GLOO_SOCKET_IFNAME, value: "ens3"}
+    - {name: NCCL_IB_DISABLE, value: "1"}
+    - {name: NCCL_P2P_LEVEL, value: "SYS"}
+    - {name: NCCL_SOCKET_NTHREADS, value: "4"}
+    - {name: NCCL_NSOCKS_PERTHREAD, value: "4"}
+    - {name: NCCL_MIN_NCHANNELS, value: "4"}
+    securityContext:
+      privileged: true
+  volumes:
+  - name: script
+    configMap:
+      name: nccl-script
